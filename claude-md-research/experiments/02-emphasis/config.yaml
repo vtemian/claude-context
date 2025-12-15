@@ -1,0 +1,37 @@
+# experiments/02-emphasis/config.yaml
+name: emphasis
+description: |
+  Test which keywords (IMPORTANT, NEVER, MUST) improve compliance.
+
+levels: 3
+emojis:
+  - "😀"
+  - "😃"
+  - "😄"
+
+padding_sizes:
+  - 1000
+
+padding_style: reinforcement
+trials_per_condition: 5
+
+emphasis_styles:
+  - name: neutral
+    template: "Every section should contain one {emoji}."
+
+  - name: important
+    template: "IMPORTANT: Every section MUST contain exactly one {emoji}."
+
+  - name: never
+    template: "NEVER write a section without {emoji}. It is REQUIRED."
+
+  - name: caps
+    template: "EVERY SECTION MUST CONTAIN ONE {emoji}. NO EXCEPTIONS."
+
+  - name: bold
+    template: "**CRITICAL**: Every section requires {emoji}. This is mandatory."
+
+prompt: |
+  Write a story with 10 clearly separated sections.
+  Each section should be 2-3 sentences.
+  Number each section (Section 1, Section 2, etc.).

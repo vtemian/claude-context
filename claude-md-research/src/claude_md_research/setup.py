@@ -37,8 +37,18 @@ def setup_experiment_files(
     padding_size: int,
     style: str = "neutral",
     backup_user_config: bool = False,
+    skip_user_config: bool = False,
 ) -> ExperimentSetup:
-    """Create CLAUDE.md files for an experiment trial."""
+    """Create CLAUDE.md files for an experiment trial.
+
+    Args:
+        config: Experiment configuration
+        base_dir: Base directory for project-level files
+        padding_size: Size of reinforcement padding
+        style: Emphasis style for rules
+        backup_user_config: If True, backup ~/.claude/CLAUDE.md before modifying
+        skip_user_config: If True, do not create/modify ~/.claude/CLAUDE.md (level 0)
+    """
     base_path = Path(base_dir)
     base_path.mkdir(parents=True, exist_ok=True)
 
@@ -54,7 +64,11 @@ def setup_experiment_files(
         )
 
         if level == 0:
-            # Level 0: User config
+            # Level 0: User config (~/.claude/CLAUDE.md)
+            if skip_user_config:
+                # Skip modifying user config - used by generate command
+                continue
+
             user_claude_md = Path.home() / ".claude" / "CLAUDE.md"
 
             if backup_user_config and user_claude_md.exists():
@@ -90,8 +104,13 @@ def setup_experiment_files(
 
 def teardown_experiment_files(setup: ExperimentSetup) -> None:
     """Remove experiment files and restore backups."""
-    # Remove project files (skip level 0 which is user config)
-    for path in setup.claude_md_paths[1:]:
+    user_claude_md = str(Path.home() / ".claude" / "CLAUDE.md")
+
+    # Remove project files (skip user config if present)
+    for path in setup.claude_md_paths:
+        if path == user_claude_md:
+            # Don't delete user config - it will be restored from backup
+            continue
         if os.path.exists(path):
             os.remove(path)
 

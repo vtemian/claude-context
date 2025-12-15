@@ -29,16 +29,17 @@ def test_setup_creates_directory_structure(sample_config):
             config=sample_config,
             base_dir=tmpdir,
             padding_size=100,
+            skip_user_config=True,  # Don't touch real user config during tests
         )
 
-        # Check files were created
-        assert os.path.exists(setup.claude_md_paths[0])  # Level 0
-        assert os.path.exists(setup.claude_md_paths[1])  # Level 1 (./CLAUDE.md)
-        assert os.path.exists(setup.claude_md_paths[2])  # Level 2 (./src/CLAUDE.md)
+        # Check files were created (only project levels since skip_user_config=True)
+        assert len(setup.claude_md_paths) == 2  # Levels 1 and 2 only
+        assert os.path.exists(setup.claude_md_paths[0])  # Level 1 (./CLAUDE.md)
+        assert os.path.exists(setup.claude_md_paths[1])  # Level 2 (./src/CLAUDE.md)
         assert setup.working_dir.endswith("src")
 
-        # Check content contains emoji
-        with open(setup.claude_md_paths[1]) as f:
+        # Check content contains emoji (level 1 has 😃)
+        with open(setup.claude_md_paths[0]) as f:
             content = f.read()
             assert "😃" in content
 
@@ -49,10 +50,41 @@ def test_teardown_removes_files(sample_config):
             config=sample_config,
             base_dir=tmpdir,
             padding_size=100,
+            skip_user_config=True,  # Don't touch real user config during tests
         )
 
         teardown_experiment_files(setup)
 
         # Project files should be gone
+        assert not os.path.exists(setup.claude_md_paths[0])
         assert not os.path.exists(setup.claude_md_paths[1])
-        assert not os.path.exists(setup.claude_md_paths[2])
+
+
+def test_skip_user_config_does_not_touch_user_claude_md(sample_config):
+    """Verify skip_user_config=True leaves ~/.claude/CLAUDE.md untouched."""
+    user_claude_md = Path.home() / ".claude" / "CLAUDE.md"
+
+    # Save original content if exists
+    original_content = None
+    if user_claude_md.exists():
+        original_content = user_claude_md.read_text()
+
+    with tempfile.TemporaryDirectory() as tmpdir:
+        setup = setup_experiment_files(
+            config=sample_config,
+            base_dir=tmpdir,
+            padding_size=100,
+            skip_user_config=True,
+        )
+
+        # Level 0 should NOT be in the paths list
+        user_path_str = str(user_claude_md)
+        assert user_path_str not in setup.claude_md_paths
+
+        # Only project-level files should exist (levels 1 and 2)
+        assert len(setup.claude_md_paths) == 2
+        assert all(tmpdir in p for p in setup.claude_md_paths)
+
+        # User config should be unchanged
+        if original_content is not None:
+            assert user_claude_md.read_text() == original_content

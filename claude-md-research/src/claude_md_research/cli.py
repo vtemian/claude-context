@@ -41,9 +41,10 @@ def generate(experiment: str, output: str, padding: int, style: str):
         base_dir=output,
         padding_size=padding,
         style=style,
+        skip_user_config=True,  # Don't modify user's ~/.claude/CLAUDE.md
     )
 
-    click.echo(f"Created {len(setup.claude_md_paths)} CLAUDE.md files")
+    click.echo(f"Created {len(setup.claude_md_paths)} CLAUDE.md files (level 0 skipped)")
     click.echo(f"Working directory: {setup.working_dir}")
 
     for path in setup.claude_md_paths:

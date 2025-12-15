@@ -1,0 +1,29 @@
+# experiments/01-scale/config.yaml
+name: scale
+description: |
+  Test how compliance degrades as CLAUDE.md context size increases.
+  Each level adds one emoji requirement. Padding reinforces the rule.
+
+levels: 5
+emojis:
+  - "😀"  # Level 0: User (~/.claude/CLAUDE.md)
+  - "😃"  # Level 1: Project root (./CLAUDE.md)
+  - "😄"  # Level 2: ./src/CLAUDE.md
+  - "😁"  # Level 3: ./src/lib/CLAUDE.md
+  - "😆"  # Level 4: ./src/lib/core/CLAUDE.md
+
+padding_sizes:
+  - 100
+  - 500
+  - 1000
+  - 2000
+  - 4000
+  - 8000
+
+padding_style: reinforcement
+trials_per_condition: 3
+
+prompt: |
+  Write a story with 10 clearly separated sections.
+  Each section should be 2-3 sentences about any topic.
+  Number each section (Section 1, Section 2, etc.).

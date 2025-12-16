@@ -1,33 +1,138 @@
-# CLAUDE.md Compliance Research Framework
+# CLAUDE.md Compliance Research
 
-Empirically measure how well Claude follows CLAUDE.md instructions under various conditions.
+Empirical research measuring how well Claude follows CLAUDE.md instructions under various conditions.
 
 ## The Problem
 
-Claude Code loads CLAUDE.md files from multiple locations and concatenates them into context. As context grows, instruction compliance may degrade. This framework measures that degradation scientifically.
+I use CLAUDE.md files extensively and had questions:
+- **How long can my instructions be** before Claude starts ignoring them?
+- **Should I use one big CLAUDE.md** or split across nested directories?
+- **Should I write detailed explanations** or keep instructions terse?
 
-## How It Works
+So I built a test framework and ran 150+ trials to find out.
+
+## Key Findings
+
+### 1. Context Size Limit (~80K chars)
+
+Compliance drops sharply after ~80K total characters across all CLAUDE.md files:
+
+| Total Context | Compliance |
+|--------------|------------|
+| ~4K chars | 100% ✅ |
+| ~21K chars | 67% ⚠️ |
+| ~42K chars | 67% ⚠️ |
+| ~85K chars | 59% ⚠️ |
+| ~128K chars | 0% ❌ |
+| ~214K chars | 0% ❌ |
+
+**Recommendation:** Keep total CLAUDE.md content under 80K characters.
+
+### 2. Rule Count Is Not the Bottleneck
+
+Claude can follow 200+ distinct rules with ~98% compliance when using terse instructions:
+
+| Rules | Compliance |
+|-------|------------|
+| 10-80 | ~100% ✅ |
+| 100-160 | ~100% ✅ |
+| 200 | 98% ✅ |
+
+**Recommendation:** Don't worry about having too many rules—worry about total size.
+
+### 3. Terse Instructions Beat Verbose Explanations
+
+Verbose explanations perform worse than single-sentence rules:
+
+| Style | Example | Compliance |
+|-------|---------|------------|
+| Terse | `"Include 😀 in each section."` | **94.8%** |
+| Verbose | `"When writing any section, you must include 😀. This is a firm requirement..."` | **86.6%** |
+
+Verbose rules use 5x more context but achieve 8% *worse* compliance.
+
+**Recommendation:** Use short, direct instructions. Don't over-explain.
+
+### 4. Nesting Works Fine
+
+4 levels of nested CLAUDE.md files (root → src → src/lib → src/lib/core) work well. The total size matters, not the nesting depth.
+
+## Methodology
 
 ### Measurement Approach
 
 Instead of asking Claude what instructions it sees (self-reporting), we measure **behavioral compliance**:
 
-1. Each CLAUDE.md level introduces a unique emoji requirement (e.g., "Include 😀 in every section")
-2. Claude generates structured text output (story with numbered sections)
-3. Python script counts emoji occurrences per section
-4. Compliance rate = `sections_with_emoji / total_sections`
+1. Each CLAUDE.md file contains emoji rules: `"Include 😀 in every section"`
+2. Claude generates a 10-section story
+3. Script counts emoji occurrences per section
+4. Compliance = `sections_with_emoji / total_sections`
+
+### Why Emojis?
+
+- **Unambiguous:** Either present or not
+- **Measurable:** Easy to count programmatically
+- **Non-interfering:** Don't affect story quality
+- **Distinct per level:** Easy to track which CLAUDE.md files are followed
 
 ### CLAUDE.md Hierarchy
 
-The framework creates nested CLAUDE.md files mimicking real-world usage:
+Tests use 4 nested levels (level 0 skipped to avoid modifying user config):
 
-| Level | Location | Emoji |
-|-------|----------|-------|
-| 0 | `~/.claude/CLAUDE.md` | 😀 |
-| 1 | `./CLAUDE.md` | 😃 |
-| 2 | `./src/CLAUDE.md` | 😄 |
-| 3 | `./src/lib/CLAUDE.md` | 😁 |
-| 4 | `./src/lib/core/CLAUDE.md` | 😆 |
+| Level | Location | Emoji Pool |
+|-------|----------|------------|
+| 1 | `./CLAUDE.md` | Smileys 😀😃😄😁😆 |
+| 2 | `./src/CLAUDE.md` | Animals 🐶🐱🐭🐹🐰 |
+| 3 | `./src/lib/CLAUDE.md` | Food 🍎🍊🍋🍌🍉 |
+| 4 | `./src/lib/core/CLAUDE.md` | Symbols ⭐🌟✨💫🔥 |
+
+### Test Prompt
+
+```
+Write a story with 10 clearly separated sections.
+Each section should be 2-3 sentences about any topic.
+Number each section (Section 1, Section 2, etc.).
+```
+
+## Experiments
+
+### Experiment 01: Context Size (`01-scale`)
+
+**Question:** At what context size does compliance break down?
+
+**Method:**
+- Padding sizes: 1K, 5K, 10K, 20K, 30K, 50K chars per file
+- 4 files = 4K to 200K total context
+- 3 trials per condition
+- Fixed 5 emojis per level (20 total)
+
+**Key Finding:** Hard cliff between 85K-128K chars. Beyond that, Claude completely ignores instructions.
+
+**Full analysis:** [results/01-scale-analysis.md](results/01-scale-analysis.md)
+
+### Experiment 03: Rule Count (`03-rule-count`)
+
+**Question:** How many distinct rules can Claude follow?
+
+**Method:**
+- Rule counts: 10, 20, 30... up to 200
+- Terse single-sentence rules
+- 3 trials per condition
+
+**Key Finding:** 94.8% mean compliance. Rule count is not the limiting factor.
+
+### Experiment 04: Verbosity (`04-verbose-rules`)
+
+**Question:** Do detailed rule explanations improve compliance?
+
+**Method:**
+- Same rule counts as experiment 03
+- Verbose 2-3 sentence explanations instead of terse rules
+- 3 trials per condition
+
+**Key Finding:** 86.6% mean compliance (-8.2% vs terse). Verbose hurts.
+
+**Full comparison:** [results/03-04-rule-count-analysis.md](results/03-04-rule-count-analysis.md)
 
 ## Installation
 
@@ -37,253 +142,152 @@ cd claude-context
 uv sync
 ```
 
-## Quick Start
+## Usage
 
-### 1. Preview Generated Files
-
-Generate CLAUDE.md files without running Claude (safe - doesn't touch your `~/.claude/CLAUDE.md`):
+### Run All Experiments
 
 ```bash
-uv run claude-md-research generate -e 01-scale -p 1000 -o ./workspace
+make experiments
 ```
 
-This creates:
-```
-workspace/
-├── CLAUDE.md           # Level 1: "Include 😃 in every section" + padding
-├── src/
-│   └── CLAUDE.md       # Level 2: "Include 😄 in every section" + padding
-│   └── lib/
-│       └── CLAUDE.md   # Level 3: ...
-│       └── core/
-│           └── CLAUDE.md  # Level 4: ...
-```
-
-### 2. Run an Experiment Trial
+### Run Individual Experiments
 
 ```bash
-uv run claude-md-research run -e 01-scale -p 1000 -t 1 -o ./results
+make run-01    # Context size (18 trials)
+make run-03    # Rule count - terse (45 trials)
+make run-04    # Rule count - verbose (45 trials)
 ```
 
-This:
-1. Backs up your `~/.claude/CLAUDE.md`
-2. Creates experiment files in a temp directory
-3. Runs Claude Code with the standard prompt
-4. Analyzes output for emoji compliance
-5. Restores your original CLAUDE.md
-6. Saves results to `./results/`
-
-### 3. Analyze Results
+### Analyze Results
 
 ```bash
-uv run claude-md-research analyze -e 01-scale -i ./results
+make analyze      # All experiments
+make analyze-01   # Just 01-scale
+make analyze-03   # Just 03-rule-count
+make analyze-04   # Just 04-verbose-rules
 ```
 
-Output:
-```
-Experiment: 01-scale
-Total trials: 5
-Mean compliance: 72.3%
-Range: 65.0% - 80.0%
-
-By padding size:
-   500 chars: 95.0%
-  1000 chars: 85.0%
-  2000 chars: 72.0%
-  4000 chars: 58.0%
-```
-
-## CLI Reference
-
-### `generate` - Create experiment files
+### Generate Charts
 
 ```bash
-uv run claude-md-research generate [OPTIONS]
-
-Options:
-  -e, --experiment TEXT   Experiment name (required)
-  -o, --output TEXT       Output directory [default: ./workspace]
-  -p, --padding INTEGER   Padding size in chars [default: 1000]
-  -s, --style TEXT        Emphasis style: neutral|important|never|caps [default: neutral]
-  --claude-padding        Use Claude API to generate varied padding
+python scripts/generate_chart.py        # 01-scale chart
+python scripts/generate_rule_charts.py  # 03 vs 04 comparison
 ```
 
-**Examples:**
+### Custom Configuration
 
 ```bash
-# Basic generation with templates
-uv run claude-md-research generate -e 01-scale -p 2000
+# Generate CLAUDE.md files with 10K padding per file
+uv run claude-md-research generate -e 01-scale -p 10000 -o ./workspace
 
-# With IMPORTANT/MUST emphasis
-uv run claude-md-research generate -e 02-emphasis -p 1000 -s important
+# Generate with 50 rules (terse)
+uv run claude-md-research generate -e 03-rule-count -r 50 -o ./workspace
 
-# With Claude-generated padding (requires ANTHROPIC_API_KEY)
-ANTHROPIC_API_KEY=sk-ant-... uv run claude-md-research generate -e 01-scale -p 1000 --claude-padding
+# Generate with 50 rules (verbose)
+uv run claude-md-research generate -e 04-verbose-rules -r 50 -s verbose -o ./workspace
+
+
+# Run a single trial
+uv run claude-md-research run -e 01-scale -p 5000 -t 1 -w ./workspace
 ```
 
-### `run` - Execute a trial
-
-```bash
-uv run claude-md-research run [OPTIONS]
-
-Options:
-  -e, --experiment TEXT   Experiment name (required)
-  -p, --padding INTEGER   Padding size (required)
-  -t, --trial INTEGER     Trial number [default: 1]
-  -o, --output TEXT       Results directory [default: ./results]
-  --timeout INTEGER       Timeout in seconds [default: 60]
-  -s, --style TEXT        Emphasis style [default: neutral]
-  --claude-padding        Use Claude API for padding
-```
-
-**Examples:**
-
-```bash
-# Run single trial
-uv run claude-md-research run -e 01-scale -p 1000 -t 1
-
-# Run multiple trials at different padding sizes
-for p in 500 1000 2000 4000; do
-  for t in 1 2 3; do
-    uv run claude-md-research run -e 01-scale -p $p -t $t
-  done
-done
-```
-
-### `analyze` - Aggregate results
-
-```bash
-uv run claude-md-research analyze [OPTIONS]
-
-Options:
-  -e, --experiment TEXT   Experiment name (required)
-  -i, --input TEXT        Results directory [default: ./results]
-```
-
-## Experiments
-
-### 01-scale: Context Size vs Compliance
-
-**Hypothesis:** Compliance degrades as context size increases.
-
-**Variables:**
-- Padding per CLAUDE.md: 100, 500, 1000, 2000, 4000, 8000 chars
-
-**Run:**
-```bash
-for p in 100 500 1000 2000 4000 8000; do
-  uv run claude-md-research run -e 01-scale -p $p -t 1
-done
-uv run claude-md-research analyze -e 01-scale
-```
-
-### 02-emphasis: Keyword Effectiveness
-
-**Hypothesis:** Keywords like IMPORTANT, NEVER, MUST improve compliance.
-
-**Variables:**
-- Styles: neutral, important, never, caps
-
-**Run:**
-```bash
-for s in neutral important never caps; do
-  uv run claude-md-research run -e 02-emphasis -p 1000 -t 1 -s $s
-done
-```
-
-## Padding Generation
-
-### Template-based (default)
-
-Uses 15 pre-written variations that cycle:
+## Project Structure
 
 ```
-Remember to include 😀 in every section.
-The 😀 symbol is required in all paragraphs.
-Do not forget: 😀 must appear in each section.
-...
+claude-context/
+├── experiments/           # Experiment configurations
+│   ├── 01-scale/         # Context size experiment
+│   ├── 03-rule-count/    # Terse rule count experiment
+│   └── 04-verbose-rules/ # Verbose rule count experiment
+├── results/
+│   ├── metrics/          # JSON metrics per trial
+│   ├── raw/              # Raw Claude output
+│   ├── charts/           # Generated visualizations
+│   ├── 01-scale-analysis.md
+│   └── 03-04-rule-count-analysis.md
+├── scripts/
+│   ├── generate_chart.py
+│   └── generate_rule_charts.py
+├── src/claude_md_research/
+│   ├── analyzer.py       # Output parsing & compliance calculation
+│   ├── cli.py            # Command-line interface
+│   ├── config.py         # Experiment configuration
+│   ├── generator.py      # CLAUDE.md content generation
+│   ├── metrics.py        # Results storage
+│   ├── runner.py         # Claude CLI execution
+│   └── setup.py          # File structure setup
+└── tests/
 ```
 
-Pros: Deterministic, reproducible
-Cons: Repetitive at large padding sizes
+## Practical Recommendations
 
-### Claude API-based (`--claude-padding`)
+Based on 150+ trials:
 
-Uses Claude Haiku to generate unique phrasings:
+1. **Keep total CLAUDE.md under 80K chars** - Compliance drops to 0% beyond ~128K
+2. **Use terse instructions** - One sentence per rule, no explanations needed
+3. **Don't repeat yourself** - Reinforcement wastes context without improving compliance
+4. **Nesting is fine** - 4 levels work well, total size is what matters
+5. **Many short rules > few long rules** - Same context budget, better results
 
-```bash
-ANTHROPIC_API_KEY=sk-ant-... uv run claude-md-research generate -e 01-scale -p 2000 --claude-padding
+### Example: Good CLAUDE.md
+
+```markdown
+# Code Style
+- Use TypeScript strict mode
+- Prefer const over let
+- No any types
+
+# Testing
+- Write tests for new functions
+- Use vitest for unit tests
+
+# Git
+- Commit messages: imperative mood
+- No commits to main directly
 ```
 
-Pros: Natural variation, no repetition
-Cons: Non-deterministic, API cost, potential confound (Claude writing instructions Claude follows)
+### Example: Bad CLAUDE.md
 
-## Results Structure
+```markdown
+# Code Style Guidelines
 
-```
-results/
-├── raw/                    # Claude output captures
-│   ├── 01-scale-p1000-t1.txt
-│   └── 01-scale-p2000-t1.txt
-├── metrics/                # JSON metrics per trial
-│   ├── 01-scale-p1000-t1.json
-│   └── 01-scale-p2000-t1.json
-└── charts/                 # Generated visualizations (future)
+When writing code in this project, it is extremely important that you always
+use TypeScript's strict mode. This means you should enable all strict type
+checking options in the tsconfig.json file. The reason for this is that strict
+mode catches many common errors at compile time rather than runtime...
+
+[300 more words of explanation]
 ```
 
-### Metrics JSON Format
+## Results Data
 
-```json
-{
-  "trial_id": "01-scale-p1000-t1",
-  "experiment": "01-scale",
-  "parameters": {"padding_size": 1000, "style": "neutral"},
-  "sections_found": 10,
-  "compliance_rates": {
-    "😀": 1.0,
-    "😃": 0.9,
-    "😄": 0.8,
-    "😁": 0.6,
-    "😆": 0.5
-  },
-  "overall_compliance": 0.76,
-  "context_size_chars": 5240
-}
-```
+All raw data is included in the repository:
+
+- `results/metrics/*.json` - Structured metrics per trial
+- `results/raw/*.txt` - Raw Claude output
+- `results/charts/*.png` - Generated visualizations
+
+## Contributing
+
+PRs welcome! Ideas for future experiments:
+
+- [ ] Rule positioning (start vs end of file)
+- [ ] Rule conflicts (contradictory instructions)
+- [ ] Different instruction types (formatting vs behavior)
+- [ ] Model comparison (Sonnet vs Opus vs Haiku)
+- [ ] Emphasis keywords (IMPORTANT, MUST, NEVER)
 
 ## Development
 
 ```bash
-# Install dev dependencies
-uv pip install -e ".[dev]"
-
 # Run tests
-uv run pytest -v
+make test
 
-# Format code
-uv run ruff format .
-```
+# Lint
+make lint
 
-## Adding New Experiments
-
-1. Create `experiments/<name>/config.yaml`:
-
-```yaml
-name: my-experiment
-description: Test something new
-levels: 5
-emojis: ["😀", "😃", "😄", "😁", "😆"]
-padding_sizes: [500, 1000, 2000]
-trials_per_condition: 3
-prompt: |
-  Write a story with 10 clearly separated sections.
-  Each section should be 2-3 sentences.
-  Number each section (Section 1, Section 2, etc.)
-```
-
-2. Run:
-```bash
-uv run claude-md-research run -e my-experiment -p 1000 -t 1
+# Format
+make format
 ```
 
 ## License

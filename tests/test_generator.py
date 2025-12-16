@@ -60,7 +60,7 @@ The 😀 symbol is required throughout.""")]
         mock_client.messages.create.assert_called_once()
         call_kwargs = mock_client.messages.create.call_args[1]
         assert "😀" in call_kwargs["messages"][0]["content"]
-        assert call_kwargs["model"] == "claude-haiku-4-20250514"
+        assert call_kwargs["model"] == "claude-3-5-haiku-20241022"
 
 
 @pytest.mark.skipif(

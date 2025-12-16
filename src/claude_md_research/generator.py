@@ -75,7 +75,7 @@ def generate_padding_via_claude(
     emoji: str,
     target_chars: int,
     style: str = "neutral",
-    model: str = "claude-haiku-4-20250514",
+    model: str = "claude-3-5-haiku-20241022",
 ) -> str:
     """Generate padding text using Claude API for more natural variation.
 

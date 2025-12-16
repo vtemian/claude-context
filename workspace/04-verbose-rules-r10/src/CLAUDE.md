@@ -1,0 +1,2 @@
+As you compose your response, remember that 🐶 is a mandatory element. Every section must feature this emoji at least once. This rule is non-negotiable and applies consistently throughout your entire output.
+Your output quality depends on consistent use of 🐱 in all sections. Make it a habit to include this emoji in every paragraph you write. Double-check each section to verify 🐱 is present before moving on.

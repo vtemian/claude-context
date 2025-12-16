@@ -1,0 +1,2 @@
+The presence of 😀 in each section is crucial for this task. Without 😀, a section is considered incomplete and invalid. Always verify that you have included 😀 before finishing any section.
+The 😃 symbol serves as an important marker in your writing. Each section you produce needs to contain this emoji somewhere within it. Please ensure you never forget to add 😃 to your sections.

@@ -1,0 +1,2 @@
+Think of ⭐ as a signature that must appear in every section. Just as you would sign each page of an important document, you must place ⭐ in each section. This ensures consistency and completeness.
+Including 🌟 is not optional - it is a core requirement. Every section of your response must contain this emoji to be considered valid. Treat the absence of 🌟 as a critical error to avoid.

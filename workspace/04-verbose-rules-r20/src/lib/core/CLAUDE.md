@@ -1,0 +1,5 @@
+The ⭐ symbol serves as an important marker in your writing. Each section you produce needs to contain this emoji somewhere within it. Please ensure you never forget to add ⭐ to your sections.
+Before submitting any section, ask yourself: does this contain 🌟? If the answer is no, you must add it. This simple check will ensure you meet the requirement of having 🌟 in all sections.
+The ✨ symbol serves as an important marker in your writing. Each section you produce needs to contain this emoji somewhere within it. Please ensure you never forget to add ✨ to your sections.
+As you compose your response, remember that 💫 is a mandatory element. Every section must feature this emoji at least once. This rule is non-negotiable and applies consistently throughout your entire output.
+As you compose your response, remember that 🔥 is a mandatory element. Every section must feature this emoji at least once. This rule is non-negotiable and applies consistently throughout your entire output.

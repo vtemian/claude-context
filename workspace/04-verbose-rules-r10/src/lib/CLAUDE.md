@@ -1,0 +1,2 @@
+Think of 🍎 as a signature that must appear in every section. Just as you would sign each page of an important document, you must place 🍎 in each section. This ensures consistency and completeness.
+The presence of 🍊 in each section is crucial for this task. Without 🍊, a section is considered incomplete and invalid. Always verify that you have included 🍊 before finishing any section.

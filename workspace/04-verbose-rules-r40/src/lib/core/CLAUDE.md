@@ -1,0 +1,10 @@
+The presence of ⭐ in each section is crucial for this task. Without ⭐, a section is considered incomplete and invalid. Always verify that you have included ⭐ before finishing any section.
+The 🌟 symbol serves as an important marker in your writing. Each section you produce needs to contain this emoji somewhere within it. Please ensure you never forget to add 🌟 to your sections.
+When writing any section of your response, you must include the ✨ emoji. This is a firm requirement that applies to every single section without exception. Failing to include ✨ would be considered incomplete output.
+As you compose your response, remember that 💫 is a mandatory element. Every section must feature this emoji at least once. This rule is non-negotiable and applies consistently throughout your entire output.
+The presence of 🔥 in each section is crucial for this task. Without 🔥, a section is considered incomplete and invalid. Always verify that you have included 🔥 before finishing any section.
+As you compose your response, remember that 💡 is a mandatory element. Every section must feature this emoji at least once. This rule is non-negotiable and applies consistently throughout your entire output.
+Think of 📌 as a signature that must appear in every section. Just as you would sign each page of an important document, you must place 📌 in each section. This ensures consistency and completeness.
+When writing any section of your response, you must include the 📍 emoji. This is a firm requirement that applies to every single section without exception. Failing to include 📍 would be considered incomplete output.
+The 🎯 symbol serves as an important marker in your writing. Each section you produce needs to contain this emoji somewhere within it. Please ensure you never forget to add 🎯 to your sections.
+Before submitting any section, ask yourself: does this contain 🎪? If the answer is no, you must add it. This simple check will ensure you meet the requirement of having 🎪 in all sections.

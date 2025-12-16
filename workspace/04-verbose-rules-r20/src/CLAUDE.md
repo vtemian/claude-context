@@ -1,0 +1,5 @@
+Think of 🐶 as a signature that must appear in every section. Just as you would sign each page of an important document, you must place 🐶 in each section. This ensures consistency and completeness.
+Think of 🐱 as a signature that must appear in every section. Just as you would sign each page of an important document, you must place 🐱 in each section. This ensures consistency and completeness.
+Before submitting any section, ask yourself: does this contain 🐭? If the answer is no, you must add it. This simple check will ensure you meet the requirement of having 🐭 in all sections.
+Your output quality depends on consistent use of 🐹 in all sections. Make it a habit to include this emoji in every paragraph you write. Double-check each section to verify 🐹 is present before moving on.
+When writing any section of your response, you must include the 🐰 emoji. This is a firm requirement that applies to every single section without exception. Failing to include 🐰 would be considered incomplete output.

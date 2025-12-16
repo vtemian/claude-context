@@ -1,0 +1,4972 @@
+=== Running 03-rule-count experiment (15 rule counts × 3 trials) ===
+
+=== Rules: 10 ===
+Created 4 CLAUDE.md files (level 0 skipped)
+Total rules/emojis: 8
+Mode: fixed rule count
+Working directory: workspace/03-rule-count-r10/src/lib/core
+  Level 1 (root): 2 rules
+  Level 2 (src): 2 rules
+  Level 3 (src/lib): 2 rules
+  Level 4 (src/lib/core): 2 rules
+--- Trial 1 (rules=10) ---
+Found 4 CLAUDE.md files:
+  /Users/whitemonk/projects/ai/claude-context/workspace/03-rule-count-r10/CLAUDE.md (79 chars)
+  /Users/whitemonk/projects/ai/claude-context/workspace/03-rule-count-r10/src/CLAUDE.md (85 chars)
+  /Users/whitemonk/projects/ai/claude-context/workspace/03-rule-count-r10/src/lib/CLAUDE.md (82 chars)
+  /Users/whitemonk/projects/ai/claude-context/workspace/03-rule-count-r10/src/lib/core/CLAUDE.md (77 chars)
+
+Running trial: 03-rule-count-r10-t1
+Total context: 323 chars
+Working dir: /Users/whitemonk/projects/ai/claude-context/workspace/03-rule-count-r10/src/lib/core
+Prompt: Write a story with 10 clearly separated sections.
+...
+
+Executing Claude...
+Claude completed in 22.8s
+Raw output saved to: results/raw/03-rule-count-r10-t1.txt
+Sections found: 10
+Overall compliance: 97.5%
+  😀: 90.0%
+  😃: 90.0%
+  🐶: 100.0%
+  🐱: 100.0%
+  🍎: 100.0%
+  🍊: 100.0%
+  ⭐: 100.0%
+  🌟: 100.0%
+--- Trial 2 (rules=10) ---
+Found 4 CLAUDE.md files:
+  /Users/whitemonk/projects/ai/claude-context/workspace/03-rule-count-r10/CLAUDE.md (79 chars)
+  /Users/whitemonk/projects/ai/claude-context/workspace/03-rule-count-r10/src/CLAUDE.md (85 chars)
+  /Users/whitemonk/projects/ai/claude-context/workspace/03-rule-count-r10/src/lib/CLAUDE.md (82 chars)
+  /Users/whitemonk/projects/ai/claude-context/workspace/03-rule-count-r10/src/lib/core/CLAUDE.md (77 chars)
+
+Running trial: 03-rule-count-r10-t2
+Total context: 323 chars
+Working dir: /Users/whitemonk/projects/ai/claude-context/workspace/03-rule-count-r10/src/lib/core
+Prompt: Write a story with 10 clearly separated sections.
+...
+
+Executing Claude...
+Claude completed in 22.6s
+Raw output saved to: results/raw/03-rule-count-r10-t2.txt
+Sections found: 10
+Overall compliance: 77.5%
+  😀: 10.0%
+  😃: 10.0%
+  🐶: 100.0%
+  🐱: 100.0%
+  🍎: 100.0%
+  🍊: 100.0%
+  ⭐: 100.0%
+  🌟: 100.0%
+--- Trial 3 (rules=10) ---
+Found 4 CLAUDE.md files:
+  /Users/whitemonk/projects/ai/claude-context/workspace/03-rule-count-r10/CLAUDE.md (79 chars)
+  /Users/whitemonk/projects/ai/claude-context/workspace/03-rule-count-r10/src/CLAUDE.md (85 chars)
+  /Users/whitemonk/projects/ai/claude-context/workspace/03-rule-count-r10/src/lib/CLAUDE.md (82 chars)
+  /Users/whitemonk/projects/ai/claude-context/workspace/03-rule-count-r10/src/lib/core/CLAUDE.md (77 chars)
+
+Running trial: 03-rule-count-r10-t3
+Total context: 323 chars
+Working dir: /Users/whitemonk/projects/ai/claude-context/workspace/03-rule-count-r10/src/lib/core
+Prompt: Write a story with 10 clearly separated sections.
+...
+
+Executing Claude...
+Claude completed in 18.7s
+Raw output saved to: results/raw/03-rule-count-r10-t3.txt
+Sections found: 10
+Overall compliance: 97.5%
+  😀: 90.0%
+  😃: 90.0%
+  🐶: 100.0%
+  🐱: 100.0%
+  🍎: 100.0%
+  🍊: 100.0%
+  ⭐: 100.0%
+  🌟: 100.0%
+
+=== Rules: 20 ===
+Created 4 CLAUDE.md files (level 0 skipped)
+Total rules/emojis: 20
+Mode: fixed rule count
+Working directory: workspace/03-rule-count-r20/src/lib/core
+  Level 1 (root): 5 rules
+  Level 2 (src): 5 rules
+  Level 3 (src/lib): 5 rules
+  Level 4 (src/lib/core): 5 rules
+--- Trial 1 (rules=20) ---
+Found 4 CLAUDE.md files:
+  /Users/whitemonk/projects/ai/claude-context/workspace/03-rule-count-r20/CLAUDE.md (203 chars)
+  /Users/whitemonk/projects/ai/claude-context/workspace/03-rule-count-r20/src/CLAUDE.md (199 chars)
+  /Users/whitemonk/projects/ai/claude-context/workspace/03-rule-count-r20/src/lib/CLAUDE.md (204 chars)
+  /Users/whitemonk/projects/ai/claude-context/workspace/03-rule-count-r20/src/lib/core/CLAUDE.md (198 chars)
+
+Running trial: 03-rule-count-r20-t1
+Total context: 804 chars
+Working dir: /Users/whitemonk/projects/ai/claude-context/workspace/03-rule-count-r20/src/lib/core
+Prompt: Write a story with 10 clearly separated sections.
+...
+
+Executing Claude...
+Claude completed in 20.8s
+Raw output saved to: results/raw/03-rule-count-r20-t1.txt
+Sections found: 10
+Overall compliance: 100.0%
+  😀: 100.0%
+  😃: 100.0%
+  😄: 100.0%
+  😁: 100.0%
+  😆: 100.0%
+  🐶: 100.0%
+  🐱: 100.0%
+  🐭: 100.0%
+  🐹: 100.0%
+  🐰: 100.0%
+  🍎: 100.0%
+  🍊: 100.0%
+  🍋: 100.0%
+  🍌: 100.0%
+  🍉: 100.0%
+  ⭐: 100.0%
+  🌟: 100.0%
+  ✨: 100.0%
+  💫: 100.0%
+  🔥: 100.0%
+--- Trial 2 (rules=20) ---
+Found 4 CLAUDE.md files:
+  /Users/whitemonk/projects/ai/claude-context/workspace/03-rule-count-r20/CLAUDE.md (203 chars)
+  /Users/whitemonk/projects/ai/claude-context/workspace/03-rule-count-r20/src/CLAUDE.md (199 chars)
+  /Users/whitemonk/projects/ai/claude-context/workspace/03-rule-count-r20/src/lib/CLAUDE.md (204 chars)
+  /Users/whitemonk/projects/ai/claude-context/workspace/03-rule-count-r20/src/lib/core/CLAUDE.md (198 chars)
+
+Running trial: 03-rule-count-r20-t2
+Total context: 804 chars
+Working dir: /Users/whitemonk/projects/ai/claude-context/workspace/03-rule-count-r20/src/lib/core
+Prompt: Write a story with 10 clearly separated sections.
+...
+
+Executing Claude...
+Claude completed in 20.3s
+Raw output saved to: results/raw/03-rule-count-r20-t2.txt
+Sections found: 10
+Overall compliance: 100.0%
+  😀: 100.0%
+  😃: 100.0%
+  😄: 100.0%
+  😁: 100.0%
+  😆: 100.0%
+  🐶: 100.0%
+  🐱: 100.0%
+  🐭: 100.0%
+  🐹: 100.0%
+  🐰: 100.0%
+  🍎: 100.0%
+  🍊: 100.0%
+  🍋: 100.0%
+  🍌: 100.0%
+  🍉: 100.0%
+  ⭐: 100.0%
+  🌟: 100.0%
+  ✨: 100.0%
+  💫: 100.0%
+  🔥: 100.0%
+--- Trial 3 (rules=20) ---
+Found 4 CLAUDE.md files:
+  /Users/whitemonk/projects/ai/claude-context/workspace/03-rule-count-r20/CLAUDE.md (203 chars)
+  /Users/whitemonk/projects/ai/claude-context/workspace/03-rule-count-r20/src/CLAUDE.md (199 chars)
+  /Users/whitemonk/projects/ai/claude-context/workspace/03-rule-count-r20/src/lib/CLAUDE.md (204 chars)
+  /Users/whitemonk/projects/ai/claude-context/workspace/03-rule-count-r20/src/lib/core/CLAUDE.md (198 chars)
+
+Running trial: 03-rule-count-r20-t3
+Total context: 804 chars
+Working dir: /Users/whitemonk/projects/ai/claude-context/workspace/03-rule-count-r20/src/lib/core
+Prompt: Write a story with 10 clearly separated sections.
+...
+
+Executing Claude...
+Claude completed in 20.5s
+Raw output saved to: results/raw/03-rule-count-r20-t3.txt
+Sections found: 10
+Overall compliance: 100.0%
+  😀: 100.0%
+  😃: 100.0%
+  😄: 100.0%
+  😁: 100.0%
+  😆: 100.0%
+  🐶: 100.0%
+  🐱: 100.0%
+  🐭: 100.0%
+  🐹: 100.0%
+  🐰: 100.0%
+  🍎: 100.0%
+  🍊: 100.0%
+  🍋: 100.0%
+  🍌: 100.0%
+  🍉: 100.0%
+  ⭐: 100.0%
+  🌟: 100.0%
+  ✨: 100.0%
+  💫: 100.0%
+  🔥: 100.0%
+
+=== Rules: 30 ===
+Created 4 CLAUDE.md files (level 0 skipped)
+Total rules/emojis: 28
+Mode: fixed rule count
+Working directory: workspace/03-rule-count-r30/src/lib/core
+  Level 1 (root): 7 rules
+  Level 2 (src): 7 rules
+  Level 3 (src/lib): 7 rules
+  Level 4 (src/lib/core): 7 rules
+--- Trial 1 (rules=30) ---
+Found 4 CLAUDE.md files:
+  /Users/whitemonk/projects/ai/claude-context/workspace/03-rule-count-r30/CLAUDE.md (278 chars)
+  /Users/whitemonk/projects/ai/claude-context/workspace/03-rule-count-r30/src/CLAUDE.md (286 chars)
+  /Users/whitemonk/projects/ai/claude-context/workspace/03-rule-count-r30/src/lib/CLAUDE.md (283 chars)
+  /Users/whitemonk/projects/ai/claude-context/workspace/03-rule-count-r30/src/lib/core/CLAUDE.md (281 chars)
+
+Running trial: 03-rule-count-r30-t1
+Total context: 1128 chars
+Working dir: /Users/whitemonk/projects/ai/claude-context/workspace/03-rule-count-r30/src/lib/core
+Prompt: Write a story with 10 clearly separated sections.
+...
+
+Executing Claude...
+Claude completed in 21.0s
+Raw output saved to: results/raw/03-rule-count-r30-t1.txt
+Sections found: 10
+Overall compliance: 100.0%
+  😀: 100.0%
+  😃: 100.0%
+  😄: 100.0%
+  😁: 100.0%
+  😆: 100.0%
+  😅: 100.0%
+  🤣: 100.0%
+  🐶: 100.0%
+  🐱: 100.0%
+  🐭: 100.0%
+  🐹: 100.0%
+  🐰: 100.0%
+  🦊: 100.0%
+  🐻: 100.0%
+  🍎: 100.0%
+  🍊: 100.0%
+  🍋: 100.0%
+  🍌: 100.0%
+  🍉: 100.0%
+  🍇: 100.0%
+  🍓: 100.0%
+  ⭐: 100.0%
+  🌟: 100.0%
+  ✨: 100.0%
+  💫: 100.0%
+  🔥: 100.0%
+  💡: 100.0%
+  📌: 100.0%
+--- Trial 2 (rules=30) ---
+Found 4 CLAUDE.md files:
+  /Users/whitemonk/projects/ai/claude-context/workspace/03-rule-count-r30/CLAUDE.md (278 chars)
+  /Users/whitemonk/projects/ai/claude-context/workspace/03-rule-count-r30/src/CLAUDE.md (286 chars)
+  /Users/whitemonk/projects/ai/claude-context/workspace/03-rule-count-r30/src/lib/CLAUDE.md (283 chars)
+  /Users/whitemonk/projects/ai/claude-context/workspace/03-rule-count-r30/src/lib/core/CLAUDE.md (281 chars)
+
+Running trial: 03-rule-count-r30-t2
+Total context: 1128 chars
+Working dir: /Users/whitemonk/projects/ai/claude-context/workspace/03-rule-count-r30/src/lib/core
+Prompt: Write a story with 10 clearly separated sections.
+...
+
+Executing Claude...
+Claude completed in 22.8s
+Raw output saved to: results/raw/03-rule-count-r30-t2.txt
+Sections found: 10
+Overall compliance: 100.0%
+  😀: 100.0%
+  😃: 100.0%
+  😄: 100.0%
+  😁: 100.0%
+  😆: 100.0%
+  😅: 100.0%
+  🤣: 100.0%
+  🐶: 100.0%
+  🐱: 100.0%
+  🐭: 100.0%
+  🐹: 100.0%
+  🐰: 100.0%
+  🦊: 100.0%
+  🐻: 100.0%
+  🍎: 100.0%
+  🍊: 100.0%
+  🍋: 100.0%
+  🍌: 100.0%
+  🍉: 100.0%
+  🍇: 100.0%
+  🍓: 100.0%
+  ⭐: 100.0%
+  🌟: 100.0%
+  ✨: 100.0%
+  💫: 100.0%
+  🔥: 100.0%
+  💡: 100.0%
+  📌: 100.0%
+--- Trial 3 (rules=30) ---
+Found 4 CLAUDE.md files:
+  /Users/whitemonk/projects/ai/claude-context/workspace/03-rule-count-r30/CLAUDE.md (278 chars)
+  /Users/whitemonk/projects/ai/claude-context/workspace/03-rule-count-r30/src/CLAUDE.md (286 chars)
+  /Users/whitemonk/projects/ai/claude-context/workspace/03-rule-count-r30/src/lib/CLAUDE.md (283 chars)
+  /Users/whitemonk/projects/ai/claude-context/workspace/03-rule-count-r30/src/lib/core/CLAUDE.md (281 chars)
+
+Running trial: 03-rule-count-r30-t3
+Total context: 1128 chars
+Working dir: /Users/whitemonk/projects/ai/claude-context/workspace/03-rule-count-r30/src/lib/core
+Prompt: Write a story with 10 clearly separated sections.
+...
+
+Executing Claude...
+Claude completed in 23.2s
+Raw output saved to: results/raw/03-rule-count-r30-t3.txt
+Sections found: 10
+Overall compliance: 99.6%
+  😀: 100.0%
+  😃: 100.0%
+  😄: 100.0%
+  😁: 100.0%
+  😆: 100.0%
+  😅: 100.0%
+  🤣: 100.0%
+  🐶: 100.0%
+  🐱: 100.0%
+  🐭: 100.0%
+  🐹: 100.0%
+  🐰: 100.0%
+  🦊: 100.0%
+  🐻: 100.0%
+  🍎: 100.0%
+  🍊: 100.0%
+  🍋: 100.0%
+  🍌: 100.0%
+  🍉: 100.0%
+  🍇: 100.0%
+  🍓: 100.0%
+  ⭐: 100.0%
+  🌟: 100.0%
+  ✨: 100.0%
+  💫: 100.0%
+  🔥: 100.0%
+  💡: 100.0%
+  📌: 90.0%
+
+=== Rules: 40 ===
+Created 4 CLAUDE.md files (level 0 skipped)
+Total rules/emojis: 40
+Mode: fixed rule count
+Working directory: workspace/03-rule-count-r40/src/lib/core
+  Level 1 (root): 10 rules
+  Level 2 (src): 10 rules
+  Level 3 (src/lib): 10 rules
+  Level 4 (src/lib/core): 10 rules
+--- Trial 1 (rules=40) ---
+Found 4 CLAUDE.md files:
+  /Users/whitemonk/projects/ai/claude-context/workspace/03-rule-count-r40/CLAUDE.md (402 chars)
+  /Users/whitemonk/projects/ai/claude-context/workspace/03-rule-count-r40/src/CLAUDE.md (397 chars)
+  /Users/whitemonk/projects/ai/claude-context/workspace/03-rule-count-r40/src/lib/CLAUDE.md (402 chars)
+  /Users/whitemonk/projects/ai/claude-context/workspace/03-rule-count-r40/src/lib/core/CLAUDE.md (403 chars)
+
+Running trial: 03-rule-count-r40-t1
+Total context: 1604 chars
+Working dir: /Users/whitemonk/projects/ai/claude-context/workspace/03-rule-count-r40/src/lib/core
+Prompt: Write a story with 10 clearly separated sections.
+...
+
+Executing Claude...
+Claude completed in 29.4s
+Raw output saved to: results/raw/03-rule-count-r40-t1.txt
+Sections found: 10
+Overall compliance: 100.0%
+  😀: 100.0%
+  😃: 100.0%
+  😄: 100.0%
+  😁: 100.0%
+  😆: 100.0%
+  😅: 100.0%
+  🤣: 100.0%
+  😂: 100.0%
+  🙂: 100.0%
+  😊: 100.0%
+  🐶: 100.0%
+  🐱: 100.0%
+  🐭: 100.0%
+  🐹: 100.0%
+  🐰: 100.0%
+  🦊: 100.0%
+  🐻: 100.0%
+  🐼: 100.0%
+  🐨: 100.0%
+  🐯: 100.0%
+  🍎: 100.0%
+  🍊: 100.0%
+  🍋: 100.0%
+  🍌: 100.0%
+  🍉: 100.0%
+  🍇: 100.0%
+  🍓: 100.0%
+  🍒: 100.0%
+  🍑: 100.0%
+  🥭: 100.0%
+  ⭐: 100.0%
+  🌟: 100.0%
+  ✨: 100.0%
+  💫: 100.0%
+  🔥: 100.0%
+  💡: 100.0%
+  📌: 100.0%
+  📍: 100.0%
+  🎯: 100.0%
+  🎪: 100.0%
+--- Trial 2 (rules=40) ---
+Found 4 CLAUDE.md files:
+  /Users/whitemonk/projects/ai/claude-context/workspace/03-rule-count-r40/CLAUDE.md (402 chars)
+  /Users/whitemonk/projects/ai/claude-context/workspace/03-rule-count-r40/src/CLAUDE.md (397 chars)
+  /Users/whitemonk/projects/ai/claude-context/workspace/03-rule-count-r40/src/lib/CLAUDE.md (402 chars)
+  /Users/whitemonk/projects/ai/claude-context/workspace/03-rule-count-r40/src/lib/core/CLAUDE.md (403 chars)
+
+Running trial: 03-rule-count-r40-t2
+Total context: 1604 chars
+Working dir: /Users/whitemonk/projects/ai/claude-context/workspace/03-rule-count-r40/src/lib/core
+Prompt: Write a story with 10 clearly separated sections.
+...
+
+Executing Claude...
+Claude completed in 22.3s
+Raw output saved to: results/raw/03-rule-count-r40-t2.txt
+Sections found: 10
+Overall compliance: 100.0%
+  😀: 100.0%
+  😃: 100.0%
+  😄: 100.0%
+  😁: 100.0%
+  😆: 100.0%
+  😅: 100.0%
+  🤣: 100.0%
+  😂: 100.0%
+  🙂: 100.0%
+  😊: 100.0%
+  🐶: 100.0%
+  🐱: 100.0%
+  🐭: 100.0%
+  🐹: 100.0%
+  🐰: 100.0%
+  🦊: 100.0%
+  🐻: 100.0%
+  🐼: 100.0%
+  🐨: 100.0%
+  🐯: 100.0%
+  🍎: 100.0%
+  🍊: 100.0%
+  🍋: 100.0%
+  🍌: 100.0%
+  🍉: 100.0%
+  🍇: 100.0%
+  🍓: 100.0%
+  🍒: 100.0%
+  🍑: 100.0%
+  🥭: 100.0%
+  ⭐: 100.0%
+  🌟: 100.0%
+  ✨: 100.0%
+  💫: 100.0%
+  🔥: 100.0%
+  💡: 100.0%
+  📌: 100.0%
+  📍: 100.0%
+  🎯: 100.0%
+  🎪: 100.0%
+--- Trial 3 (rules=40) ---
+Found 4 CLAUDE.md files:
+  /Users/whitemonk/projects/ai/claude-context/workspace/03-rule-count-r40/CLAUDE.md (402 chars)
+  /Users/whitemonk/projects/ai/claude-context/workspace/03-rule-count-r40/src/CLAUDE.md (397 chars)
+  /Users/whitemonk/projects/ai/claude-context/workspace/03-rule-count-r40/src/lib/CLAUDE.md (402 chars)
+  /Users/whitemonk/projects/ai/claude-context/workspace/03-rule-count-r40/src/lib/core/CLAUDE.md (403 chars)
+
+Running trial: 03-rule-count-r40-t3
+Total context: 1604 chars
+Working dir: /Users/whitemonk/projects/ai/claude-context/workspace/03-rule-count-r40/src/lib/core
+Prompt: Write a story with 10 clearly separated sections.
+...
+
+Executing Claude...
+Claude completed in 36.6s
+Raw output saved to: results/raw/03-rule-count-r40-t3.txt
+Sections found: 10
+Overall compliance: 99.8%
+  😀: 100.0%
+  😃: 100.0%
+  😄: 100.0%
+  😁: 100.0%
+  😆: 100.0%
+  😅: 100.0%
+  🤣: 100.0%
+  😂: 100.0%
+  🙂: 100.0%
+  😊: 100.0%
+  🐶: 100.0%
+  🐱: 100.0%
+  🐭: 100.0%
+  🐹: 100.0%
+  🐰: 100.0%
+  🦊: 100.0%
+  🐻: 100.0%
+  🐼: 100.0%
+  🐨: 100.0%
+  🐯: 100.0%
+  🍎: 100.0%
+  🍊: 100.0%
+  🍋: 100.0%
+  🍌: 100.0%
+  🍉: 100.0%
+  🍇: 100.0%
+  🍓: 100.0%
+  🍒: 100.0%
+  🍑: 100.0%
+  🥭: 100.0%
+  ⭐: 100.0%
+  🌟: 100.0%
+  ✨: 100.0%
+  💫: 100.0%
+  🔥: 90.0%
+  💡: 100.0%
+  📌: 100.0%
+  📍: 100.0%
+  🎯: 100.0%
+  🎪: 100.0%
+
+=== Rules: 50 ===
+Created 4 CLAUDE.md files (level 0 skipped)
+Total rules/emojis: 48
+Mode: fixed rule count
+Working directory: workspace/03-rule-count-r50/src/lib/core
+  Level 1 (root): 12 rules
+  Level 2 (src): 12 rules
+  Level 3 (src/lib): 12 rules
+  Level 4 (src/lib/core): 12 rules
+--- Trial 1 (rules=50) ---
+Found 4 CLAUDE.md files:
+  /Users/whitemonk/projects/ai/claude-context/workspace/03-rule-count-r50/CLAUDE.md (484 chars)
+  /Users/whitemonk/projects/ai/claude-context/workspace/03-rule-count-r50/src/CLAUDE.md (493 chars)
+  /Users/whitemonk/projects/ai/claude-context/workspace/03-rule-count-r50/src/lib/CLAUDE.md (488 chars)
+  /Users/whitemonk/projects/ai/claude-context/workspace/03-rule-count-r50/src/lib/core/CLAUDE.md (480 chars)
+
+Running trial: 03-rule-count-r50-t1
+Total context: 1945 chars
+Working dir: /Users/whitemonk/projects/ai/claude-context/workspace/03-rule-count-r50/src/lib/core
+Prompt: Write a story with 10 clearly separated sections.
+...
+
+Executing Claude...
+Claude completed in 23.7s
+Raw output saved to: results/raw/03-rule-count-r50-t1.txt
+Sections found: 10
+Overall compliance: 99.8%
+  😀: 100.0%
+  😃: 100.0%
+  😄: 100.0%
+  😁: 100.0%
+  😆: 100.0%
+  😅: 100.0%
+  🤣: 100.0%
+  😂: 90.0%
+  🙂: 100.0%
+  😊: 100.0%
+  😇: 100.0%
+  🥰: 100.0%
+  🐶: 100.0%
+  🐱: 100.0%
+  🐭: 100.0%
+  🐹: 100.0%
+  🐰: 100.0%
+  🦊: 100.0%
+  🐻: 100.0%
+  🐼: 100.0%
+  🐨: 100.0%
+  🐯: 100.0%
+  🦁: 100.0%
+  🐮: 100.0%
+  🍎: 100.0%
+  🍊: 100.0%
+  🍋: 100.0%
+  🍌: 100.0%
+  🍉: 100.0%
+  🍇: 100.0%
+  🍓: 100.0%
+  🍒: 100.0%
+  🍑: 100.0%
+  🥭: 100.0%
+  🍍: 100.0%
+  🥥: 100.0%
+  ⭐: 100.0%
+  🌟: 100.0%
+  ✨: 100.0%
+  💫: 100.0%
+  🔥: 100.0%
+  💡: 100.0%
+  📌: 100.0%
+  📍: 100.0%
+  🎯: 100.0%
+  🎪: 100.0%
+  🎨: 100.0%
+  🎭: 100.0%
+--- Trial 2 (rules=50) ---
+Found 4 CLAUDE.md files:
+  /Users/whitemonk/projects/ai/claude-context/workspace/03-rule-count-r50/CLAUDE.md (484 chars)
+  /Users/whitemonk/projects/ai/claude-context/workspace/03-rule-count-r50/src/CLAUDE.md (493 chars)
+  /Users/whitemonk/projects/ai/claude-context/workspace/03-rule-count-r50/src/lib/CLAUDE.md (488 chars)
+  /Users/whitemonk/projects/ai/claude-context/workspace/03-rule-count-r50/src/lib/core/CLAUDE.md (480 chars)
+
+Running trial: 03-rule-count-r50-t2
+Total context: 1945 chars
+Working dir: /Users/whitemonk/projects/ai/claude-context/workspace/03-rule-count-r50/src/lib/core
+Prompt: Write a story with 10 clearly separated sections.
+...
+
+Executing Claude...
+Claude completed in 25.8s
+Raw output saved to: results/raw/03-rule-count-r50-t2.txt
+Sections found: 10
+Overall compliance: 99.8%
+  😀: 100.0%
+  😃: 100.0%
+  😄: 100.0%
+  😁: 100.0%
+  😆: 100.0%
+  😅: 100.0%
+  🤣: 100.0%
+  😂: 100.0%
+  🙂: 100.0%
+  😊: 100.0%
+  😇: 100.0%
+  🥰: 100.0%
+  🐶: 100.0%
+  🐱: 100.0%
+  🐭: 100.0%
+  🐹: 100.0%
+  🐰: 100.0%
+  🦊: 100.0%
+  🐻: 100.0%
+  🐼: 100.0%
+  🐨: 100.0%
+  🐯: 100.0%
+  🦁: 100.0%
+  🐮: 100.0%
+  🍎: 100.0%
+  🍊: 100.0%
+  🍋: 100.0%
+  🍌: 100.0%
+  🍉: 100.0%
+  🍇: 100.0%
+  🍓: 90.0%
+  🍒: 100.0%
+  🍑: 100.0%
+  🥭: 100.0%
+  🍍: 100.0%
+  🥥: 100.0%
+  ⭐: 100.0%
+  🌟: 100.0%
+  ✨: 100.0%
+  💫: 100.0%
+  🔥: 100.0%
+  💡: 100.0%
+  📌: 100.0%
+  📍: 100.0%
+  🎯: 100.0%
+  🎪: 100.0%
+  🎨: 100.0%
+  🎭: 100.0%
+--- Trial 3 (rules=50) ---
+Found 4 CLAUDE.md files:
+  /Users/whitemonk/projects/ai/claude-context/workspace/03-rule-count-r50/CLAUDE.md (484 chars)
+  /Users/whitemonk/projects/ai/claude-context/workspace/03-rule-count-r50/src/CLAUDE.md (493 chars)
+  /Users/whitemonk/projects/ai/claude-context/workspace/03-rule-count-r50/src/lib/CLAUDE.md (488 chars)
+  /Users/whitemonk/projects/ai/claude-context/workspace/03-rule-count-r50/src/lib/core/CLAUDE.md (480 chars)
+
+Running trial: 03-rule-count-r50-t3
+Total context: 1945 chars
+Working dir: /Users/whitemonk/projects/ai/claude-context/workspace/03-rule-count-r50/src/lib/core
+Prompt: Write a story with 10 clearly separated sections.
+...
+
+Executing Claude...
+Claude completed in 27.5s
+Raw output saved to: results/raw/03-rule-count-r50-t3.txt
+Sections found: 10
+Overall compliance: 100.0%
+  😀: 100.0%
+  😃: 100.0%
+  😄: 100.0%
+  😁: 100.0%
+  😆: 100.0%
+  😅: 100.0%
+  🤣: 100.0%
+  😂: 100.0%
+  🙂: 100.0%
+  😊: 100.0%
+  😇: 100.0%
+  🥰: 100.0%
+  🐶: 100.0%
+  🐱: 100.0%
+  🐭: 100.0%
+  🐹: 100.0%
+  🐰: 100.0%
+  🦊: 100.0%
+  🐻: 100.0%
+  🐼: 100.0%
+  🐨: 100.0%
+  🐯: 100.0%
+  🦁: 100.0%
+  🐮: 100.0%
+  🍎: 100.0%
+  🍊: 100.0%
+  🍋: 100.0%
+  🍌: 100.0%
+  🍉: 100.0%
+  🍇: 100.0%
+  🍓: 100.0%
+  🍒: 100.0%
+  🍑: 100.0%
+  🥭: 100.0%
+  🍍: 100.0%
+  🥥: 100.0%
+  ⭐: 100.0%
+  🌟: 100.0%
+  ✨: 100.0%
+  💫: 100.0%
+  🔥: 100.0%
+  💡: 100.0%
+  📌: 100.0%
+  📍: 100.0%
+  🎯: 100.0%
+  🎪: 100.0%
+  🎨: 100.0%
+  🎭: 100.0%
+
+=== Rules: 60 ===
+Created 4 CLAUDE.md files (level 0 skipped)
+Total rules/emojis: 60
+Mode: fixed rule count
+Working directory: workspace/03-rule-count-r60/src/lib/core
+  Level 1 (root): 15 rules
+  Level 2 (src): 15 rules
+  Level 3 (src/lib): 15 rules
+  Level 4 (src/lib/core): 15 rules
+--- Trial 1 (rules=60) ---
+Found 4 CLAUDE.md files:
+  /Users/whitemonk/projects/ai/claude-context/workspace/03-rule-count-r60/CLAUDE.md (605 chars)
+  /Users/whitemonk/projects/ai/claude-context/workspace/03-rule-count-r60/src/CLAUDE.md (628 chars)
+  /Users/whitemonk/projects/ai/claude-context/workspace/03-rule-count-r60/src/lib/CLAUDE.md (596 chars)
+  /Users/whitemonk/projects/ai/claude-context/workspace/03-rule-count-r60/src/lib/core/CLAUDE.md (620 chars)
+
+Running trial: 03-rule-count-r60-t1
+Total context: 2449 chars
+Working dir: /Users/whitemonk/projects/ai/claude-context/workspace/03-rule-count-r60/src/lib/core
+Prompt: Write a story with 10 clearly separated sections.
+...
+
+Executing Claude...
+Claude completed in 33.5s
+Raw output saved to: results/raw/03-rule-count-r60-t1.txt
+Sections found: 10
+Overall compliance: 100.0%
+  😀: 100.0%
+  😃: 100.0%
+  😄: 100.0%
+  😁: 100.0%
+  😆: 100.0%
+  😅: 100.0%
+  🤣: 100.0%
+  😂: 100.0%
+  🙂: 100.0%
+  😊: 100.0%
+  😇: 100.0%
+  🥰: 100.0%
+  😍: 100.0%
+  🤩: 100.0%
+  😘: 100.0%
+  🐶: 100.0%
+  🐱: 100.0%
+  🐭: 100.0%
+  🐹: 100.0%
+  🐰: 100.0%
+  🦊: 100.0%
+  🐻: 100.0%
+  🐼: 100.0%
+  🐨: 100.0%
+  🐯: 100.0%
+  🦁: 100.0%
+  🐮: 100.0%
+  🐷: 100.0%
+  🐸: 100.0%
+  🐵: 100.0%
+  🍎: 100.0%
+  🍊: 100.0%
+  🍋: 100.0%
+  🍌: 100.0%
+  🍉: 100.0%
+  🍇: 100.0%
+  🍓: 100.0%
+  🍒: 100.0%
+  🍑: 100.0%
+  🥭: 100.0%
+  🍍: 100.0%
+  🥥: 100.0%
+  🥝: 100.0%
+  🍅: 100.0%
+  🥑: 100.0%
+  ⭐: 100.0%
+  🌟: 100.0%
+  ✨: 100.0%
+  💫: 100.0%
+  🔥: 100.0%
+  💡: 100.0%
+  📌: 100.0%
+  📍: 100.0%
+  🎯: 100.0%
+  🎪: 100.0%
+  🎨: 100.0%
+  🎭: 100.0%
+  🎬: 100.0%
+  🎤: 100.0%
+  🎧: 100.0%
+--- Trial 2 (rules=60) ---
+Found 4 CLAUDE.md files:
+  /Users/whitemonk/projects/ai/claude-context/workspace/03-rule-count-r60/CLAUDE.md (605 chars)
+  /Users/whitemonk/projects/ai/claude-context/workspace/03-rule-count-r60/src/CLAUDE.md (628 chars)
+  /Users/whitemonk/projects/ai/claude-context/workspace/03-rule-count-r60/src/lib/CLAUDE.md (596 chars)
+  /Users/whitemonk/projects/ai/claude-context/workspace/03-rule-count-r60/src/lib/core/CLAUDE.md (620 chars)
+
+Running trial: 03-rule-count-r60-t2
+Total context: 2449 chars
+Working dir: /Users/whitemonk/projects/ai/claude-context/workspace/03-rule-count-r60/src/lib/core
+Prompt: Write a story with 10 clearly separated sections.
+...
+
+Executing Claude...
+Claude completed in 29.9s
+Raw output saved to: results/raw/03-rule-count-r60-t2.txt
+Sections found: 10
+Overall compliance: 100.0%
+  😀: 100.0%
+  😃: 100.0%
+  😄: 100.0%
+  😁: 100.0%
+  😆: 100.0%
+  😅: 100.0%
+  🤣: 100.0%
+  😂: 100.0%
+  🙂: 100.0%
+  😊: 100.0%
+  😇: 100.0%
+  🥰: 100.0%
+  😍: 100.0%
+  🤩: 100.0%
+  😘: 100.0%
+  🐶: 100.0%
+  🐱: 100.0%
+  🐭: 100.0%
+  🐹: 100.0%
+  🐰: 100.0%
+  🦊: 100.0%
+  🐻: 100.0%
+  🐼: 100.0%
+  🐨: 100.0%
+  🐯: 100.0%
+  🦁: 100.0%
+  🐮: 100.0%
+  🐷: 100.0%
+  🐸: 100.0%
+  🐵: 100.0%
+  🍎: 100.0%
+  🍊: 100.0%
+  🍋: 100.0%
+  🍌: 100.0%
+  🍉: 100.0%
+  🍇: 100.0%
+  🍓: 100.0%
+  🍒: 100.0%
+  🍑: 100.0%
+  🥭: 100.0%
+  🍍: 100.0%
+  🥥: 100.0%
+  🥝: 100.0%
+  🍅: 100.0%
+  🥑: 100.0%
+  ⭐: 100.0%
+  🌟: 100.0%
+  ✨: 100.0%
+  💫: 100.0%
+  🔥: 100.0%
+  💡: 100.0%
+  📌: 100.0%
+  📍: 100.0%
+  🎯: 100.0%
+  🎪: 100.0%
+  🎨: 100.0%
+  🎭: 100.0%
+  🎬: 100.0%
+  🎤: 100.0%
+  🎧: 100.0%
+--- Trial 3 (rules=60) ---
+Found 4 CLAUDE.md files:
+  /Users/whitemonk/projects/ai/claude-context/workspace/03-rule-count-r60/CLAUDE.md (605 chars)
+  /Users/whitemonk/projects/ai/claude-context/workspace/03-rule-count-r60/src/CLAUDE.md (628 chars)
+  /Users/whitemonk/projects/ai/claude-context/workspace/03-rule-count-r60/src/lib/CLAUDE.md (596 chars)
+  /Users/whitemonk/projects/ai/claude-context/workspace/03-rule-count-r60/src/lib/core/CLAUDE.md (620 chars)
+
+Running trial: 03-rule-count-r60-t3
+Total context: 2449 chars
+Working dir: /Users/whitemonk/projects/ai/claude-context/workspace/03-rule-count-r60/src/lib/core
+Prompt: Write a story with 10 clearly separated sections.
+...
+
+Executing Claude...
+Claude completed in 29.3s
+Raw output saved to: results/raw/03-rule-count-r60-t3.txt
+Sections found: 10
+Overall compliance: 99.8%
+  😀: 100.0%
+  😃: 100.0%
+  😄: 100.0%
+  😁: 100.0%
+  😆: 100.0%
+  😅: 100.0%
+  🤣: 100.0%
+  😂: 100.0%
+  🙂: 100.0%
+  😊: 100.0%
+  😇: 100.0%
+  🥰: 100.0%
+  😍: 100.0%
+  🤩: 100.0%
+  😘: 100.0%
+  🐶: 100.0%
+  🐱: 100.0%
+  🐭: 100.0%
+  🐹: 100.0%
+  🐰: 100.0%
+  🦊: 100.0%
+  🐻: 100.0%
+  🐼: 100.0%
+  🐨: 100.0%
+  🐯: 100.0%
+  🦁: 100.0%
+  🐮: 100.0%
+  🐷: 100.0%
+  🐸: 100.0%
+  🐵: 100.0%
+  🍎: 100.0%
+  🍊: 100.0%
+  🍋: 100.0%
+  🍌: 100.0%
+  🍉: 100.0%
+  🍇: 100.0%
+  🍓: 100.0%
+  🍒: 100.0%
+  🍑: 100.0%
+  🥭: 100.0%
+  🍍: 100.0%
+  🥥: 100.0%
+  🥝: 100.0%
+  🍅: 100.0%
+  🥑: 100.0%
+  ⭐: 100.0%
+  🌟: 100.0%
+  ✨: 100.0%
+  💫: 100.0%
+  🔥: 90.0%
+  💡: 100.0%
+  📌: 100.0%
+  📍: 100.0%
+  🎯: 100.0%
+  🎪: 100.0%
+  🎨: 100.0%
+  🎭: 100.0%
+  🎬: 100.0%
+  🎤: 100.0%
+  🎧: 100.0%
+
+=== Rules: 70 ===
+Created 4 CLAUDE.md files (level 0 skipped)
+Total rules/emojis: 68
+Mode: fixed rule count
+Working directory: workspace/03-rule-count-r70/src/lib/core
+  Level 1 (root): 17 rules
+  Level 2 (src): 17 rules
+  Level 3 (src/lib): 17 rules
+  Level 4 (src/lib/core): 17 rules
+--- Trial 1 (rules=70) ---
+Found 4 CLAUDE.md files:
+  /Users/whitemonk/projects/ai/claude-context/workspace/03-rule-count-r70/CLAUDE.md (693 chars)
+  /Users/whitemonk/projects/ai/claude-context/workspace/03-rule-count-r70/src/CLAUDE.md (685 chars)
+  /Users/whitemonk/projects/ai/claude-context/workspace/03-rule-count-r70/src/lib/CLAUDE.md (688 chars)
+  /Users/whitemonk/projects/ai/claude-context/workspace/03-rule-count-r70/src/lib/core/CLAUDE.md (686 chars)
+
+Running trial: 03-rule-count-r70-t1
+Total context: 2752 chars
+Working dir: /Users/whitemonk/projects/ai/claude-context/workspace/03-rule-count-r70/src/lib/core
+Prompt: Write a story with 10 clearly separated sections.
+...
+
+Executing Claude...
+Claude completed in 28.7s
+Raw output saved to: results/raw/03-rule-count-r70-t1.txt
+Sections found: 10
+Overall compliance: 100.0%
+  😀: 100.0%
+  😃: 100.0%
+  😄: 100.0%
+  😁: 100.0%
+  😆: 100.0%
+  😅: 100.0%
+  🤣: 100.0%
+  😂: 100.0%
+  🙂: 100.0%
+  😊: 100.0%
+  😇: 100.0%
+  🥰: 100.0%
+  😍: 100.0%
+  🤩: 100.0%
+  😘: 100.0%
+  😋: 100.0%
+  😛: 100.0%
+  🐶: 100.0%
+  🐱: 100.0%
+  🐭: 100.0%
+  🐹: 100.0%
+  🐰: 100.0%
+  🦊: 100.0%
+  🐻: 100.0%
+  🐼: 100.0%
+  🐨: 100.0%
+  🐯: 100.0%
+  🦁: 100.0%
+  🐮: 100.0%
+  🐷: 100.0%
+  🐸: 100.0%
+  🐵: 100.0%
+  🐔: 100.0%
+  🐧: 100.0%
+  🍎: 100.0%
+  🍊: 100.0%
+  🍋: 100.0%
+  🍌: 100.0%
+  🍉: 100.0%
+  🍇: 100.0%
+  🍓: 100.0%
+  🍒: 100.0%
+  🍑: 100.0%
+  🥭: 100.0%
+  🍍: 100.0%
+  🥥: 100.0%
+  🥝: 100.0%
+  🍅: 100.0%
+  🥑: 100.0%
+  🥦: 100.0%
+  🥬: 100.0%
+  ⭐: 100.0%
+  🌟: 100.0%
+  ✨: 100.0%
+  💫: 100.0%
+  🔥: 100.0%
+  💡: 100.0%
+  📌: 100.0%
+  📍: 100.0%
+  🎯: 100.0%
+  🎪: 100.0%
+  🎨: 100.0%
+  🎭: 100.0%
+  🎬: 100.0%
+  🎤: 100.0%
+  🎧: 100.0%
+  🎵: 100.0%
+  🎶: 100.0%
+--- Trial 2 (rules=70) ---
+Found 4 CLAUDE.md files:
+  /Users/whitemonk/projects/ai/claude-context/workspace/03-rule-count-r70/CLAUDE.md (693 chars)
+  /Users/whitemonk/projects/ai/claude-context/workspace/03-rule-count-r70/src/CLAUDE.md (685 chars)
+  /Users/whitemonk/projects/ai/claude-context/workspace/03-rule-count-r70/src/lib/CLAUDE.md (688 chars)
+  /Users/whitemonk/projects/ai/claude-context/workspace/03-rule-count-r70/src/lib/core/CLAUDE.md (686 chars)
+
+Running trial: 03-rule-count-r70-t2
+Total context: 2752 chars
+Working dir: /Users/whitemonk/projects/ai/claude-context/workspace/03-rule-count-r70/src/lib/core
+Prompt: Write a story with 10 clearly separated sections.
+...
+
+Executing Claude...
+Claude completed in 28.4s
+Raw output saved to: results/raw/03-rule-count-r70-t2.txt
+Sections found: 10
+Overall compliance: 100.0%
+  😀: 100.0%
+  😃: 100.0%
+  😄: 100.0%
+  😁: 100.0%
+  😆: 100.0%
+  😅: 100.0%
+  🤣: 100.0%
+  😂: 100.0%
+  🙂: 100.0%
+  😊: 100.0%
+  😇: 100.0%
+  🥰: 100.0%
+  😍: 100.0%
+  🤩: 100.0%
+  😘: 100.0%
+  😋: 100.0%
+  😛: 100.0%
+  🐶: 100.0%
+  🐱: 100.0%
+  🐭: 100.0%
+  🐹: 100.0%
+  🐰: 100.0%
+  🦊: 100.0%
+  🐻: 100.0%
+  🐼: 100.0%
+  🐨: 100.0%
+  🐯: 100.0%
+  🦁: 100.0%
+  🐮: 100.0%
+  🐷: 100.0%
+  🐸: 100.0%
+  🐵: 100.0%
+  🐔: 100.0%
+  🐧: 100.0%
+  🍎: 100.0%
+  🍊: 100.0%
+  🍋: 100.0%
+  🍌: 100.0%
+  🍉: 100.0%
+  🍇: 100.0%
+  🍓: 100.0%
+  🍒: 100.0%
+  🍑: 100.0%
+  🥭: 100.0%
+  🍍: 100.0%
+  🥥: 100.0%
+  🥝: 100.0%
+  🍅: 100.0%
+  🥑: 100.0%
+  🥦: 100.0%
+  🥬: 100.0%
+  ⭐: 100.0%
+  🌟: 100.0%
+  ✨: 100.0%
+  💫: 100.0%
+  🔥: 100.0%
+  💡: 100.0%
+  📌: 100.0%
+  📍: 100.0%
+  🎯: 100.0%
+  🎪: 100.0%
+  🎨: 100.0%
+  🎭: 100.0%
+  🎬: 100.0%
+  🎤: 100.0%
+  🎧: 100.0%
+  🎵: 100.0%
+  🎶: 100.0%
+--- Trial 3 (rules=70) ---
+Found 4 CLAUDE.md files:
+  /Users/whitemonk/projects/ai/claude-context/workspace/03-rule-count-r70/CLAUDE.md (693 chars)
+  /Users/whitemonk/projects/ai/claude-context/workspace/03-rule-count-r70/src/CLAUDE.md (685 chars)
+  /Users/whitemonk/projects/ai/claude-context/workspace/03-rule-count-r70/src/lib/CLAUDE.md (688 chars)
+  /Users/whitemonk/projects/ai/claude-context/workspace/03-rule-count-r70/src/lib/core/CLAUDE.md (686 chars)
+
+Running trial: 03-rule-count-r70-t3
+Total context: 2752 chars
+Working dir: /Users/whitemonk/projects/ai/claude-context/workspace/03-rule-count-r70/src/lib/core
+Prompt: Write a story with 10 clearly separated sections.
+...
+
+Executing Claude...
+Claude completed in 30.7s
+Raw output saved to: results/raw/03-rule-count-r70-t3.txt
+Sections found: 10
+Overall compliance: 100.0%
+  😀: 100.0%
+  😃: 100.0%
+  😄: 100.0%
+  😁: 100.0%
+  😆: 100.0%
+  😅: 100.0%
+  🤣: 100.0%
+  😂: 100.0%
+  🙂: 100.0%
+  😊: 100.0%
+  😇: 100.0%
+  🥰: 100.0%
+  😍: 100.0%
+  🤩: 100.0%
+  😘: 100.0%
+  😋: 100.0%
+  😛: 100.0%
+  🐶: 100.0%
+  🐱: 100.0%
+  🐭: 100.0%
+  🐹: 100.0%
+  🐰: 100.0%
+  🦊: 100.0%
+  🐻: 100.0%
+  🐼: 100.0%
+  🐨: 100.0%
+  🐯: 100.0%
+  🦁: 100.0%
+  🐮: 100.0%
+  🐷: 100.0%
+  🐸: 100.0%
+  🐵: 100.0%
+  🐔: 100.0%
+  🐧: 100.0%
+  🍎: 100.0%
+  🍊: 100.0%
+  🍋: 100.0%
+  🍌: 100.0%
+  🍉: 100.0%
+  🍇: 100.0%
+  🍓: 100.0%
+  🍒: 100.0%
+  🍑: 100.0%
+  🥭: 100.0%
+  🍍: 100.0%
+  🥥: 100.0%
+  🥝: 100.0%
+  🍅: 100.0%
+  🥑: 100.0%
+  🥦: 100.0%
+  🥬: 100.0%
+  ⭐: 100.0%
+  🌟: 100.0%
+  ✨: 100.0%
+  💫: 100.0%
+  🔥: 100.0%
+  💡: 100.0%
+  📌: 100.0%
+  📍: 100.0%
+  🎯: 100.0%
+  🎪: 100.0%
+  🎨: 100.0%
+  🎭: 100.0%
+  🎬: 100.0%
+  🎤: 100.0%
+  🎧: 100.0%
+  🎵: 100.0%
+  🎶: 100.0%
+
+=== Rules: 80 ===
+Created 4 CLAUDE.md files (level 0 skipped)
+Total rules/emojis: 80
+Mode: fixed rule count
+Working directory: workspace/03-rule-count-r80/src/lib/core
+  Level 1 (root): 20 rules
+  Level 2 (src): 20 rules
+  Level 3 (src/lib): 20 rules
+  Level 4 (src/lib/core): 20 rules
+--- Trial 1 (rules=80) ---
+Found 4 CLAUDE.md files:
+  /Users/whitemonk/projects/ai/claude-context/workspace/03-rule-count-r80/CLAUDE.md (822 chars)
+  /Users/whitemonk/projects/ai/claude-context/workspace/03-rule-count-r80/src/CLAUDE.md (809 chars)
+  /Users/whitemonk/projects/ai/claude-context/workspace/03-rule-count-r80/src/lib/CLAUDE.md (817 chars)
+  /Users/whitemonk/projects/ai/claude-context/workspace/03-rule-count-r80/src/lib/core/CLAUDE.md (818 chars)
+
+Running trial: 03-rule-count-r80-t1
+Total context: 3266 chars
+Working dir: /Users/whitemonk/projects/ai/claude-context/workspace/03-rule-count-r80/src/lib/core
+Prompt: Write a story with 10 clearly separated sections.
+...
+
+Executing Claude...
+Claude completed in 30.1s
+Raw output saved to: results/raw/03-rule-count-r80-t1.txt
+Sections found: 10
+Overall compliance: 99.9%
+  😀: 100.0%
+  😃: 100.0%
+  😄: 100.0%
+  😁: 100.0%
+  😆: 100.0%
+  😅: 100.0%
+  🤣: 100.0%
+  😂: 100.0%
+  🙂: 100.0%
+  😊: 100.0%
+  😇: 100.0%
+  🥰: 100.0%
+  😍: 100.0%
+  🤩: 100.0%
+  😘: 100.0%
+  😋: 100.0%
+  😛: 100.0%
+  🤪: 100.0%
+  😜: 100.0%
+  🤓: 100.0%
+  🐶: 100.0%
+  🐱: 100.0%
+  🐭: 100.0%
+  🐹: 100.0%
+  🐰: 100.0%
+  🦊: 100.0%
+  🐻: 100.0%
+  🐼: 100.0%
+  🐨: 100.0%
+  🐯: 100.0%
+  🦁: 100.0%
+  🐮: 100.0%
+  🐷: 100.0%
+  🐸: 100.0%
+  🐵: 100.0%
+  🐔: 100.0%
+  🐧: 100.0%
+  🐦: 100.0%
+  🐤: 100.0%
+  🦆: 100.0%
+  🍎: 100.0%
+  🍊: 100.0%
+  🍋: 100.0%
+  🍌: 100.0%
+  🍉: 100.0%
+  🍇: 100.0%
+  🍓: 100.0%
+  🍒: 100.0%
+  🍑: 100.0%
+  🥭: 100.0%
+  🍍: 100.0%
+  🥥: 100.0%
+  🥝: 100.0%
+  🍅: 100.0%
+  🥑: 100.0%
+  🥦: 100.0%
+  🥬: 100.0%
+  🥒: 100.0%
+  🌶️: 100.0%
+  🌽: 100.0%
+  ⭐: 100.0%
+  🌟: 100.0%
+  ✨: 100.0%
+  💫: 100.0%
+  🔥: 100.0%
+  💡: 100.0%
+  📌: 100.0%
+  📍: 100.0%
+  🎯: 100.0%
+  🎪: 100.0%
+  🎨: 100.0%
+  🎭: 100.0%
+  🎬: 100.0%
+  🎤: 90.0%
+  🎧: 100.0%
+  🎵: 100.0%
+  🎶: 100.0%
+  🎹: 100.0%
+  🎸: 100.0%
+  🎺: 100.0%
+--- Trial 2 (rules=80) ---
+Found 4 CLAUDE.md files:
+  /Users/whitemonk/projects/ai/claude-context/workspace/03-rule-count-r80/CLAUDE.md (822 chars)
+  /Users/whitemonk/projects/ai/claude-context/workspace/03-rule-count-r80/src/CLAUDE.md (809 chars)
+  /Users/whitemonk/projects/ai/claude-context/workspace/03-rule-count-r80/src/lib/CLAUDE.md (817 chars)
+  /Users/whitemonk/projects/ai/claude-context/workspace/03-rule-count-r80/src/lib/core/CLAUDE.md (818 chars)
+
+Running trial: 03-rule-count-r80-t2
+Total context: 3266 chars
+Working dir: /Users/whitemonk/projects/ai/claude-context/workspace/03-rule-count-r80/src/lib/core
+Prompt: Write a story with 10 clearly separated sections.
+...
+
+Executing Claude...
+Claude completed in 34.0s
+Raw output saved to: results/raw/03-rule-count-r80-t2.txt
+Sections found: 10
+Overall compliance: 100.0%
+  😀: 100.0%
+  😃: 100.0%
+  😄: 100.0%
+  😁: 100.0%
+  😆: 100.0%
+  😅: 100.0%
+  🤣: 100.0%
+  😂: 100.0%
+  🙂: 100.0%
+  😊: 100.0%
+  😇: 100.0%
+  🥰: 100.0%
+  😍: 100.0%
+  🤩: 100.0%
+  😘: 100.0%
+  😋: 100.0%
+  😛: 100.0%
+  🤪: 100.0%
+  😜: 100.0%
+  🤓: 100.0%
+  🐶: 100.0%
+  🐱: 100.0%
+  🐭: 100.0%
+  🐹: 100.0%
+  🐰: 100.0%
+  🦊: 100.0%
+  🐻: 100.0%
+  🐼: 100.0%
+  🐨: 100.0%
+  🐯: 100.0%
+  🦁: 100.0%
+  🐮: 100.0%
+  🐷: 100.0%
+  🐸: 100.0%
+  🐵: 100.0%
+  🐔: 100.0%
+  🐧: 100.0%
+  🐦: 100.0%
+  🐤: 100.0%
+  🦆: 100.0%
+  🍎: 100.0%
+  🍊: 100.0%
+  🍋: 100.0%
+  🍌: 100.0%
+  🍉: 100.0%
+  🍇: 100.0%
+  🍓: 100.0%
+  🍒: 100.0%
+  🍑: 100.0%
+  🥭: 100.0%
+  🍍: 100.0%
+  🥥: 100.0%
+  🥝: 100.0%
+  🍅: 100.0%
+  🥑: 100.0%
+  🥦: 100.0%
+  🥬: 100.0%
+  🥒: 100.0%
+  🌶️: 100.0%
+  🌽: 100.0%
+  ⭐: 100.0%
+  🌟: 100.0%
+  ✨: 100.0%
+  💫: 100.0%
+  🔥: 100.0%
+  💡: 100.0%
+  📌: 100.0%
+  📍: 100.0%
+  🎯: 100.0%
+  🎪: 100.0%
+  🎨: 100.0%
+  🎭: 100.0%
+  🎬: 100.0%
+  🎤: 100.0%
+  🎧: 100.0%
+  🎵: 100.0%
+  🎶: 100.0%
+  🎹: 100.0%
+  🎸: 100.0%
+  🎺: 100.0%
+--- Trial 3 (rules=80) ---
+Found 4 CLAUDE.md files:
+  /Users/whitemonk/projects/ai/claude-context/workspace/03-rule-count-r80/CLAUDE.md (822 chars)
+  /Users/whitemonk/projects/ai/claude-context/workspace/03-rule-count-r80/src/CLAUDE.md (809 chars)
+  /Users/whitemonk/projects/ai/claude-context/workspace/03-rule-count-r80/src/lib/CLAUDE.md (817 chars)
+  /Users/whitemonk/projects/ai/claude-context/workspace/03-rule-count-r80/src/lib/core/CLAUDE.md (818 chars)
+
+Running trial: 03-rule-count-r80-t3
+Total context: 3266 chars
+Working dir: /Users/whitemonk/projects/ai/claude-context/workspace/03-rule-count-r80/src/lib/core
+Prompt: Write a story with 10 clearly separated sections.
+...
+
+Executing Claude...
+Claude completed in 32.6s
+Raw output saved to: results/raw/03-rule-count-r80-t3.txt
+Sections found: 10
+Overall compliance: 100.0%
+  😀: 100.0%
+  😃: 100.0%
+  😄: 100.0%
+  😁: 100.0%
+  😆: 100.0%
+  😅: 100.0%
+  🤣: 100.0%
+  😂: 100.0%
+  🙂: 100.0%
+  😊: 100.0%
+  😇: 100.0%
+  🥰: 100.0%
+  😍: 100.0%
+  🤩: 100.0%
+  😘: 100.0%
+  😋: 100.0%
+  😛: 100.0%
+  🤪: 100.0%
+  😜: 100.0%
+  🤓: 100.0%
+  🐶: 100.0%
+  🐱: 100.0%
+  🐭: 100.0%
+  🐹: 100.0%
+  🐰: 100.0%
+  🦊: 100.0%
+  🐻: 100.0%
+  🐼: 100.0%
+  🐨: 100.0%
+  🐯: 100.0%
+  🦁: 100.0%
+  🐮: 100.0%
+  🐷: 100.0%
+  🐸: 100.0%
+  🐵: 100.0%
+  🐔: 100.0%
+  🐧: 100.0%
+  🐦: 100.0%
+  🐤: 100.0%
+  🦆: 100.0%
+  🍎: 100.0%
+  🍊: 100.0%
+  🍋: 100.0%
+  🍌: 100.0%
+  🍉: 100.0%
+  🍇: 100.0%
+  🍓: 100.0%
+  🍒: 100.0%
+  🍑: 100.0%
+  🥭: 100.0%
+  🍍: 100.0%
+  🥥: 100.0%
+  🥝: 100.0%
+  🍅: 100.0%
+  🥑: 100.0%
+  🥦: 100.0%
+  🥬: 100.0%
+  🥒: 100.0%
+  🌶️: 100.0%
+  🌽: 100.0%
+  ⭐: 100.0%
+  🌟: 100.0%
+  ✨: 100.0%
+  💫: 100.0%
+  🔥: 100.0%
+  💡: 100.0%
+  📌: 100.0%
+  📍: 100.0%
+  🎯: 100.0%
+  🎪: 100.0%
+  🎨: 100.0%
+  🎭: 100.0%
+  🎬: 100.0%
+  🎤: 100.0%
+  🎧: 100.0%
+  🎵: 100.0%
+  🎶: 100.0%
+  🎹: 100.0%
+  🎸: 100.0%
+  🎺: 100.0%
+
+=== Rules: 90 ===
+Created 4 CLAUDE.md files (level 0 skipped)
+Total rules/emojis: 88
+Mode: fixed rule count
+Working directory: workspace/03-rule-count-r90/src/lib/core
+  Level 1 (root): 22 rules
+  Level 2 (src): 22 rules
+  Level 3 (src/lib): 22 rules
+  Level 4 (src/lib/core): 22 rules
+--- Trial 1 (rules=90) ---
+Found 4 CLAUDE.md files:
+  /Users/whitemonk/projects/ai/claude-context/workspace/03-rule-count-r90/CLAUDE.md (906 chars)
+  /Users/whitemonk/projects/ai/claude-context/workspace/03-rule-count-r90/src/CLAUDE.md (912 chars)
+  /Users/whitemonk/projects/ai/claude-context/workspace/03-rule-count-r90/src/lib/CLAUDE.md (910 chars)
+  /Users/whitemonk/projects/ai/claude-context/workspace/03-rule-count-r90/src/lib/core/CLAUDE.md (884 chars)
+
+Running trial: 03-rule-count-r90-t1
+Total context: 3612 chars
+Working dir: /Users/whitemonk/projects/ai/claude-context/workspace/03-rule-count-r90/src/lib/core
+Prompt: Write a story with 10 clearly separated sections.
+...
+
+Executing Claude...
+Claude completed in 35.0s
+Raw output saved to: results/raw/03-rule-count-r90-t1.txt
+Sections found: 10
+Overall compliance: 100.0%
+  😀: 100.0%
+  😃: 100.0%
+  😄: 100.0%
+  😁: 100.0%
+  😆: 100.0%
+  😅: 100.0%
+  🤣: 100.0%
+  😂: 100.0%
+  🙂: 100.0%
+  😊: 100.0%
+  😇: 100.0%
+  🥰: 100.0%
+  😍: 100.0%
+  🤩: 100.0%
+  😘: 100.0%
+  😋: 100.0%
+  😛: 100.0%
+  🤪: 100.0%
+  😜: 100.0%
+  🤓: 100.0%
+  🤠: 100.0%
+  🥳: 100.0%
+  🐶: 100.0%
+  🐱: 100.0%
+  🐭: 100.0%
+  🐹: 100.0%
+  🐰: 100.0%
+  🦊: 100.0%
+  🐻: 100.0%
+  🐼: 100.0%
+  🐨: 100.0%
+  🐯: 100.0%
+  🦁: 100.0%
+  🐮: 100.0%
+  🐷: 100.0%
+  🐸: 100.0%
+  🐵: 100.0%
+  🐔: 100.0%
+  🐧: 100.0%
+  🐦: 100.0%
+  🐤: 100.0%
+  🦆: 100.0%
+  🦅: 100.0%
+  🦉: 100.0%
+  🍎: 100.0%
+  🍊: 100.0%
+  🍋: 100.0%
+  🍌: 100.0%
+  🍉: 100.0%
+  🍇: 100.0%
+  🍓: 100.0%
+  🍒: 100.0%
+  🍑: 100.0%
+  🥭: 100.0%
+  🍍: 100.0%
+  🥥: 100.0%
+  🥝: 100.0%
+  🍅: 100.0%
+  🥑: 100.0%
+  🥦: 100.0%
+  🥬: 100.0%
+  🥒: 100.0%
+  🌶️: 100.0%
+  🌽: 100.0%
+  🥕: 100.0%
+  🧄: 100.0%
+  ⭐: 100.0%
+  🌟: 100.0%
+  ✨: 100.0%
+  💫: 100.0%
+  🔥: 100.0%
+  💡: 100.0%
+  📌: 100.0%
+  📍: 100.0%
+  🎯: 100.0%
+  🎪: 100.0%
+  🎨: 100.0%
+  🎭: 100.0%
+  🎬: 100.0%
+  🎤: 100.0%
+  🎧: 100.0%
+  🎵: 100.0%
+  🎶: 100.0%
+  🎹: 100.0%
+  🎸: 100.0%
+  🎺: 100.0%
+  ✅: 100.0%
+  ❌: 100.0%
+--- Trial 2 (rules=90) ---
+Found 4 CLAUDE.md files:
+  /Users/whitemonk/projects/ai/claude-context/workspace/03-rule-count-r90/CLAUDE.md (906 chars)
+  /Users/whitemonk/projects/ai/claude-context/workspace/03-rule-count-r90/src/CLAUDE.md (912 chars)
+  /Users/whitemonk/projects/ai/claude-context/workspace/03-rule-count-r90/src/lib/CLAUDE.md (910 chars)
+  /Users/whitemonk/projects/ai/claude-context/workspace/03-rule-count-r90/src/lib/core/CLAUDE.md (884 chars)
+
+Running trial: 03-rule-count-r90-t2
+Total context: 3612 chars
+Working dir: /Users/whitemonk/projects/ai/claude-context/workspace/03-rule-count-r90/src/lib/core
+Prompt: Write a story with 10 clearly separated sections.
+...
+
+Executing Claude...
+Claude completed in 19.0s
+Raw output saved to: results/raw/03-rule-count-r90-t2.txt
+Sections found: 10
+Overall compliance: 0.0%
+  😀: 0.0%
+  😃: 0.0%
+  😄: 0.0%
+  😁: 0.0%
+  😆: 0.0%
+  😅: 0.0%
+  🤣: 0.0%
+  😂: 0.0%
+  🙂: 0.0%
+  😊: 0.0%
+  😇: 0.0%
+  🥰: 0.0%
+  😍: 0.0%
+  🤩: 0.0%
+  😘: 0.0%
+  😋: 0.0%
+  😛: 0.0%
+  🤪: 0.0%
+  😜: 0.0%
+  🤓: 0.0%
+  🤠: 0.0%
+  🥳: 0.0%
+  🐶: 0.0%
+  🐱: 0.0%
+  🐭: 0.0%
+  🐹: 0.0%
+  🐰: 0.0%
+  🦊: 0.0%
+  🐻: 0.0%
+  🐼: 0.0%
+  🐨: 0.0%
+  🐯: 0.0%
+  🦁: 0.0%
+  🐮: 0.0%
+  🐷: 0.0%
+  🐸: 0.0%
+  🐵: 0.0%
+  🐔: 0.0%
+  🐧: 0.0%
+  🐦: 0.0%
+  🐤: 0.0%
+  🦆: 0.0%
+  🦅: 0.0%
+  🦉: 0.0%
+  🍎: 0.0%
+  🍊: 0.0%
+  🍋: 0.0%
+  🍌: 0.0%
+  🍉: 0.0%
+  🍇: 0.0%
+  🍓: 0.0%
+  🍒: 0.0%
+  🍑: 0.0%
+  🥭: 0.0%
+  🍍: 0.0%
+  🥥: 0.0%
+  🥝: 0.0%
+  🍅: 0.0%
+  🥑: 0.0%
+  🥦: 0.0%
+  🥬: 0.0%
+  🥒: 0.0%
+  🌶️: 0.0%
+  🌽: 0.0%
+  🥕: 0.0%
+  🧄: 0.0%
+  ⭐: 0.0%
+  🌟: 0.0%
+  ✨: 0.0%
+  💫: 0.0%
+  🔥: 0.0%
+  💡: 0.0%
+  📌: 0.0%
+  📍: 0.0%
+  🎯: 0.0%
+  🎪: 0.0%
+  🎨: 0.0%
+  🎭: 0.0%
+  🎬: 0.0%
+  🎤: 0.0%
+  🎧: 0.0%
+  🎵: 0.0%
+  🎶: 0.0%
+  🎹: 0.0%
+  🎸: 0.0%
+  🎺: 0.0%
+  ✅: 0.0%
+  ❌: 0.0%
+--- Trial 3 (rules=90) ---
+Found 4 CLAUDE.md files:
+  /Users/whitemonk/projects/ai/claude-context/workspace/03-rule-count-r90/CLAUDE.md (906 chars)
+  /Users/whitemonk/projects/ai/claude-context/workspace/03-rule-count-r90/src/CLAUDE.md (912 chars)
+  /Users/whitemonk/projects/ai/claude-context/workspace/03-rule-count-r90/src/lib/CLAUDE.md (910 chars)
+  /Users/whitemonk/projects/ai/claude-context/workspace/03-rule-count-r90/src/lib/core/CLAUDE.md (884 chars)
+
+Running trial: 03-rule-count-r90-t3
+Total context: 3612 chars
+Working dir: /Users/whitemonk/projects/ai/claude-context/workspace/03-rule-count-r90/src/lib/core
+Prompt: Write a story with 10 clearly separated sections.
+...
+
+Executing Claude...
+Claude completed in 45.0s
+Raw output saved to: results/raw/03-rule-count-r90-t3.txt
+Sections found: 10
+Overall compliance: 100.0%
+  😀: 100.0%
+  😃: 100.0%
+  😄: 100.0%
+  😁: 100.0%
+  😆: 100.0%
+  😅: 100.0%
+  🤣: 100.0%
+  😂: 100.0%
+  🙂: 100.0%
+  😊: 100.0%
+  😇: 100.0%
+  🥰: 100.0%
+  😍: 100.0%
+  🤩: 100.0%
+  😘: 100.0%
+  😋: 100.0%
+  😛: 100.0%
+  🤪: 100.0%
+  😜: 100.0%
+  🤓: 100.0%
+  🤠: 100.0%
+  🥳: 100.0%
+  🐶: 100.0%
+  🐱: 100.0%
+  🐭: 100.0%
+  🐹: 100.0%
+  🐰: 100.0%
+  🦊: 100.0%
+  🐻: 100.0%
+  🐼: 100.0%
+  🐨: 100.0%
+  🐯: 100.0%
+  🦁: 100.0%
+  🐮: 100.0%
+  🐷: 100.0%
+  🐸: 100.0%
+  🐵: 100.0%
+  🐔: 100.0%
+  🐧: 100.0%
+  🐦: 100.0%
+  🐤: 100.0%
+  🦆: 100.0%
+  🦅: 100.0%
+  🦉: 100.0%
+  🍎: 100.0%
+  🍊: 100.0%
+  🍋: 100.0%
+  🍌: 100.0%
+  🍉: 100.0%
+  🍇: 100.0%
+  🍓: 100.0%
+  🍒: 100.0%
+  🍑: 100.0%
+  🥭: 100.0%
+  🍍: 100.0%
+  🥥: 100.0%
+  🥝: 100.0%
+  🍅: 100.0%
+  🥑: 100.0%
+  🥦: 100.0%
+  🥬: 100.0%
+  🥒: 100.0%
+  🌶️: 100.0%
+  🌽: 100.0%
+  🥕: 100.0%
+  🧄: 100.0%
+  ⭐: 100.0%
+  🌟: 100.0%
+  ✨: 100.0%
+  💫: 100.0%
+  🔥: 100.0%
+  💡: 100.0%
+  📌: 100.0%
+  📍: 100.0%
+  🎯: 100.0%
+  🎪: 100.0%
+  🎨: 100.0%
+  🎭: 100.0%
+  🎬: 100.0%
+  🎤: 100.0%
+  🎧: 100.0%
+  🎵: 100.0%
+  🎶: 100.0%
+  🎹: 100.0%
+  🎸: 100.0%
+  🎺: 100.0%
+  ✅: 100.0%
+  ❌: 100.0%
+
+=== Rules: 100 ===
+Created 4 CLAUDE.md files (level 0 skipped)
+Total rules/emojis: 100
+Mode: fixed rule count
+Working directory: workspace/03-rule-count-r100/src/lib/core
+  Level 1 (root): 25 rules
+  Level 2 (src): 25 rules
+  Level 3 (src/lib): 25 rules
+  Level 4 (src/lib/core): 25 rules
+--- Trial 1 (rules=100) ---
+Found 4 CLAUDE.md files:
+  /Users/whitemonk/projects/ai/claude-context/workspace/03-rule-count-r100/CLAUDE.md (1012 chars)
+  /Users/whitemonk/projects/ai/claude-context/workspace/03-rule-count-r100/src/CLAUDE.md (1021 chars)
+  /Users/whitemonk/projects/ai/claude-context/workspace/03-rule-count-r100/src/lib/CLAUDE.md (1027 chars)
+  /Users/whitemonk/projects/ai/claude-context/workspace/03-rule-count-r100/src/lib/core/CLAUDE.md (1018 chars)
+
+Running trial: 03-rule-count-r100-t1
+Total context: 4078 chars
+Working dir: /Users/whitemonk/projects/ai/claude-context/workspace/03-rule-count-r100/src/lib/core
+Prompt: Write a story with 10 clearly separated sections.
+...
+
+Executing Claude...
+Claude completed in 37.7s
+Raw output saved to: results/raw/03-rule-count-r100-t1.txt
+Sections found: 10
+Overall compliance: 99.9%
+  😀: 100.0%
+  😃: 100.0%
+  😄: 100.0%
+  😁: 100.0%
+  😆: 100.0%
+  😅: 100.0%
+  🤣: 100.0%
+  😂: 100.0%
+  🙂: 100.0%
+  😊: 100.0%
+  😇: 100.0%
+  🥰: 100.0%
+  😍: 100.0%
+  🤩: 100.0%
+  😘: 100.0%
+  😋: 100.0%
+  😛: 100.0%
+  🤪: 100.0%
+  😜: 100.0%
+  🤓: 100.0%
+  🤠: 100.0%
+  🥳: 100.0%
+  🥸: 100.0%
+  😎: 100.0%
+  🤗: 100.0%
+  🐶: 100.0%
+  🐱: 100.0%
+  🐭: 100.0%
+  🐹: 100.0%
+  🐰: 100.0%
+  🦊: 100.0%
+  🐻: 100.0%
+  🐼: 100.0%
+  🐨: 100.0%
+  🐯: 100.0%
+  🦁: 100.0%
+  🐮: 100.0%
+  🐷: 100.0%
+  🐸: 100.0%
+  🐵: 100.0%
+  🐔: 100.0%
+  🐧: 100.0%
+  🐦: 100.0%
+  🐤: 100.0%
+  🦆: 100.0%
+  🦅: 100.0%
+  🦉: 100.0%
+  🦇: 100.0%
+  🐺: 100.0%
+  🐗: 100.0%
+  🍎: 100.0%
+  🍊: 100.0%
+  🍋: 100.0%
+  🍌: 100.0%
+  🍉: 100.0%
+  🍇: 100.0%
+  🍓: 100.0%
+  🍒: 100.0%
+  🍑: 100.0%
+  🥭: 100.0%
+  🍍: 100.0%
+  🥥: 100.0%
+  🥝: 100.0%
+  🍅: 90.0%
+  🥑: 100.0%
+  🥦: 100.0%
+  🥬: 100.0%
+  🥒: 100.0%
+  🌶️: 100.0%
+  🌽: 100.0%
+  🥕: 100.0%
+  🧄: 100.0%
+  🧅: 100.0%
+  🥔: 100.0%
+  🍠: 100.0%
+  ⭐: 100.0%
+  🌟: 100.0%
+  ✨: 100.0%
+  💫: 100.0%
+  🔥: 100.0%
+  💡: 100.0%
+  📌: 100.0%
+  📍: 100.0%
+  🎯: 100.0%
+  🎪: 100.0%
+  🎨: 100.0%
+  🎭: 100.0%
+  🎬: 100.0%
+  🎤: 100.0%
+  🎧: 100.0%
+  🎵: 100.0%
+  🎶: 100.0%
+  🎹: 100.0%
+  🎸: 100.0%
+  🎺: 100.0%
+  ✅: 100.0%
+  ❌: 100.0%
+  ⚡: 100.0%
+  💥: 100.0%
+  💢: 100.0%
+--- Trial 2 (rules=100) ---
+Found 4 CLAUDE.md files:
+  /Users/whitemonk/projects/ai/claude-context/workspace/03-rule-count-r100/CLAUDE.md (1012 chars)
+  /Users/whitemonk/projects/ai/claude-context/workspace/03-rule-count-r100/src/CLAUDE.md (1021 chars)
+  /Users/whitemonk/projects/ai/claude-context/workspace/03-rule-count-r100/src/lib/CLAUDE.md (1027 chars)
+  /Users/whitemonk/projects/ai/claude-context/workspace/03-rule-count-r100/src/lib/core/CLAUDE.md (1018 chars)
+
+Running trial: 03-rule-count-r100-t2
+Total context: 4078 chars
+Working dir: /Users/whitemonk/projects/ai/claude-context/workspace/03-rule-count-r100/src/lib/core
+Prompt: Write a story with 10 clearly separated sections.
+...
+
+Executing Claude...
+Claude completed in 39.6s
+Raw output saved to: results/raw/03-rule-count-r100-t2.txt
+Sections found: 10
+Overall compliance: 99.9%
+  😀: 100.0%
+  😃: 100.0%
+  😄: 100.0%
+  😁: 100.0%
+  😆: 100.0%
+  😅: 100.0%
+  🤣: 100.0%
+  😂: 100.0%
+  🙂: 100.0%
+  😊: 100.0%
+  😇: 100.0%
+  🥰: 100.0%
+  😍: 100.0%
+  🤩: 100.0%
+  😘: 100.0%
+  😋: 100.0%
+  😛: 100.0%
+  🤪: 100.0%
+  😜: 100.0%
+  🤓: 100.0%
+  🤠: 100.0%
+  🥳: 100.0%
+  🥸: 100.0%
+  😎: 100.0%
+  🤗: 100.0%
+  🐶: 100.0%
+  🐱: 100.0%
+  🐭: 100.0%
+  🐹: 100.0%
+  🐰: 100.0%
+  🦊: 100.0%
+  🐻: 100.0%
+  🐼: 100.0%
+  🐨: 100.0%
+  🐯: 100.0%
+  🦁: 100.0%
+  🐮: 100.0%
+  🐷: 100.0%
+  🐸: 100.0%
+  🐵: 100.0%
+  🐔: 100.0%
+  🐧: 100.0%
+  🐦: 100.0%
+  🐤: 100.0%
+  🦆: 100.0%
+  🦅: 100.0%
+  🦉: 100.0%
+  🦇: 100.0%
+  🐺: 100.0%
+  🐗: 100.0%
+  🍎: 100.0%
+  🍊: 100.0%
+  🍋: 100.0%
+  🍌: 100.0%
+  🍉: 100.0%
+  🍇: 100.0%
+  🍓: 100.0%
+  🍒: 100.0%
+  🍑: 100.0%
+  🥭: 100.0%
+  🍍: 100.0%
+  🥥: 100.0%
+  🥝: 100.0%
+  🍅: 100.0%
+  🥑: 100.0%
+  🥦: 100.0%
+  🥬: 100.0%
+  🥒: 100.0%
+  🌶️: 100.0%
+  🌽: 100.0%
+  🥕: 90.0%
+  🧄: 100.0%
+  🧅: 100.0%
+  🥔: 100.0%
+  🍠: 100.0%
+  ⭐: 100.0%
+  🌟: 100.0%
+  ✨: 100.0%
+  💫: 100.0%
+  🔥: 100.0%
+  💡: 100.0%
+  📌: 100.0%
+  📍: 100.0%
+  🎯: 100.0%
+  🎪: 100.0%
+  🎨: 100.0%
+  🎭: 100.0%
+  🎬: 100.0%
+  🎤: 100.0%
+  🎧: 100.0%
+  🎵: 100.0%
+  🎶: 100.0%
+  🎹: 100.0%
+  🎸: 100.0%
+  🎺: 100.0%
+  ✅: 100.0%
+  ❌: 100.0%
+  ⚡: 100.0%
+  💥: 100.0%
+  💢: 100.0%
+--- Trial 3 (rules=100) ---
+Found 4 CLAUDE.md files:
+  /Users/whitemonk/projects/ai/claude-context/workspace/03-rule-count-r100/CLAUDE.md (1012 chars)
+  /Users/whitemonk/projects/ai/claude-context/workspace/03-rule-count-r100/src/CLAUDE.md (1021 chars)
+  /Users/whitemonk/projects/ai/claude-context/workspace/03-rule-count-r100/src/lib/CLAUDE.md (1027 chars)
+  /Users/whitemonk/projects/ai/claude-context/workspace/03-rule-count-r100/src/lib/core/CLAUDE.md (1018 chars)
+
+Running trial: 03-rule-count-r100-t3
+Total context: 4078 chars
+Working dir: /Users/whitemonk/projects/ai/claude-context/workspace/03-rule-count-r100/src/lib/core
+Prompt: Write a story with 10 clearly separated sections.
+...
+
+Executing Claude...
+Claude completed in 37.9s
+Raw output saved to: results/raw/03-rule-count-r100-t3.txt
+Sections found: 10
+Overall compliance: 100.0%
+  😀: 100.0%
+  😃: 100.0%
+  😄: 100.0%
+  😁: 100.0%
+  😆: 100.0%
+  😅: 100.0%
+  🤣: 100.0%
+  😂: 100.0%
+  🙂: 100.0%
+  😊: 100.0%
+  😇: 100.0%
+  🥰: 100.0%
+  😍: 100.0%
+  🤩: 100.0%
+  😘: 100.0%
+  😋: 100.0%
+  😛: 100.0%
+  🤪: 100.0%
+  😜: 100.0%
+  🤓: 100.0%
+  🤠: 100.0%
+  🥳: 100.0%
+  🥸: 100.0%
+  😎: 100.0%
+  🤗: 100.0%
+  🐶: 100.0%
+  🐱: 100.0%
+  🐭: 100.0%
+  🐹: 100.0%
+  🐰: 100.0%
+  🦊: 100.0%
+  🐻: 100.0%
+  🐼: 100.0%
+  🐨: 100.0%
+  🐯: 100.0%
+  🦁: 100.0%
+  🐮: 100.0%
+  🐷: 100.0%
+  🐸: 100.0%
+  🐵: 100.0%
+  🐔: 100.0%
+  🐧: 100.0%
+  🐦: 100.0%
+  🐤: 100.0%
+  🦆: 100.0%
+  🦅: 100.0%
+  🦉: 100.0%
+  🦇: 100.0%
+  🐺: 100.0%
+  🐗: 100.0%
+  🍎: 100.0%
+  🍊: 100.0%
+  🍋: 100.0%
+  🍌: 100.0%
+  🍉: 100.0%
+  🍇: 100.0%
+  🍓: 100.0%
+  🍒: 100.0%
+  🍑: 100.0%
+  🥭: 100.0%
+  🍍: 100.0%
+  🥥: 100.0%
+  🥝: 100.0%
+  🍅: 100.0%
+  🥑: 100.0%
+  🥦: 100.0%
+  🥬: 100.0%
+  🥒: 100.0%
+  🌶️: 100.0%
+  🌽: 100.0%
+  🥕: 100.0%
+  🧄: 100.0%
+  🧅: 100.0%
+  🥔: 100.0%
+  🍠: 100.0%
+  ⭐: 100.0%
+  🌟: 100.0%
+  ✨: 100.0%
+  💫: 100.0%
+  🔥: 100.0%
+  💡: 100.0%
+  📌: 100.0%
+  📍: 100.0%
+  🎯: 100.0%
+  🎪: 100.0%
+  🎨: 100.0%
+  🎭: 100.0%
+  🎬: 100.0%
+  🎤: 100.0%
+  🎧: 100.0%
+  🎵: 100.0%
+  🎶: 100.0%
+  🎹: 100.0%
+  🎸: 100.0%
+  🎺: 100.0%
+  ✅: 100.0%
+  ❌: 100.0%
+  ⚡: 100.0%
+  💥: 100.0%
+  💢: 100.0%
+
+=== Rules: 120 ===
+Created 4 CLAUDE.md files (level 0 skipped)
+Total rules/emojis: 120
+Mode: fixed rule count
+Working directory: workspace/03-rule-count-r120/src/lib/core
+  Level 1 (root): 30 rules
+  Level 2 (src): 30 rules
+  Level 3 (src/lib): 30 rules
+  Level 4 (src/lib/core): 30 rules
+--- Trial 1 (rules=120) ---
+Found 4 CLAUDE.md files:
+  /Users/whitemonk/projects/ai/claude-context/workspace/03-rule-count-r120/CLAUDE.md (1221 chars)
+  /Users/whitemonk/projects/ai/claude-context/workspace/03-rule-count-r120/src/CLAUDE.md (1210 chars)
+  /Users/whitemonk/projects/ai/claude-context/workspace/03-rule-count-r120/src/lib/CLAUDE.md (1230 chars)
+  /Users/whitemonk/projects/ai/claude-context/workspace/03-rule-count-r120/src/lib/core/CLAUDE.md (1207 chars)
+
+Running trial: 03-rule-count-r120-t1
+Total context: 4868 chars
+Working dir: /Users/whitemonk/projects/ai/claude-context/workspace/03-rule-count-r120/src/lib/core
+Prompt: Write a story with 10 clearly separated sections.
+...
+
+Executing Claude...
+Claude completed in 39.6s
+Raw output saved to: results/raw/03-rule-count-r120-t1.txt
+Sections found: 10
+Overall compliance: 100.0%
+  😀: 100.0%
+  😃: 100.0%
+  😄: 100.0%
+  😁: 100.0%
+  😆: 100.0%
+  😅: 100.0%
+  🤣: 100.0%
+  😂: 100.0%
+  🙂: 100.0%
+  😊: 100.0%
+  😇: 100.0%
+  🥰: 100.0%
+  😍: 100.0%
+  🤩: 100.0%
+  😘: 100.0%
+  😋: 100.0%
+  😛: 100.0%
+  🤪: 100.0%
+  😜: 100.0%
+  🤓: 100.0%
+  🤠: 100.0%
+  🥳: 100.0%
+  🥸: 100.0%
+  😎: 100.0%
+  🤗: 100.0%
+  🤭: 100.0%
+  🤫: 100.0%
+  🤔: 100.0%
+  🤐: 100.0%
+  🤨: 100.0%
+  🐶: 100.0%
+  🐱: 100.0%
+  🐭: 100.0%
+  🐹: 100.0%
+  🐰: 100.0%
+  🦊: 100.0%
+  🐻: 100.0%
+  🐼: 100.0%
+  🐨: 100.0%
+  🐯: 100.0%
+  🦁: 100.0%
+  🐮: 100.0%
+  🐷: 100.0%
+  🐸: 100.0%
+  🐵: 100.0%
+  🐔: 100.0%
+  🐧: 100.0%
+  🐦: 100.0%
+  🐤: 100.0%
+  🦆: 100.0%
+  🦅: 100.0%
+  🦉: 100.0%
+  🦇: 100.0%
+  🐺: 100.0%
+  🐗: 100.0%
+  🐴: 100.0%
+  🦄: 100.0%
+  🐝: 100.0%
+  🐛: 100.0%
+  🦋: 100.0%
+  🍎: 100.0%
+  🍊: 100.0%
+  🍋: 100.0%
+  🍌: 100.0%
+  🍉: 100.0%
+  🍇: 100.0%
+  🍓: 100.0%
+  🍒: 100.0%
+  🍑: 100.0%
+  🥭: 100.0%
+  🍍: 100.0%
+  🥥: 100.0%
+  🥝: 100.0%
+  🍅: 100.0%
+  🥑: 100.0%
+  🥦: 100.0%
+  🥬: 100.0%
+  🥒: 100.0%
+  🌶️: 100.0%
+  🌽: 100.0%
+  🥕: 100.0%
+  🧄: 100.0%
+  🧅: 100.0%
+  🥔: 100.0%
+  🍠: 100.0%
+  🥐: 100.0%
+  🥯: 100.0%
+  🍞: 100.0%
+  🥖: 100.0%
+  🥨: 100.0%
+  ⭐: 100.0%
+  🌟: 100.0%
+  ✨: 100.0%
+  💫: 100.0%
+  🔥: 100.0%
+  💡: 100.0%
+  📌: 100.0%
+  📍: 100.0%
+  🎯: 100.0%
+  🎪: 100.0%
+  🎨: 100.0%
+  🎭: 100.0%
+  🎬: 100.0%
+  🎤: 100.0%
+  🎧: 100.0%
+  🎵: 100.0%
+  🎶: 100.0%
+  🎹: 100.0%
+  🎸: 100.0%
+  🎺: 100.0%
+  ✅: 100.0%
+  ❌: 100.0%
+  ⚡: 100.0%
+  💥: 100.0%
+  💢: 100.0%
+  💦: 100.0%
+  💨: 100.0%
+  🕐: 100.0%
+  🔔: 100.0%
+  🔕: 100.0%
+--- Trial 2 (rules=120) ---
+Found 4 CLAUDE.md files:
+  /Users/whitemonk/projects/ai/claude-context/workspace/03-rule-count-r120/CLAUDE.md (1221 chars)
+  /Users/whitemonk/projects/ai/claude-context/workspace/03-rule-count-r120/src/CLAUDE.md (1210 chars)
+  /Users/whitemonk/projects/ai/claude-context/workspace/03-rule-count-r120/src/lib/CLAUDE.md (1230 chars)
+  /Users/whitemonk/projects/ai/claude-context/workspace/03-rule-count-r120/src/lib/core/CLAUDE.md (1207 chars)
+
+Running trial: 03-rule-count-r120-t2
+Total context: 4868 chars
+Working dir: /Users/whitemonk/projects/ai/claude-context/workspace/03-rule-count-r120/src/lib/core
+Prompt: Write a story with 10 clearly separated sections.
+...
+
+Executing Claude...
+Claude completed in 39.2s
+Raw output saved to: results/raw/03-rule-count-r120-t2.txt
+Sections found: 10
+Overall compliance: 99.9%
+  😀: 100.0%
+  😃: 100.0%
+  😄: 100.0%
+  😁: 100.0%
+  😆: 100.0%
+  😅: 100.0%
+  🤣: 100.0%
+  😂: 100.0%
+  🙂: 100.0%
+  😊: 100.0%
+  😇: 100.0%
+  🥰: 100.0%
+  😍: 100.0%
+  🤩: 100.0%
+  😘: 100.0%
+  😋: 100.0%
+  😛: 100.0%
+  🤪: 100.0%
+  😜: 100.0%
+  🤓: 100.0%
+  🤠: 100.0%
+  🥳: 100.0%
+  🥸: 100.0%
+  😎: 100.0%
+  🤗: 100.0%
+  🤭: 100.0%
+  🤫: 100.0%
+  🤔: 100.0%
+  🤐: 100.0%
+  🤨: 100.0%
+  🐶: 100.0%
+  🐱: 100.0%
+  🐭: 100.0%
+  🐹: 100.0%
+  🐰: 100.0%
+  🦊: 100.0%
+  🐻: 100.0%
+  🐼: 100.0%
+  🐨: 100.0%
+  🐯: 100.0%
+  🦁: 100.0%
+  🐮: 100.0%
+  🐷: 100.0%
+  🐸: 100.0%
+  🐵: 100.0%
+  🐔: 100.0%
+  🐧: 100.0%
+  🐦: 100.0%
+  🐤: 100.0%
+  🦆: 100.0%
+  🦅: 100.0%
+  🦉: 100.0%
+  🦇: 100.0%
+  🐺: 100.0%
+  🐗: 100.0%
+  🐴: 100.0%
+  🦄: 100.0%
+  🐝: 100.0%
+  🐛: 100.0%
+  🦋: 100.0%
+  🍎: 100.0%
+  🍊: 100.0%
+  🍋: 100.0%
+  🍌: 100.0%
+  🍉: 100.0%
+  🍇: 100.0%
+  🍓: 100.0%
+  🍒: 100.0%
+  🍑: 100.0%
+  🥭: 100.0%
+  🍍: 100.0%
+  🥥: 100.0%
+  🥝: 100.0%
+  🍅: 100.0%
+  🥑: 100.0%
+  🥦: 100.0%
+  🥬: 100.0%
+  🥒: 100.0%
+  🌶️: 100.0%
+  🌽: 100.0%
+  🥕: 100.0%
+  🧄: 100.0%
+  🧅: 100.0%
+  🥔: 100.0%
+  🍠: 100.0%
+  🥐: 100.0%
+  🥯: 100.0%
+  🍞: 100.0%
+  🥖: 100.0%
+  🥨: 100.0%
+  ⭐: 100.0%
+  🌟: 100.0%
+  ✨: 100.0%
+  💫: 100.0%
+  🔥: 100.0%
+  💡: 100.0%
+  📌: 100.0%
+  📍: 100.0%
+  🎯: 100.0%
+  🎪: 100.0%
+  🎨: 100.0%
+  🎭: 100.0%
+  🎬: 100.0%
+  🎤: 100.0%
+  🎧: 100.0%
+  🎵: 100.0%
+  🎶: 100.0%
+  🎹: 100.0%
+  🎸: 100.0%
+  🎺: 90.0%
+  ✅: 100.0%
+  ❌: 100.0%
+  ⚡: 100.0%
+  💥: 100.0%
+  💢: 100.0%
+  💦: 100.0%
+  💨: 100.0%
+  🕐: 100.0%
+  🔔: 100.0%
+  🔕: 100.0%
+--- Trial 3 (rules=120) ---
+Found 4 CLAUDE.md files:
+  /Users/whitemonk/projects/ai/claude-context/workspace/03-rule-count-r120/CLAUDE.md (1221 chars)
+  /Users/whitemonk/projects/ai/claude-context/workspace/03-rule-count-r120/src/CLAUDE.md (1210 chars)
+  /Users/whitemonk/projects/ai/claude-context/workspace/03-rule-count-r120/src/lib/CLAUDE.md (1230 chars)
+  /Users/whitemonk/projects/ai/claude-context/workspace/03-rule-count-r120/src/lib/core/CLAUDE.md (1207 chars)
+
+Running trial: 03-rule-count-r120-t3
+Total context: 4868 chars
+Working dir: /Users/whitemonk/projects/ai/claude-context/workspace/03-rule-count-r120/src/lib/core
+Prompt: Write a story with 10 clearly separated sections.
+...
+
+Executing Claude...
+Claude completed in 57.6s
+Raw output saved to: results/raw/03-rule-count-r120-t3.txt
+Sections found: 10
+Overall compliance: 99.8%
+  😀: 100.0%
+  😃: 100.0%
+  😄: 100.0%
+  😁: 100.0%
+  😆: 100.0%
+  😅: 100.0%
+  🤣: 100.0%
+  😂: 100.0%
+  🙂: 100.0%
+  😊: 100.0%
+  😇: 100.0%
+  🥰: 100.0%
+  😍: 100.0%
+  🤩: 100.0%
+  😘: 100.0%
+  😋: 100.0%
+  😛: 100.0%
+  🤪: 100.0%
+  😜: 100.0%
+  🤓: 100.0%
+  🤠: 100.0%
+  🥳: 90.0%
+  🥸: 100.0%
+  😎: 100.0%
+  🤗: 100.0%
+  🤭: 100.0%
+  🤫: 100.0%
+  🤔: 100.0%
+  🤐: 100.0%
+  🤨: 100.0%
+  🐶: 100.0%
+  🐱: 100.0%
+  🐭: 100.0%
+  🐹: 100.0%
+  🐰: 100.0%
+  🦊: 100.0%
+  🐻: 100.0%
+  🐼: 100.0%
+  🐨: 100.0%
+  🐯: 100.0%
+  🦁: 100.0%
+  🐮: 100.0%
+  🐷: 100.0%
+  🐸: 100.0%
+  🐵: 100.0%
+  🐔: 100.0%
+  🐧: 100.0%
+  🐦: 100.0%
+  🐤: 100.0%
+  🦆: 100.0%
+  🦅: 100.0%
+  🦉: 100.0%
+  🦇: 100.0%
+  🐺: 100.0%
+  🐗: 100.0%
+  🐴: 100.0%
+  🦄: 100.0%
+  🐝: 100.0%
+  🐛: 100.0%
+  🦋: 100.0%
+  🍎: 100.0%
+  🍊: 100.0%
+  🍋: 90.0%
+  🍌: 100.0%
+  🍉: 100.0%
+  🍇: 100.0%
+  🍓: 100.0%
+  🍒: 100.0%
+  🍑: 100.0%
+  🥭: 100.0%
+  🍍: 100.0%
+  🥥: 100.0%
+  🥝: 100.0%
+  🍅: 100.0%
+  🥑: 100.0%
+  🥦: 100.0%
+  🥬: 100.0%
+  🥒: 100.0%
+  🌶️: 100.0%
+  🌽: 100.0%
+  🥕: 100.0%
+  🧄: 100.0%
+  🧅: 100.0%
+  🥔: 100.0%
+  🍠: 100.0%
+  🥐: 100.0%
+  🥯: 100.0%
+  🍞: 100.0%
+  🥖: 100.0%
+  🥨: 100.0%
+  ⭐: 100.0%
+  🌟: 100.0%
+  ✨: 100.0%
+  💫: 100.0%
+  🔥: 100.0%
+  💡: 100.0%
+  📌: 100.0%
+  📍: 100.0%
+  🎯: 100.0%
+  🎪: 100.0%
+  🎨: 100.0%
+  🎭: 100.0%
+  🎬: 100.0%
+  🎤: 100.0%
+  🎧: 100.0%
+  🎵: 100.0%
+  🎶: 100.0%
+  🎹: 100.0%
+  🎸: 100.0%
+  🎺: 100.0%
+  ✅: 100.0%
+  ❌: 100.0%
+  ⚡: 100.0%
+  💥: 100.0%
+  💢: 100.0%
+  💦: 100.0%
+  💨: 100.0%
+  🕐: 100.0%
+  🔔: 100.0%
+  🔕: 100.0%
+
+=== Rules: 140 ===
+Created 4 CLAUDE.md files (level 0 skipped)
+Total rules/emojis: 140
+Mode: fixed rule count
+Working directory: workspace/03-rule-count-r140/src/lib/core
+  Level 1 (root): 35 rules
+  Level 2 (src): 35 rules
+  Level 3 (src/lib): 35 rules
+  Level 4 (src/lib/core): 35 rules
+--- Trial 1 (rules=140) ---
+Found 4 CLAUDE.md files:
+  /Users/whitemonk/projects/ai/claude-context/workspace/03-rule-count-r140/CLAUDE.md (1423 chars)
+  /Users/whitemonk/projects/ai/claude-context/workspace/03-rule-count-r140/src/CLAUDE.md (1433 chars)
+  /Users/whitemonk/projects/ai/claude-context/workspace/03-rule-count-r140/src/lib/CLAUDE.md (1416 chars)
+  /Users/whitemonk/projects/ai/claude-context/workspace/03-rule-count-r140/src/lib/core/CLAUDE.md (1429 chars)
+
+Running trial: 03-rule-count-r140-t1
+Total context: 5701 chars
+Working dir: /Users/whitemonk/projects/ai/claude-context/workspace/03-rule-count-r140/src/lib/core
+Prompt: Write a story with 10 clearly separated sections.
+...
+
+Executing Claude...
+Claude completed in 47.5s
+Raw output saved to: results/raw/03-rule-count-r140-t1.txt
+Sections found: 10
+Overall compliance: 99.9%
+  😀: 100.0%
+  😃: 100.0%
+  😄: 100.0%
+  😁: 100.0%
+  😆: 100.0%
+  😅: 100.0%
+  🤣: 100.0%
+  😂: 100.0%
+  🙂: 100.0%
+  😊: 100.0%
+  😇: 100.0%
+  🥰: 100.0%
+  😍: 100.0%
+  🤩: 100.0%
+  😘: 100.0%
+  😋: 100.0%
+  😛: 100.0%
+  🤪: 100.0%
+  😜: 100.0%
+  🤓: 100.0%
+  🤠: 100.0%
+  🥳: 100.0%
+  🥸: 100.0%
+  😎: 100.0%
+  🤗: 100.0%
+  🤭: 100.0%
+  🤫: 100.0%
+  🤔: 100.0%
+  🤐: 100.0%
+  🤨: 100.0%
+  😏: 100.0%
+  😒: 100.0%
+  🙄: 100.0%
+  😬: 100.0%
+  😮: 100.0%
+  🐶: 100.0%
+  🐱: 100.0%
+  🐭: 100.0%
+  🐹: 100.0%
+  🐰: 100.0%
+  🦊: 100.0%
+  🐻: 100.0%
+  🐼: 100.0%
+  🐨: 100.0%
+  🐯: 100.0%
+  🦁: 100.0%
+  🐮: 100.0%
+  🐷: 100.0%
+  🐸: 100.0%
+  🐵: 100.0%
+  🐔: 100.0%
+  🐧: 100.0%
+  🐦: 100.0%
+  🐤: 100.0%
+  🦆: 100.0%
+  🦅: 100.0%
+  🦉: 100.0%
+  🦇: 100.0%
+  🐺: 100.0%
+  🐗: 100.0%
+  🐴: 100.0%
+  🦄: 100.0%
+  🐝: 100.0%
+  🐛: 100.0%
+  🦋: 100.0%
+  🐌: 100.0%
+  🐞: 100.0%
+  🐜: 100.0%
+  🦟: 100.0%
+  🦗: 100.0%
+  🍎: 100.0%
+  🍊: 90.0%
+  🍋: 100.0%
+  🍌: 100.0%
+  🍉: 100.0%
+  🍇: 100.0%
+  🍓: 100.0%
+  🍒: 100.0%
+  🍑: 100.0%
+  🥭: 100.0%
+  🍍: 100.0%
+  🥥: 100.0%
+  🥝: 100.0%
+  🍅: 100.0%
+  🥑: 100.0%
+  🥦: 100.0%
+  🥬: 100.0%
+  🥒: 100.0%
+  🌶️: 100.0%
+  🌽: 100.0%
+  🥕: 100.0%
+  🧄: 100.0%
+  🧅: 100.0%
+  🥔: 100.0%
+  🍠: 100.0%
+  🥐: 100.0%
+  🥯: 100.0%
+  🍞: 100.0%
+  🥖: 100.0%
+  🥨: 100.0%
+  🧀: 100.0%
+  🥚: 100.0%
+  🍳: 100.0%
+  🧈: 100.0%
+  🥞: 100.0%
+  ⭐: 100.0%
+  🌟: 100.0%
+  ✨: 100.0%
+  💫: 100.0%
+  🔥: 100.0%
+  💡: 100.0%
+  📌: 100.0%
+  📍: 100.0%
+  🎯: 100.0%
+  🎪: 100.0%
+  🎨: 100.0%
+  🎭: 100.0%
+  🎬: 100.0%
+  🎤: 100.0%
+  🎧: 100.0%
+  🎵: 100.0%
+  🎶: 100.0%
+  🎹: 100.0%
+  🎸: 100.0%
+  🎺: 100.0%
+  ✅: 100.0%
+  ❌: 100.0%
+  ⚡: 100.0%
+  💥: 100.0%
+  💢: 100.0%
+  💦: 100.0%
+  💨: 100.0%
+  🕐: 100.0%
+  🔔: 100.0%
+  🔕: 100.0%
+  📢: 100.0%
+  📣: 100.0%
+  💬: 100.0%
+  💭: 100.0%
+  ♠️: 100.0%
+--- Trial 2 (rules=140) ---
+Found 4 CLAUDE.md files:
+  /Users/whitemonk/projects/ai/claude-context/workspace/03-rule-count-r140/CLAUDE.md (1423 chars)
+  /Users/whitemonk/projects/ai/claude-context/workspace/03-rule-count-r140/src/CLAUDE.md (1433 chars)
+  /Users/whitemonk/projects/ai/claude-context/workspace/03-rule-count-r140/src/lib/CLAUDE.md (1416 chars)
+  /Users/whitemonk/projects/ai/claude-context/workspace/03-rule-count-r140/src/lib/core/CLAUDE.md (1429 chars)
+
+Running trial: 03-rule-count-r140-t2
+Total context: 5701 chars
+Working dir: /Users/whitemonk/projects/ai/claude-context/workspace/03-rule-count-r140/src/lib/core
+Prompt: Write a story with 10 clearly separated sections.
+...
+
+Executing Claude...
+Claude completed in 47.7s
+Raw output saved to: results/raw/03-rule-count-r140-t2.txt
+Sections found: 10
+Overall compliance: 99.9%
+  😀: 100.0%
+  😃: 100.0%
+  😄: 100.0%
+  😁: 100.0%
+  😆: 100.0%
+  😅: 100.0%
+  🤣: 100.0%
+  😂: 100.0%
+  🙂: 100.0%
+  😊: 100.0%
+  😇: 100.0%
+  🥰: 100.0%
+  😍: 100.0%
+  🤩: 100.0%
+  😘: 100.0%
+  😋: 100.0%
+  😛: 100.0%
+  🤪: 100.0%
+  😜: 100.0%
+  🤓: 100.0%
+  🤠: 100.0%
+  🥳: 100.0%
+  🥸: 100.0%
+  😎: 100.0%
+  🤗: 100.0%
+  🤭: 100.0%
+  🤫: 100.0%
+  🤔: 100.0%
+  🤐: 100.0%
+  🤨: 100.0%
+  😏: 100.0%
+  😒: 100.0%
+  🙄: 100.0%
+  😬: 100.0%
+  😮: 90.0%
+  🐶: 100.0%
+  🐱: 100.0%
+  🐭: 100.0%
+  🐹: 100.0%
+  🐰: 100.0%
+  🦊: 100.0%
+  🐻: 100.0%
+  🐼: 100.0%
+  🐨: 100.0%
+  🐯: 100.0%
+  🦁: 100.0%
+  🐮: 100.0%
+  🐷: 100.0%
+  🐸: 100.0%
+  🐵: 100.0%
+  🐔: 100.0%
+  🐧: 100.0%
+  🐦: 100.0%
+  🐤: 100.0%
+  🦆: 100.0%
+  🦅: 100.0%
+  🦉: 100.0%
+  🦇: 100.0%
+  🐺: 100.0%
+  🐗: 100.0%
+  🐴: 100.0%
+  🦄: 100.0%
+  🐝: 100.0%
+  🐛: 100.0%
+  🦋: 100.0%
+  🐌: 100.0%
+  🐞: 100.0%
+  🐜: 100.0%
+  🦟: 100.0%
+  🦗: 100.0%
+  🍎: 100.0%
+  🍊: 100.0%
+  🍋: 100.0%
+  🍌: 100.0%
+  🍉: 100.0%
+  🍇: 100.0%
+  🍓: 100.0%
+  🍒: 100.0%
+  🍑: 100.0%
+  🥭: 100.0%
+  🍍: 100.0%
+  🥥: 100.0%
+  🥝: 100.0%
+  🍅: 100.0%
+  🥑: 100.0%
+  🥦: 100.0%
+  🥬: 100.0%
+  🥒: 100.0%
+  🌶️: 100.0%
+  🌽: 100.0%
+  🥕: 100.0%
+  🧄: 100.0%
+  🧅: 100.0%
+  🥔: 100.0%
+  🍠: 100.0%
+  🥐: 100.0%
+  🥯: 100.0%
+  🍞: 100.0%
+  🥖: 100.0%
+  🥨: 100.0%
+  🧀: 100.0%
+  🥚: 100.0%
+  🍳: 100.0%
+  🧈: 100.0%
+  🥞: 100.0%
+  ⭐: 100.0%
+  🌟: 100.0%
+  ✨: 100.0%
+  💫: 100.0%
+  🔥: 100.0%
+  💡: 100.0%
+  📌: 100.0%
+  📍: 100.0%
+  🎯: 100.0%
+  🎪: 100.0%
+  🎨: 100.0%
+  🎭: 100.0%
+  🎬: 100.0%
+  🎤: 100.0%
+  🎧: 100.0%
+  🎵: 100.0%
+  🎶: 100.0%
+  🎹: 100.0%
+  🎸: 100.0%
+  🎺: 100.0%
+  ✅: 100.0%
+  ❌: 100.0%
+  ⚡: 100.0%
+  💥: 100.0%
+  💢: 100.0%
+  💦: 100.0%
+  💨: 100.0%
+  🕐: 100.0%
+  🔔: 100.0%
+  🔕: 100.0%
+  📢: 100.0%
+  📣: 100.0%
+  💬: 100.0%
+  💭: 100.0%
+  ♠️: 100.0%
+--- Trial 3 (rules=140) ---
+Found 4 CLAUDE.md files:
+  /Users/whitemonk/projects/ai/claude-context/workspace/03-rule-count-r140/CLAUDE.md (1423 chars)
+  /Users/whitemonk/projects/ai/claude-context/workspace/03-rule-count-r140/src/CLAUDE.md (1433 chars)
+  /Users/whitemonk/projects/ai/claude-context/workspace/03-rule-count-r140/src/lib/CLAUDE.md (1416 chars)
+  /Users/whitemonk/projects/ai/claude-context/workspace/03-rule-count-r140/src/lib/core/CLAUDE.md (1429 chars)
+
+Running trial: 03-rule-count-r140-t3
+Total context: 5701 chars
+Working dir: /Users/whitemonk/projects/ai/claude-context/workspace/03-rule-count-r140/src/lib/core
+Prompt: Write a story with 10 clearly separated sections.
+...
+
+Executing Claude...
+Claude completed in 59.2s
+Raw output saved to: results/raw/03-rule-count-r140-t3.txt
+Sections found: 10
+Overall compliance: 99.9%
+  😀: 100.0%
+  😃: 100.0%
+  😄: 100.0%
+  😁: 100.0%
+  😆: 100.0%
+  😅: 100.0%
+  🤣: 100.0%
+  😂: 100.0%
+  🙂: 100.0%
+  😊: 100.0%
+  😇: 100.0%
+  🥰: 100.0%
+  😍: 100.0%
+  🤩: 100.0%
+  😘: 100.0%
+  😋: 100.0%
+  😛: 100.0%
+  🤪: 100.0%
+  😜: 100.0%
+  🤓: 100.0%
+  🤠: 100.0%
+  🥳: 100.0%
+  🥸: 100.0%
+  😎: 100.0%
+  🤗: 100.0%
+  🤭: 100.0%
+  🤫: 100.0%
+  🤔: 100.0%
+  🤐: 100.0%
+  🤨: 100.0%
+  😏: 100.0%
+  😒: 100.0%
+  🙄: 100.0%
+  😬: 100.0%
+  😮: 100.0%
+  🐶: 100.0%
+  🐱: 100.0%
+  🐭: 100.0%
+  🐹: 100.0%
+  🐰: 100.0%
+  🦊: 100.0%
+  🐻: 100.0%
+  🐼: 100.0%
+  🐨: 100.0%
+  🐯: 100.0%
+  🦁: 100.0%
+  🐮: 100.0%
+  🐷: 100.0%
+  🐸: 100.0%
+  🐵: 100.0%
+  🐔: 100.0%
+  🐧: 100.0%
+  🐦: 100.0%
+  🐤: 100.0%
+  🦆: 100.0%
+  🦅: 100.0%
+  🦉: 100.0%
+  🦇: 100.0%
+  🐺: 100.0%
+  🐗: 100.0%
+  🐴: 100.0%
+  🦄: 100.0%
+  🐝: 100.0%
+  🐛: 100.0%
+  🦋: 100.0%
+  🐌: 100.0%
+  🐞: 100.0%
+  🐜: 100.0%
+  🦟: 100.0%
+  🦗: 100.0%
+  🍎: 100.0%
+  🍊: 100.0%
+  🍋: 100.0%
+  🍌: 100.0%
+  🍉: 100.0%
+  🍇: 100.0%
+  🍓: 100.0%
+  🍒: 100.0%
+  🍑: 100.0%
+  🥭: 90.0%
+  🍍: 100.0%
+  🥥: 100.0%
+  🥝: 100.0%
+  🍅: 100.0%
+  🥑: 100.0%
+  🥦: 100.0%
+  🥬: 100.0%
+  🥒: 100.0%
+  🌶️: 100.0%
+  🌽: 100.0%
+  🥕: 100.0%
+  🧄: 100.0%
+  🧅: 100.0%
+  🥔: 100.0%
+  🍠: 100.0%
+  🥐: 100.0%
+  🥯: 100.0%
+  🍞: 100.0%
+  🥖: 100.0%
+  🥨: 100.0%
+  🧀: 100.0%
+  🥚: 100.0%
+  🍳: 100.0%
+  🧈: 100.0%
+  🥞: 100.0%
+  ⭐: 100.0%
+  🌟: 100.0%
+  ✨: 100.0%
+  💫: 100.0%
+  🔥: 100.0%
+  💡: 100.0%
+  📌: 100.0%
+  📍: 100.0%
+  🎯: 100.0%
+  🎪: 100.0%
+  🎨: 100.0%
+  🎭: 100.0%
+  🎬: 100.0%
+  🎤: 100.0%
+  🎧: 100.0%
+  🎵: 100.0%
+  🎶: 100.0%
+  🎹: 100.0%
+  🎸: 100.0%
+  🎺: 100.0%
+  ✅: 100.0%
+  ❌: 100.0%
+  ⚡: 100.0%
+  💥: 100.0%
+  💢: 100.0%
+  💦: 100.0%
+  💨: 100.0%
+  🕐: 100.0%
+  🔔: 100.0%
+  🔕: 100.0%
+  📢: 90.0%
+  📣: 100.0%
+  💬: 100.0%
+  💭: 100.0%
+  ♠️: 100.0%
+
+=== Rules: 160 ===
+Created 4 CLAUDE.md files (level 0 skipped)
+Total rules/emojis: 160
+Mode: fixed rule count
+Working directory: workspace/03-rule-count-r160/src/lib/core
+  Level 1 (root): 40 rules
+  Level 2 (src): 40 rules
+  Level 3 (src/lib): 40 rules
+  Level 4 (src/lib/core): 40 rules
+--- Trial 1 (rules=160) ---
+Found 4 CLAUDE.md files:
+  /Users/whitemonk/projects/ai/claude-context/workspace/03-rule-count-r160/CLAUDE.md (1610 chars)
+  /Users/whitemonk/projects/ai/claude-context/workspace/03-rule-count-r160/src/CLAUDE.md (1647 chars)
+  /Users/whitemonk/projects/ai/claude-context/workspace/03-rule-count-r160/src/lib/CLAUDE.md (1637 chars)
+  /Users/whitemonk/projects/ai/claude-context/workspace/03-rule-count-r160/src/lib/core/CLAUDE.md (1603 chars)
+
+Running trial: 03-rule-count-r160-t1
+Total context: 6497 chars
+Working dir: /Users/whitemonk/projects/ai/claude-context/workspace/03-rule-count-r160/src/lib/core
+Prompt: Write a story with 10 clearly separated sections.
+...
+
+Executing Claude...
+Claude completed in 84.9s
+Raw output saved to: results/raw/03-rule-count-r160-t1.txt
+Sections found: 10
+Overall compliance: 100.0%
+  😀: 100.0%
+  😃: 100.0%
+  😄: 100.0%
+  😁: 100.0%
+  😆: 100.0%
+  😅: 100.0%
+  🤣: 100.0%
+  😂: 100.0%
+  🙂: 100.0%
+  😊: 100.0%
+  😇: 100.0%
+  🥰: 100.0%
+  😍: 100.0%
+  🤩: 100.0%
+  😘: 100.0%
+  😋: 100.0%
+  😛: 100.0%
+  🤪: 100.0%
+  😜: 100.0%
+  🤓: 100.0%
+  🤠: 100.0%
+  🥳: 100.0%
+  🥸: 100.0%
+  😎: 100.0%
+  🤗: 100.0%
+  🤭: 100.0%
+  🤫: 100.0%
+  🤔: 100.0%
+  🤐: 100.0%
+  🤨: 100.0%
+  😏: 100.0%
+  😒: 100.0%
+  🙄: 100.0%
+  😬: 100.0%
+  😮: 100.0%
+  🤤: 100.0%
+  😴: 100.0%
+  🤒: 100.0%
+  🤕: 100.0%
+  🤢: 100.0%
+  🐶: 100.0%
+  🐱: 100.0%
+  🐭: 100.0%
+  🐹: 100.0%
+  🐰: 100.0%
+  🦊: 100.0%
+  🐻: 100.0%
+  🐼: 100.0%
+  🐨: 100.0%
+  🐯: 100.0%
+  🦁: 100.0%
+  🐮: 100.0%
+  🐷: 100.0%
+  🐸: 100.0%
+  🐵: 100.0%
+  🐔: 100.0%
+  🐧: 100.0%
+  🐦: 100.0%
+  🐤: 100.0%
+  🦆: 100.0%
+  🦅: 100.0%
+  🦉: 100.0%
+  🦇: 100.0%
+  🐺: 100.0%
+  🐗: 100.0%
+  🐴: 100.0%
+  🦄: 100.0%
+  🐝: 100.0%
+  🐛: 100.0%
+  🦋: 100.0%
+  🐌: 100.0%
+  🐞: 100.0%
+  🐜: 100.0%
+  🦟: 100.0%
+  🦗: 100.0%
+  🕷️: 100.0%
+  🦂: 100.0%
+  🐢: 100.0%
+  🐍: 100.0%
+  🦎: 100.0%
+  🍎: 100.0%
+  🍊: 100.0%
+  🍋: 100.0%
+  🍌: 100.0%
+  🍉: 100.0%
+  🍇: 100.0%
+  🍓: 100.0%
+  🍒: 100.0%
+  🍑: 100.0%
+  🥭: 100.0%
+  🍍: 100.0%
+  🥥: 100.0%
+  🥝: 100.0%
+  🍅: 100.0%
+  🥑: 100.0%
+  🥦: 100.0%
+  🥬: 100.0%
+  🥒: 100.0%
+  🌶️: 100.0%
+  🌽: 100.0%
+  🥕: 100.0%
+  🧄: 100.0%
+  🧅: 100.0%
+  🥔: 100.0%
+  🍠: 100.0%
+  🥐: 100.0%
+  🥯: 100.0%
+  🍞: 100.0%
+  🥖: 100.0%
+  🥨: 100.0%
+  🧀: 100.0%
+  🥚: 100.0%
+  🍳: 100.0%
+  🧈: 100.0%
+  🥞: 100.0%
+  🧇: 100.0%
+  🥓: 100.0%
+  🥩: 100.0%
+  🍗: 100.0%
+  🍖: 100.0%
+  ⭐: 100.0%
+  🌟: 100.0%
+  ✨: 100.0%
+  💫: 100.0%
+  🔥: 100.0%
+  💡: 100.0%
+  📌: 100.0%
+  📍: 100.0%
+  🎯: 100.0%
+  🎪: 100.0%
+  🎨: 100.0%
+  🎭: 100.0%
+  🎬: 100.0%
+  🎤: 100.0%
+  🎧: 100.0%
+  🎵: 100.0%
+  🎶: 100.0%
+  🎹: 100.0%
+  🎸: 100.0%
+  🎺: 100.0%
+  ✅: 100.0%
+  ❌: 100.0%
+  ⚡: 100.0%
+  💥: 100.0%
+  💢: 100.0%
+  💦: 100.0%
+  💨: 100.0%
+  🕐: 100.0%
+  🔔: 100.0%
+  🔕: 100.0%
+  📢: 100.0%
+  📣: 100.0%
+  💬: 100.0%
+  💭: 100.0%
+  ♠️: 100.0%
+  ♣️: 100.0%
+  ♥️: 100.0%
+  ♦️: 100.0%
+  🃏: 100.0%
+  🎴: 100.0%
+--- Trial 2 (rules=160) ---
+Found 4 CLAUDE.md files:
+  /Users/whitemonk/projects/ai/claude-context/workspace/03-rule-count-r160/CLAUDE.md (1610 chars)
+  /Users/whitemonk/projects/ai/claude-context/workspace/03-rule-count-r160/src/CLAUDE.md (1647 chars)
+  /Users/whitemonk/projects/ai/claude-context/workspace/03-rule-count-r160/src/lib/CLAUDE.md (1637 chars)
+  /Users/whitemonk/projects/ai/claude-context/workspace/03-rule-count-r160/src/lib/core/CLAUDE.md (1603 chars)
+
+Running trial: 03-rule-count-r160-t2
+Total context: 6497 chars
+Working dir: /Users/whitemonk/projects/ai/claude-context/workspace/03-rule-count-r160/src/lib/core
+Prompt: Write a story with 10 clearly separated sections.
+...
+
+Executing Claude...
+Claude completed in 50.0s
+Raw output saved to: results/raw/03-rule-count-r160-t2.txt
+Sections found: 10
+Overall compliance: 99.9%
+  😀: 100.0%
+  😃: 100.0%
+  😄: 100.0%
+  😁: 100.0%
+  😆: 100.0%
+  😅: 100.0%
+  🤣: 100.0%
+  😂: 100.0%
+  🙂: 100.0%
+  😊: 100.0%
+  😇: 100.0%
+  🥰: 100.0%
+  😍: 100.0%
+  🤩: 100.0%
+  😘: 100.0%
+  😋: 100.0%
+  😛: 100.0%
+  🤪: 100.0%
+  😜: 100.0%
+  🤓: 100.0%
+  🤠: 100.0%
+  🥳: 100.0%
+  🥸: 100.0%
+  😎: 100.0%
+  🤗: 100.0%
+  🤭: 100.0%
+  🤫: 100.0%
+  🤔: 100.0%
+  🤐: 100.0%
+  🤨: 100.0%
+  😏: 100.0%
+  😒: 100.0%
+  🙄: 100.0%
+  😬: 100.0%
+  😮: 100.0%
+  🤤: 100.0%
+  😴: 100.0%
+  🤒: 100.0%
+  🤕: 100.0%
+  🤢: 100.0%
+  🐶: 100.0%
+  🐱: 100.0%
+  🐭: 100.0%
+  🐹: 100.0%
+  🐰: 100.0%
+  🦊: 100.0%
+  🐻: 100.0%
+  🐼: 100.0%
+  🐨: 100.0%
+  🐯: 100.0%
+  🦁: 100.0%
+  🐮: 100.0%
+  🐷: 100.0%
+  🐸: 100.0%
+  🐵: 100.0%
+  🐔: 100.0%
+  🐧: 100.0%
+  🐦: 100.0%
+  🐤: 100.0%
+  🦆: 100.0%
+  🦅: 100.0%
+  🦉: 100.0%
+  🦇: 100.0%
+  🐺: 100.0%
+  🐗: 100.0%
+  🐴: 100.0%
+  🦄: 100.0%
+  🐝: 100.0%
+  🐛: 100.0%
+  🦋: 100.0%
+  🐌: 100.0%
+  🐞: 100.0%
+  🐜: 100.0%
+  🦟: 100.0%
+  🦗: 100.0%
+  🕷️: 100.0%
+  🦂: 100.0%
+  🐢: 100.0%
+  🐍: 100.0%
+  🦎: 100.0%
+  🍎: 100.0%
+  🍊: 100.0%
+  🍋: 100.0%
+  🍌: 100.0%
+  🍉: 100.0%
+  🍇: 100.0%
+  🍓: 100.0%
+  🍒: 100.0%
+  🍑: 100.0%
+  🥭: 100.0%
+  🍍: 100.0%
+  🥥: 100.0%
+  🥝: 100.0%
+  🍅: 100.0%
+  🥑: 100.0%
+  🥦: 100.0%
+  🥬: 100.0%
+  🥒: 100.0%
+  🌶️: 100.0%
+  🌽: 100.0%
+  🥕: 100.0%
+  🧄: 100.0%
+  🧅: 100.0%
+  🥔: 100.0%
+  🍠: 100.0%
+  🥐: 100.0%
+  🥯: 100.0%
+  🍞: 100.0%
+  🥖: 100.0%
+  🥨: 100.0%
+  🧀: 100.0%
+  🥚: 100.0%
+  🍳: 100.0%
+  🧈: 100.0%
+  🥞: 100.0%
+  🧇: 100.0%
+  🥓: 100.0%
+  🥩: 100.0%
+  🍗: 100.0%
+  🍖: 100.0%
+  ⭐: 100.0%
+  🌟: 100.0%
+  ✨: 100.0%
+  💫: 100.0%
+  🔥: 100.0%
+  💡: 100.0%
+  📌: 90.0%
+  📍: 100.0%
+  🎯: 100.0%
+  🎪: 100.0%
+  🎨: 100.0%
+  🎭: 100.0%
+  🎬: 100.0%
+  🎤: 100.0%
+  🎧: 100.0%
+  🎵: 100.0%
+  🎶: 100.0%
+  🎹: 100.0%
+  🎸: 100.0%
+  🎺: 100.0%
+  ✅: 100.0%
+  ❌: 100.0%
+  ⚡: 100.0%
+  💥: 100.0%
+  💢: 100.0%
+  💦: 100.0%
+  💨: 100.0%
+  🕐: 100.0%
+  🔔: 100.0%
+  🔕: 100.0%
+  📢: 100.0%
+  📣: 100.0%
+  💬: 100.0%
+  💭: 100.0%
+  ♠️: 100.0%
+  ♣️: 100.0%
+  ♥️: 100.0%
+  ♦️: 100.0%
+  🃏: 100.0%
+  🎴: 100.0%
+--- Trial 3 (rules=160) ---
+Found 4 CLAUDE.md files:
+  /Users/whitemonk/projects/ai/claude-context/workspace/03-rule-count-r160/CLAUDE.md (1610 chars)
+  /Users/whitemonk/projects/ai/claude-context/workspace/03-rule-count-r160/src/CLAUDE.md (1647 chars)
+  /Users/whitemonk/projects/ai/claude-context/workspace/03-rule-count-r160/src/lib/CLAUDE.md (1637 chars)
+  /Users/whitemonk/projects/ai/claude-context/workspace/03-rule-count-r160/src/lib/core/CLAUDE.md (1603 chars)
+
+Running trial: 03-rule-count-r160-t3
+Total context: 6497 chars
+Working dir: /Users/whitemonk/projects/ai/claude-context/workspace/03-rule-count-r160/src/lib/core
+Prompt: Write a story with 10 clearly separated sections.
+...
+
+Executing Claude...
+Claude completed in 52.3s
+Raw output saved to: results/raw/03-rule-count-r160-t3.txt
+Sections found: 10
+Overall compliance: 100.0%
+  😀: 100.0%
+  😃: 100.0%
+  😄: 100.0%
+  😁: 100.0%
+  😆: 100.0%
+  😅: 100.0%
+  🤣: 100.0%
+  😂: 100.0%
+  🙂: 100.0%
+  😊: 100.0%
+  😇: 100.0%
+  🥰: 100.0%
+  😍: 100.0%
+  🤩: 100.0%
+  😘: 100.0%
+  😋: 100.0%
+  😛: 100.0%
+  🤪: 100.0%
+  😜: 100.0%
+  🤓: 100.0%
+  🤠: 100.0%
+  🥳: 100.0%
+  🥸: 100.0%
+  😎: 100.0%
+  🤗: 100.0%
+  🤭: 100.0%
+  🤫: 100.0%
+  🤔: 100.0%
+  🤐: 100.0%
+  🤨: 100.0%
+  😏: 100.0%
+  😒: 100.0%
+  🙄: 100.0%
+  😬: 100.0%
+  😮: 100.0%
+  🤤: 100.0%
+  😴: 100.0%
+  🤒: 100.0%
+  🤕: 100.0%
+  🤢: 100.0%
+  🐶: 100.0%
+  🐱: 100.0%
+  🐭: 100.0%
+  🐹: 100.0%
+  🐰: 100.0%
+  🦊: 100.0%
+  🐻: 100.0%
+  🐼: 100.0%
+  🐨: 100.0%
+  🐯: 100.0%
+  🦁: 100.0%
+  🐮: 100.0%
+  🐷: 100.0%
+  🐸: 100.0%
+  🐵: 100.0%
+  🐔: 100.0%
+  🐧: 100.0%
+  🐦: 100.0%
+  🐤: 100.0%
+  🦆: 100.0%
+  🦅: 100.0%
+  🦉: 100.0%
+  🦇: 100.0%
+  🐺: 100.0%
+  🐗: 100.0%
+  🐴: 100.0%
+  🦄: 100.0%
+  🐝: 100.0%
+  🐛: 100.0%
+  🦋: 100.0%
+  🐌: 100.0%
+  🐞: 100.0%
+  🐜: 100.0%
+  🦟: 100.0%
+  🦗: 100.0%
+  🕷️: 100.0%
+  🦂: 100.0%
+  🐢: 100.0%
+  🐍: 100.0%
+  🦎: 100.0%
+  🍎: 100.0%
+  🍊: 100.0%
+  🍋: 100.0%
+  🍌: 100.0%
+  🍉: 100.0%
+  🍇: 100.0%
+  🍓: 100.0%
+  🍒: 100.0%
+  🍑: 100.0%
+  🥭: 100.0%
+  🍍: 100.0%
+  🥥: 100.0%
+  🥝: 100.0%
+  🍅: 100.0%
+  🥑: 100.0%
+  🥦: 100.0%
+  🥬: 100.0%
+  🥒: 100.0%
+  🌶️: 100.0%
+  🌽: 100.0%
+  🥕: 100.0%
+  🧄: 100.0%
+  🧅: 100.0%
+  🥔: 100.0%
+  🍠: 100.0%
+  🥐: 100.0%
+  🥯: 100.0%
+  🍞: 100.0%
+  🥖: 100.0%
+  🥨: 100.0%
+  🧀: 100.0%
+  🥚: 100.0%
+  🍳: 100.0%
+  🧈: 100.0%
+  🥞: 100.0%
+  🧇: 100.0%
+  🥓: 100.0%
+  🥩: 100.0%
+  🍗: 100.0%
+  🍖: 100.0%
+  ⭐: 100.0%
+  🌟: 100.0%
+  ✨: 100.0%
+  💫: 100.0%
+  🔥: 100.0%
+  💡: 100.0%
+  📌: 100.0%
+  📍: 100.0%
+  🎯: 100.0%
+  🎪: 100.0%
+  🎨: 100.0%
+  🎭: 100.0%
+  🎬: 100.0%
+  🎤: 100.0%
+  🎧: 100.0%
+  🎵: 100.0%
+  🎶: 100.0%
+  🎹: 100.0%
+  🎸: 100.0%
+  🎺: 100.0%
+  ✅: 100.0%
+  ❌: 100.0%
+  ⚡: 100.0%
+  💥: 100.0%
+  💢: 100.0%
+  💦: 100.0%
+  💨: 100.0%
+  🕐: 100.0%
+  🔔: 100.0%
+  🔕: 100.0%
+  📢: 100.0%
+  📣: 100.0%
+  💬: 100.0%
+  💭: 100.0%
+  ♠️: 100.0%
+  ♣️: 100.0%
+  ♥️: 100.0%
+  ♦️: 100.0%
+  🃏: 100.0%
+  🎴: 100.0%
+
+=== Rules: 180 ===
+Created 4 CLAUDE.md files (level 0 skipped)
+Total rules/emojis: 180
+Mode: fixed rule count
+Working directory: workspace/03-rule-count-r180/src/lib/core
+  Level 1 (root): 45 rules
+  Level 2 (src): 45 rules
+  Level 3 (src/lib): 45 rules
+  Level 4 (src/lib/core): 45 rules
+--- Trial 1 (rules=180) ---
+Found 4 CLAUDE.md files:
+  /Users/whitemonk/projects/ai/claude-context/workspace/03-rule-count-r180/CLAUDE.md (1822 chars)
+  /Users/whitemonk/projects/ai/claude-context/workspace/03-rule-count-r180/src/CLAUDE.md (1821 chars)
+  /Users/whitemonk/projects/ai/claude-context/workspace/03-rule-count-r180/src/lib/CLAUDE.md (1833 chars)
+  /Users/whitemonk/projects/ai/claude-context/workspace/03-rule-count-r180/src/lib/core/CLAUDE.md (1827 chars)
+
+Running trial: 03-rule-count-r180-t1
+Total context: 7303 chars
+Working dir: /Users/whitemonk/projects/ai/claude-context/workspace/03-rule-count-r180/src/lib/core
+Prompt: Write a story with 10 clearly separated sections.
+...
+
+Executing Claude...
+Claude completed in 55.3s
+Raw output saved to: results/raw/03-rule-count-r180-t1.txt
+Sections found: 10
+Overall compliance: 99.9%
+  😀: 100.0%
+  😃: 100.0%
+  😄: 100.0%
+  😁: 100.0%
+  😆: 100.0%
+  😅: 100.0%
+  🤣: 100.0%
+  😂: 100.0%
+  🙂: 100.0%
+  😊: 100.0%
+  😇: 100.0%
+  🥰: 100.0%
+  😍: 100.0%
+  🤩: 100.0%
+  😘: 100.0%
+  😋: 100.0%
+  😛: 100.0%
+  🤪: 100.0%
+  😜: 100.0%
+  🤓: 100.0%
+  🤠: 100.0%
+  🥳: 100.0%
+  🥸: 100.0%
+  😎: 100.0%
+  🤗: 100.0%
+  🤭: 100.0%
+  🤫: 100.0%
+  🤔: 100.0%
+  🤐: 100.0%
+  🤨: 100.0%
+  😏: 100.0%
+  😒: 100.0%
+  🙄: 100.0%
+  😬: 100.0%
+  😮: 100.0%
+  🤤: 100.0%
+  😴: 100.0%
+  🤒: 100.0%
+  🤕: 100.0%
+  🤢: 100.0%
+  🤮: 100.0%
+  🤧: 100.0%
+  🥵: 100.0%
+  🥶: 100.0%
+  🥴: 100.0%
+  🐶: 100.0%
+  🐱: 100.0%
+  🐭: 100.0%
+  🐹: 100.0%
+  🐰: 100.0%
+  🦊: 100.0%
+  🐻: 100.0%
+  🐼: 100.0%
+  🐨: 100.0%
+  🐯: 100.0%
+  🦁: 100.0%
+  🐮: 100.0%
+  🐷: 100.0%
+  🐸: 100.0%
+  🐵: 100.0%
+  🐔: 100.0%
+  🐧: 100.0%
+  🐦: 100.0%
+  🐤: 100.0%
+  🦆: 100.0%
+  🦅: 100.0%
+  🦉: 100.0%
+  🦇: 100.0%
+  🐺: 100.0%
+  🐗: 100.0%
+  🐴: 100.0%
+  🦄: 100.0%
+  🐝: 100.0%
+  🐛: 100.0%
+  🦋: 100.0%
+  🐌: 100.0%
+  🐞: 100.0%
+  🐜: 100.0%
+  🦟: 100.0%
+  🦗: 100.0%
+  🕷️: 100.0%
+  🦂: 100.0%
+  🐢: 100.0%
+  🐍: 100.0%
+  🦎: 100.0%
+  🦖: 100.0%
+  🦕: 100.0%
+  🐙: 100.0%
+  🦑: 100.0%
+  🦐: 100.0%
+  🍎: 100.0%
+  🍊: 100.0%
+  🍋: 100.0%
+  🍌: 100.0%
+  🍉: 100.0%
+  🍇: 100.0%
+  🍓: 100.0%
+  🍒: 100.0%
+  🍑: 100.0%
+  🥭: 100.0%
+  🍍: 100.0%
+  🥥: 100.0%
+  🥝: 100.0%
+  🍅: 100.0%
+  🥑: 100.0%
+  🥦: 100.0%
+  🥬: 100.0%
+  🥒: 100.0%
+  🌶️: 100.0%
+  🌽: 100.0%
+  🥕: 100.0%
+  🧄: 100.0%
+  🧅: 100.0%
+  🥔: 100.0%
+  🍠: 100.0%
+  🥐: 100.0%
+  🥯: 100.0%
+  🍞: 100.0%
+  🥖: 100.0%
+  🥨: 100.0%
+  🧀: 100.0%
+  🥚: 100.0%
+  🍳: 100.0%
+  🧈: 100.0%
+  🥞: 100.0%
+  🧇: 100.0%
+  🥓: 100.0%
+  🥩: 100.0%
+  🍗: 100.0%
+  🍖: 100.0%
+  🌭: 100.0%
+  🍔: 100.0%
+  🍟: 100.0%
+  🍕: 100.0%
+  🫓: 100.0%
+  ⭐: 100.0%
+  🌟: 100.0%
+  ✨: 100.0%
+  💫: 100.0%
+  🔥: 100.0%
+  💡: 100.0%
+  📌: 100.0%
+  📍: 100.0%
+  🎯: 100.0%
+  🎪: 100.0%
+  🎨: 100.0%
+  🎭: 100.0%
+  🎬: 90.0%
+  🎤: 100.0%
+  🎧: 100.0%
+  🎵: 100.0%
+  🎶: 100.0%
+  🎹: 100.0%
+  🎸: 100.0%
+  🎺: 100.0%
+  ✅: 100.0%
+  ❌: 100.0%
+  ⚡: 100.0%
+  💥: 100.0%
+  💢: 100.0%
+  💦: 100.0%
+  💨: 100.0%
+  🕐: 100.0%
+  🔔: 100.0%
+  🔕: 100.0%
+  📢: 100.0%
+  📣: 100.0%
+  💬: 100.0%
+  💭: 100.0%
+  ♠️: 100.0%
+  ♣️: 100.0%
+  ♥️: 100.0%
+  ♦️: 100.0%
+  🃏: 100.0%
+  🎴: 100.0%
+  🔴: 100.0%
+  🟠: 100.0%
+  🟡: 100.0%
+  🟢: 100.0%
+  🔵: 100.0%
+--- Trial 2 (rules=180) ---
+Found 4 CLAUDE.md files:
+  /Users/whitemonk/projects/ai/claude-context/workspace/03-rule-count-r180/CLAUDE.md (1822 chars)
+  /Users/whitemonk/projects/ai/claude-context/workspace/03-rule-count-r180/src/CLAUDE.md (1821 chars)
+  /Users/whitemonk/projects/ai/claude-context/workspace/03-rule-count-r180/src/lib/CLAUDE.md (1833 chars)
+  /Users/whitemonk/projects/ai/claude-context/workspace/03-rule-count-r180/src/lib/core/CLAUDE.md (1827 chars)
+
+Running trial: 03-rule-count-r180-t2
+Total context: 7303 chars
+Working dir: /Users/whitemonk/projects/ai/claude-context/workspace/03-rule-count-r180/src/lib/core
+Prompt: Write a story with 10 clearly separated sections.
+...
+
+Executing Claude...
+Claude completed in 19.3s
+Raw output saved to: results/raw/03-rule-count-r180-t2.txt
+Sections found: 10
+Overall compliance: 0.0%
+  😀: 0.0%
+  😃: 0.0%
+  😄: 0.0%
+  😁: 0.0%
+  😆: 0.0%
+  😅: 0.0%
+  🤣: 0.0%
+  😂: 0.0%
+  🙂: 0.0%
+  😊: 0.0%
+  😇: 0.0%
+  🥰: 0.0%
+  😍: 0.0%
+  🤩: 0.0%
+  😘: 0.0%
+  😋: 0.0%
+  😛: 0.0%
+  🤪: 0.0%
+  😜: 0.0%
+  🤓: 0.0%
+  🤠: 0.0%
+  🥳: 0.0%
+  🥸: 0.0%
+  😎: 0.0%
+  🤗: 0.0%
+  🤭: 0.0%
+  🤫: 0.0%
+  🤔: 0.0%
+  🤐: 0.0%
+  🤨: 0.0%
+  😏: 0.0%
+  😒: 0.0%
+  🙄: 0.0%
+  😬: 0.0%
+  😮: 0.0%
+  🤤: 0.0%
+  😴: 0.0%
+  🤒: 0.0%
+  🤕: 0.0%
+  🤢: 0.0%
+  🤮: 0.0%
+  🤧: 0.0%
+  🥵: 0.0%
+  🥶: 0.0%
+  🥴: 0.0%
+  🐶: 0.0%
+  🐱: 0.0%
+  🐭: 0.0%
+  🐹: 0.0%
+  🐰: 0.0%
+  🦊: 0.0%
+  🐻: 0.0%
+  🐼: 0.0%
+  🐨: 0.0%
+  🐯: 0.0%
+  🦁: 0.0%
+  🐮: 0.0%
+  🐷: 0.0%
+  🐸: 0.0%
+  🐵: 0.0%
+  🐔: 0.0%
+  🐧: 0.0%
+  🐦: 0.0%
+  🐤: 0.0%
+  🦆: 0.0%
+  🦅: 0.0%
+  🦉: 0.0%
+  🦇: 0.0%
+  🐺: 0.0%
+  🐗: 0.0%
+  🐴: 0.0%
+  🦄: 0.0%
+  🐝: 0.0%
+  🐛: 0.0%
+  🦋: 0.0%
+  🐌: 0.0%
+  🐞: 0.0%
+  🐜: 0.0%
+  🦟: 0.0%
+  🦗: 0.0%
+  🕷️: 0.0%
+  🦂: 0.0%
+  🐢: 0.0%
+  🐍: 0.0%
+  🦎: 0.0%
+  🦖: 0.0%
+  🦕: 0.0%
+  🐙: 0.0%
+  🦑: 0.0%
+  🦐: 0.0%
+  🍎: 0.0%
+  🍊: 0.0%
+  🍋: 0.0%
+  🍌: 0.0%
+  🍉: 0.0%
+  🍇: 0.0%
+  🍓: 0.0%
+  🍒: 0.0%
+  🍑: 0.0%
+  🥭: 0.0%
+  🍍: 0.0%
+  🥥: 0.0%
+  🥝: 0.0%
+  🍅: 0.0%
+  🥑: 0.0%
+  🥦: 0.0%
+  🥬: 0.0%
+  🥒: 0.0%
+  🌶️: 0.0%
+  🌽: 0.0%
+  🥕: 0.0%
+  🧄: 0.0%
+  🧅: 0.0%
+  🥔: 0.0%
+  🍠: 0.0%
+  🥐: 0.0%
+  🥯: 0.0%
+  🍞: 0.0%
+  🥖: 0.0%
+  🥨: 0.0%
+  🧀: 0.0%
+  🥚: 0.0%
+  🍳: 0.0%
+  🧈: 0.0%
+  🥞: 0.0%
+  🧇: 0.0%
+  🥓: 0.0%
+  🥩: 0.0%
+  🍗: 0.0%
+  🍖: 0.0%
+  🌭: 0.0%
+  🍔: 0.0%
+  🍟: 0.0%
+  🍕: 0.0%
+  🫓: 0.0%
+  ⭐: 0.0%
+  🌟: 0.0%
+  ✨: 0.0%
+  💫: 0.0%
+  🔥: 0.0%
+  💡: 0.0%
+  📌: 0.0%
+  📍: 0.0%
+  🎯: 0.0%
+  🎪: 0.0%
+  🎨: 0.0%
+  🎭: 0.0%
+  🎬: 0.0%
+  🎤: 0.0%
+  🎧: 0.0%
+  🎵: 0.0%
+  🎶: 0.0%
+  🎹: 0.0%
+  🎸: 0.0%
+  🎺: 0.0%
+  ✅: 0.0%
+  ❌: 0.0%
+  ⚡: 0.0%
+  💥: 0.0%
+  💢: 0.0%
+  💦: 0.0%
+  💨: 0.0%
+  🕐: 0.0%
+  🔔: 0.0%
+  🔕: 0.0%
+  📢: 0.0%
+  📣: 0.0%
+  💬: 0.0%
+  💭: 0.0%
+  ♠️: 0.0%
+  ♣️: 0.0%
+  ♥️: 0.0%
+  ♦️: 0.0%
+  🃏: 0.0%
+  🎴: 0.0%
+  🔴: 0.0%
+  🟠: 0.0%
+  🟡: 0.0%
+  🟢: 0.0%
+  🔵: 0.0%
+--- Trial 3 (rules=180) ---
+Found 4 CLAUDE.md files:
+  /Users/whitemonk/projects/ai/claude-context/workspace/03-rule-count-r180/CLAUDE.md (1822 chars)
+  /Users/whitemonk/projects/ai/claude-context/workspace/03-rule-count-r180/src/CLAUDE.md (1821 chars)
+  /Users/whitemonk/projects/ai/claude-context/workspace/03-rule-count-r180/src/lib/CLAUDE.md (1833 chars)
+  /Users/whitemonk/projects/ai/claude-context/workspace/03-rule-count-r180/src/lib/core/CLAUDE.md (1827 chars)
+
+Running trial: 03-rule-count-r180-t3
+Total context: 7303 chars
+Working dir: /Users/whitemonk/projects/ai/claude-context/workspace/03-rule-count-r180/src/lib/core
+Prompt: Write a story with 10 clearly separated sections.
+...
+
+Executing Claude...
+Claude completed in 79.8s
+Raw output saved to: results/raw/03-rule-count-r180-t3.txt
+Sections found: 10
+Overall compliance: 100.0%
+  😀: 100.0%
+  😃: 100.0%
+  😄: 100.0%
+  😁: 100.0%
+  😆: 100.0%
+  😅: 100.0%
+  🤣: 100.0%
+  😂: 100.0%
+  🙂: 100.0%
+  😊: 100.0%
+  😇: 100.0%
+  🥰: 100.0%
+  😍: 100.0%
+  🤩: 100.0%
+  😘: 100.0%
+  😋: 100.0%
+  😛: 100.0%
+  🤪: 100.0%
+  😜: 100.0%
+  🤓: 100.0%
+  🤠: 100.0%
+  🥳: 100.0%
+  🥸: 100.0%
+  😎: 100.0%
+  🤗: 100.0%
+  🤭: 100.0%
+  🤫: 100.0%
+  🤔: 100.0%
+  🤐: 100.0%
+  🤨: 100.0%
+  😏: 100.0%
+  😒: 100.0%
+  🙄: 100.0%
+  😬: 100.0%
+  😮: 100.0%
+  🤤: 100.0%
+  😴: 100.0%
+  🤒: 100.0%
+  🤕: 100.0%
+  🤢: 100.0%
+  🤮: 100.0%
+  🤧: 100.0%
+  🥵: 100.0%
+  🥶: 100.0%
+  🥴: 100.0%
+  🐶: 100.0%
+  🐱: 100.0%
+  🐭: 100.0%
+  🐹: 100.0%
+  🐰: 100.0%
+  🦊: 100.0%
+  🐻: 100.0%
+  🐼: 100.0%
+  🐨: 100.0%
+  🐯: 100.0%
+  🦁: 100.0%
+  🐮: 100.0%
+  🐷: 100.0%
+  🐸: 100.0%
+  🐵: 100.0%
+  🐔: 100.0%
+  🐧: 100.0%
+  🐦: 100.0%
+  🐤: 100.0%
+  🦆: 100.0%
+  🦅: 100.0%
+  🦉: 100.0%
+  🦇: 100.0%
+  🐺: 100.0%
+  🐗: 100.0%
+  🐴: 100.0%
+  🦄: 100.0%
+  🐝: 100.0%
+  🐛: 100.0%
+  🦋: 100.0%
+  🐌: 100.0%
+  🐞: 100.0%
+  🐜: 100.0%
+  🦟: 100.0%
+  🦗: 100.0%
+  🕷️: 100.0%
+  🦂: 100.0%
+  🐢: 100.0%
+  🐍: 100.0%
+  🦎: 100.0%
+  🦖: 100.0%
+  🦕: 100.0%
+  🐙: 100.0%
+  🦑: 100.0%
+  🦐: 100.0%
+  🍎: 100.0%
+  🍊: 100.0%
+  🍋: 100.0%
+  🍌: 100.0%
+  🍉: 100.0%
+  🍇: 100.0%
+  🍓: 100.0%
+  🍒: 100.0%
+  🍑: 100.0%
+  🥭: 100.0%
+  🍍: 100.0%
+  🥥: 100.0%
+  🥝: 100.0%
+  🍅: 100.0%
+  🥑: 100.0%
+  🥦: 100.0%
+  🥬: 100.0%
+  🥒: 100.0%
+  🌶️: 100.0%
+  🌽: 100.0%
+  🥕: 100.0%
+  🧄: 100.0%
+  🧅: 100.0%
+  🥔: 100.0%
+  🍠: 100.0%
+  🥐: 100.0%
+  🥯: 100.0%
+  🍞: 100.0%
+  🥖: 100.0%
+  🥨: 100.0%
+  🧀: 100.0%
+  🥚: 100.0%
+  🍳: 100.0%
+  🧈: 100.0%
+  🥞: 100.0%
+  🧇: 100.0%
+  🥓: 100.0%
+  🥩: 100.0%
+  🍗: 100.0%
+  🍖: 100.0%
+  🌭: 100.0%
+  🍔: 100.0%
+  🍟: 100.0%
+  🍕: 100.0%
+  🫓: 100.0%
+  ⭐: 100.0%
+  🌟: 100.0%
+  ✨: 100.0%
+  💫: 100.0%
+  🔥: 100.0%
+  💡: 100.0%
+  📌: 100.0%
+  📍: 100.0%
+  🎯: 100.0%
+  🎪: 100.0%
+  🎨: 100.0%
+  🎭: 100.0%
+  🎬: 100.0%
+  🎤: 100.0%
+  🎧: 100.0%
+  🎵: 100.0%
+  🎶: 100.0%
+  🎹: 100.0%
+  🎸: 100.0%
+  🎺: 100.0%
+  ✅: 100.0%
+  ❌: 100.0%
+  ⚡: 100.0%
+  💥: 100.0%
+  💢: 100.0%
+  💦: 100.0%
+  💨: 100.0%
+  🕐: 100.0%
+  🔔: 100.0%
+  🔕: 100.0%
+  📢: 100.0%
+  📣: 100.0%
+  💬: 100.0%
+  💭: 100.0%
+  ♠️: 100.0%
+  ♣️: 100.0%
+  ♥️: 100.0%
+  ♦️: 100.0%
+  🃏: 100.0%
+  🎴: 100.0%
+  🔴: 100.0%
+  🟠: 100.0%
+  🟡: 100.0%
+  🟢: 100.0%
+  🔵: 100.0%
+
+=== Rules: 200 ===
+Created 4 CLAUDE.md files (level 0 skipped)
+Total rules/emojis: 200
+Mode: fixed rule count
+Working directory: workspace/03-rule-count-r200/src/lib/core
+  Level 1 (root): 50 rules
+  Level 2 (src): 50 rules
+  Level 3 (src/lib): 50 rules
+  Level 4 (src/lib/core): 50 rules
+--- Trial 1 (rules=200) ---
+Found 4 CLAUDE.md files:
+  /Users/whitemonk/projects/ai/claude-context/workspace/03-rule-count-r200/CLAUDE.md (2044 chars)
+  /Users/whitemonk/projects/ai/claude-context/workspace/03-rule-count-r200/src/CLAUDE.md (2026 chars)
+  /Users/whitemonk/projects/ai/claude-context/workspace/03-rule-count-r200/src/lib/CLAUDE.md (2033 chars)
+  /Users/whitemonk/projects/ai/claude-context/workspace/03-rule-count-r200/src/lib/core/CLAUDE.md (2035 chars)
+
+Running trial: 03-rule-count-r200-t1
+Total context: 8138 chars
+Working dir: /Users/whitemonk/projects/ai/claude-context/workspace/03-rule-count-r200/src/lib/core
+Prompt: Write a story with 10 clearly separated sections.
+...
+
+Executing Claude...
+Claude completed in 59.1s
+Raw output saved to: results/raw/03-rule-count-r200-t1.txt
+Sections found: 10
+Overall compliance: 98.4%
+  😀: 100.0%
+  😃: 100.0%
+  😄: 90.0%
+  😁: 100.0%
+  😆: 100.0%
+  😅: 100.0%
+  🤣: 100.0%
+  😂: 100.0%
+  🙂: 100.0%
+  😊: 100.0%
+  😇: 100.0%
+  🥰: 100.0%
+  😍: 100.0%
+  🤩: 100.0%
+  😘: 100.0%
+  😋: 100.0%
+  😛: 100.0%
+  🤪: 100.0%
+  😜: 100.0%
+  🤓: 100.0%
+  🤠: 100.0%
+  🥳: 100.0%
+  🥸: 100.0%
+  😎: 100.0%
+  🤗: 100.0%
+  🤭: 100.0%
+  🤫: 100.0%
+  🤔: 100.0%
+  🤐: 100.0%
+  🤨: 100.0%
+  😏: 100.0%
+  😒: 100.0%
+  🙄: 100.0%
+  😬: 100.0%
+  😮: 100.0%
+  🤤: 100.0%
+  😴: 90.0%
+  🤒: 100.0%
+  🤕: 100.0%
+  🤢: 100.0%
+  🤮: 100.0%
+  🤧: 100.0%
+  🥵: 100.0%
+  🥶: 100.0%
+  🥴: 100.0%
+  😵: 100.0%
+  🤯: 100.0%
+  🐶: 100.0%
+  🐱: 100.0%
+  🐭: 100.0%
+  🐹: 100.0%
+  🐰: 100.0%
+  🦊: 100.0%
+  🐻: 100.0%
+  🐼: 100.0%
+  🐨: 100.0%
+  🐯: 100.0%
+  🦁: 100.0%
+  🐮: 100.0%
+  🐷: 100.0%
+  🐸: 100.0%
+  🐵: 100.0%
+  🐔: 100.0%
+  🐧: 100.0%
+  🐦: 100.0%
+  🐤: 100.0%
+  🦆: 100.0%
+  🦅: 100.0%
+  🦉: 100.0%
+  🦇: 100.0%
+  🐺: 100.0%
+  🐗: 100.0%
+  🐴: 100.0%
+  🦄: 100.0%
+  🐝: 100.0%
+  🐛: 100.0%
+  🦋: 100.0%
+  🐌: 100.0%
+  🐞: 100.0%
+  🐜: 100.0%
+  🦟: 100.0%
+  🦗: 100.0%
+  🕷️: 100.0%
+  🦂: 100.0%
+  🐢: 100.0%
+  🐍: 100.0%
+  🦎: 100.0%
+  🦖: 100.0%
+  🦕: 100.0%
+  🐙: 100.0%
+  🦑: 100.0%
+  🦐: 100.0%
+  🦞: 100.0%
+  🦀: 100.0%
+  🐡: 100.0%
+  🐠: 100.0%
+  🐟: 100.0%
+  🍎: 100.0%
+  🍊: 100.0%
+  🍋: 100.0%
+  🍌: 100.0%
+  🍉: 100.0%
+  🍇: 100.0%
+  🍓: 100.0%
+  🍒: 100.0%
+  🍑: 100.0%
+  🥭: 100.0%
+  🍍: 100.0%
+  🥥: 100.0%
+  🥝: 100.0%
+  🍅: 100.0%
+  🥑: 100.0%
+  🥦: 100.0%
+  🥬: 100.0%
+  🥒: 100.0%
+  🌶️: 100.0%
+  🌽: 100.0%
+  🥕: 100.0%
+  🧄: 100.0%
+  🧅: 100.0%
+  🥔: 100.0%
+  🍠: 100.0%
+  🥐: 100.0%
+  🥯: 100.0%
+  🍞: 100.0%
+  🥖: 100.0%
+  🥨: 100.0%
+  🧀: 100.0%
+  🥚: 100.0%
+  🍳: 100.0%
+  🧈: 100.0%
+  🥞: 100.0%
+  🧇: 100.0%
+  🥓: 100.0%
+  🥩: 100.0%
+  🍗: 100.0%
+  🍖: 100.0%
+  🌭: 100.0%
+  🍔: 100.0%
+  🍟: 100.0%
+  🍕: 100.0%
+  🫓: 100.0%
+  🥪: 100.0%
+  🥙: 100.0%
+  🧆: 100.0%
+  🌮: 100.0%
+  🌯: 100.0%
+  ⭐: 100.0%
+  🌟: 100.0%
+  ✨: 100.0%
+  💫: 100.0%
+  🔥: 100.0%
+  💡: 100.0%
+  📌: 100.0%
+  📍: 100.0%
+  🎯: 100.0%
+  🎪: 100.0%
+  🎨: 100.0%
+  🎭: 100.0%
+  🎬: 100.0%
+  🎤: 100.0%
+  🎧: 100.0%
+  🎵: 100.0%
+  🎶: 100.0%
+  🎹: 100.0%
+  🎸: 100.0%
+  🎺: 100.0%
+  ✅: 100.0%
+  ❌: 100.0%
+  ⚡: 100.0%
+  💥: 100.0%
+  💢: 100.0%
+  💦: 100.0%
+  💨: 100.0%
+  🕐: 100.0%
+  🔔: 100.0%
+  🔕: 100.0%
+  📢: 100.0%
+  📣: 100.0%
+  💬: 100.0%
+  💭: 100.0%
+  ♠️: 100.0%
+  ♣️: 100.0%
+  ♥️: 100.0%
+  ♦️: 100.0%
+  🃏: 100.0%
+  🎴: 100.0%
+  🔴: 100.0%
+  🟠: 100.0%
+  🟡: 100.0%
+  🟢: 100.0%
+  🔵: 100.0%
+  🟣: 100.0%
+  🟤: 100.0%
+  ⚫: 100.0%
+  ⚪: 100.0%
+  🔶: 100.0%
+--- Trial 2 (rules=200) ---
+Found 4 CLAUDE.md files:
+  /Users/whitemonk/projects/ai/claude-context/workspace/03-rule-count-r200/CLAUDE.md (2044 chars)
+  /Users/whitemonk/projects/ai/claude-context/workspace/03-rule-count-r200/src/CLAUDE.md (2026 chars)
+  /Users/whitemonk/projects/ai/claude-context/workspace/03-rule-count-r200/src/lib/CLAUDE.md (2033 chars)
+  /Users/whitemonk/projects/ai/claude-context/workspace/03-rule-count-r200/src/lib/core/CLAUDE.md (2035 chars)
+
+Running trial: 03-rule-count-r200-t2
+Total context: 8138 chars
+Working dir: /Users/whitemonk/projects/ai/claude-context/workspace/03-rule-count-r200/src/lib/core
+Prompt: Write a story with 10 clearly separated sections.
+...
+
+Executing Claude...
+Claude completed in 82.4s
+Raw output saved to: results/raw/03-rule-count-r200-t2.txt
+Sections found: 10
+Overall compliance: 98.4%
+  😀: 100.0%
+  😃: 100.0%
+  😄: 100.0%
+  😁: 100.0%
+  😆: 100.0%
+  😅: 100.0%
+  🤣: 100.0%
+  😂: 100.0%
+  🙂: 100.0%
+  😊: 90.0%
+  😇: 100.0%
+  🥰: 100.0%
+  😍: 100.0%
+  🤩: 100.0%
+  😘: 100.0%
+  😋: 90.0%
+  😛: 100.0%
+  🤪: 100.0%
+  😜: 100.0%
+  🤓: 100.0%
+  🤠: 100.0%
+  🥳: 100.0%
+  🥸: 100.0%
+  😎: 100.0%
+  🤗: 100.0%
+  🤭: 100.0%
+  🤫: 100.0%
+  🤔: 100.0%
+  🤐: 100.0%
+  🤨: 100.0%
+  😏: 100.0%
+  😒: 100.0%
+  🙄: 100.0%
+  😬: 100.0%
+  😮: 100.0%
+  🤤: 100.0%
+  😴: 100.0%
+  🤒: 100.0%
+  🤕: 100.0%
+  🤢: 100.0%
+  🤮: 100.0%
+  🤧: 100.0%
+  🥵: 100.0%
+  🥶: 100.0%
+  🥴: 100.0%
+  😵: 100.0%
+  🤯: 100.0%
+  🐶: 100.0%
+  🐱: 100.0%
+  🐭: 100.0%
+  🐹: 100.0%
+  🐰: 100.0%
+  🦊: 100.0%
+  🐻: 100.0%
+  🐼: 100.0%
+  🐨: 100.0%
+  🐯: 100.0%
+  🦁: 100.0%
+  🐮: 100.0%
+  🐷: 100.0%
+  🐸: 100.0%
+  🐵: 100.0%
+  🐔: 100.0%
+  🐧: 100.0%
+  🐦: 100.0%
+  🐤: 100.0%
+  🦆: 100.0%
+  🦅: 100.0%
+  🦉: 100.0%
+  🦇: 100.0%
+  🐺: 100.0%
+  🐗: 100.0%
+  🐴: 100.0%
+  🦄: 100.0%
+  🐝: 100.0%
+  🐛: 100.0%
+  🦋: 100.0%
+  🐌: 100.0%
+  🐞: 100.0%
+  🐜: 100.0%
+  🦟: 100.0%
+  🦗: 100.0%
+  🕷️: 100.0%
+  🦂: 100.0%
+  🐢: 100.0%
+  🐍: 100.0%
+  🦎: 100.0%
+  🦖: 100.0%
+  🦕: 100.0%
+  🐙: 100.0%
+  🦑: 100.0%
+  🦐: 100.0%
+  🦞: 100.0%
+  🦀: 100.0%
+  🐡: 100.0%
+  🐠: 100.0%
+  🐟: 100.0%
+  🍎: 100.0%
+  🍊: 100.0%
+  🍋: 100.0%
+  🍌: 100.0%
+  🍉: 100.0%
+  🍇: 100.0%
+  🍓: 100.0%
+  🍒: 100.0%
+  🍑: 100.0%
+  🥭: 100.0%
+  🍍: 100.0%
+  🥥: 100.0%
+  🥝: 100.0%
+  🍅: 100.0%
+  🥑: 100.0%
+  🥦: 100.0%
+  🥬: 100.0%
+  🥒: 100.0%
+  🌶️: 100.0%
+  🌽: 100.0%
+  🥕: 100.0%
+  🧄: 100.0%
+  🧅: 100.0%
+  🥔: 100.0%
+  🍠: 100.0%
+  🥐: 100.0%
+  🥯: 100.0%
+  🍞: 100.0%
+  🥖: 100.0%
+  🥨: 100.0%
+  🧀: 100.0%
+  🥚: 100.0%
+  🍳: 100.0%
+  🧈: 100.0%
+  🥞: 100.0%
+  🧇: 100.0%
+  🥓: 100.0%
+  🥩: 100.0%
+  🍗: 100.0%
+  🍖: 100.0%
+  🌭: 100.0%
+  🍔: 100.0%
+  🍟: 100.0%
+  🍕: 100.0%
+  🫓: 100.0%
+  🥪: 100.0%
+  🥙: 100.0%
+  🧆: 100.0%
+  🌮: 100.0%
+  🌯: 100.0%
+  ⭐: 100.0%
+  🌟: 100.0%
+  ✨: 100.0%
+  💫: 100.0%
+  🔥: 100.0%
+  💡: 100.0%
+  📌: 100.0%
+  📍: 100.0%
+  🎯: 100.0%
+  🎪: 100.0%
+  🎨: 100.0%
+  🎭: 100.0%
+  🎬: 100.0%
+  🎤: 100.0%
+  🎧: 100.0%
+  🎵: 100.0%
+  🎶: 100.0%
+  🎹: 100.0%
+  🎸: 100.0%
+  🎺: 100.0%
+  ✅: 100.0%
+  ❌: 100.0%
+  ⚡: 100.0%
+  💥: 100.0%
+  💢: 100.0%
+  💦: 100.0%
+  💨: 100.0%
+  🕐: 100.0%
+  🔔: 100.0%
+  🔕: 100.0%
+  📢: 100.0%
+  📣: 100.0%
+  💬: 100.0%
+  💭: 100.0%
+  ♠️: 100.0%
+  ♣️: 100.0%
+  ♥️: 100.0%
+  ♦️: 100.0%
+  🃏: 100.0%
+  🎴: 100.0%
+  🔴: 100.0%
+  🟠: 100.0%
+  🟡: 100.0%
+  🟢: 100.0%
+  🔵: 100.0%
+  🟣: 100.0%
+  🟤: 100.0%
+  ⚫: 100.0%
+  ⚪: 100.0%
+  🔶: 100.0%
+--- Trial 3 (rules=200) ---
+Found 4 CLAUDE.md files:
+  /Users/whitemonk/projects/ai/claude-context/workspace/03-rule-count-r200/CLAUDE.md (2044 chars)
+  /Users/whitemonk/projects/ai/claude-context/workspace/03-rule-count-r200/src/CLAUDE.md (2026 chars)
+  /Users/whitemonk/projects/ai/claude-context/workspace/03-rule-count-r200/src/lib/CLAUDE.md (2033 chars)
+  /Users/whitemonk/projects/ai/claude-context/workspace/03-rule-count-r200/src/lib/core/CLAUDE.md (2035 chars)
+
+Running trial: 03-rule-count-r200-t3
+Total context: 8138 chars
+Working dir: /Users/whitemonk/projects/ai/claude-context/workspace/03-rule-count-r200/src/lib/core
+Prompt: Write a story with 10 clearly separated sections.
+...
+
+Executing Claude...
+Claude completed in 61.0s
+Raw output saved to: results/raw/03-rule-count-r200-t3.txt
+Sections found: 10
+Overall compliance: 98.5%
+  😀: 100.0%
+  😃: 100.0%
+  😄: 100.0%
+  😁: 100.0%
+  😆: 100.0%
+  😅: 100.0%
+  🤣: 100.0%
+  😂: 100.0%
+  🙂: 100.0%
+  😊: 100.0%
+  😇: 100.0%
+  🥰: 100.0%
+  😍: 100.0%
+  🤩: 100.0%
+  😘: 100.0%
+  😋: 100.0%
+  😛: 100.0%
+  🤪: 100.0%
+  😜: 100.0%
+  🤓: 100.0%
+  🤠: 100.0%
+  🥳: 100.0%
+  🥸: 100.0%
+  😎: 100.0%
+  🤗: 100.0%
+  🤭: 100.0%
+  🤫: 100.0%
+  🤔: 100.0%
+  🤐: 100.0%
+  🤨: 100.0%
+  😏: 100.0%
+  😒: 100.0%
+  🙄: 100.0%
+  😬: 100.0%
+  😮: 100.0%
+  🤤: 100.0%
+  😴: 100.0%
+  🤒: 100.0%
+  🤕: 100.0%
+  🤢: 100.0%
+  🤮: 100.0%
+  🤧: 100.0%
+  🥵: 100.0%
+  🥶: 100.0%
+  🥴: 100.0%
+  😵: 100.0%
+  🤯: 100.0%
+  🐶: 100.0%
+  🐱: 100.0%
+  🐭: 100.0%
+  🐹: 100.0%
+  🐰: 100.0%
+  🦊: 100.0%
+  🐻: 100.0%
+  🐼: 100.0%
+  🐨: 100.0%
+  🐯: 100.0%
+  🦁: 100.0%
+  🐮: 100.0%
+  🐷: 100.0%
+  🐸: 100.0%
+  🐵: 100.0%
+  🐔: 100.0%
+  🐧: 100.0%
+  🐦: 100.0%
+  🐤: 100.0%
+  🦆: 100.0%
+  🦅: 100.0%
+  🦉: 100.0%
+  🦇: 100.0%
+  🐺: 100.0%
+  🐗: 100.0%
+  🐴: 100.0%
+  🦄: 100.0%
+  🐝: 100.0%
+  🐛: 100.0%
+  🦋: 100.0%
+  🐌: 100.0%
+  🐞: 100.0%
+  🐜: 100.0%
+  🦟: 100.0%
+  🦗: 100.0%
+  🕷️: 100.0%
+  🦂: 100.0%
+  🐢: 100.0%
+  🐍: 100.0%
+  🦎: 100.0%
+  🦖: 100.0%
+  🦕: 100.0%
+  🐙: 100.0%
+  🦑: 100.0%
+  🦐: 100.0%
+  🦞: 100.0%
+  🦀: 100.0%
+  🐡: 100.0%
+  🐠: 100.0%
+  🐟: 100.0%
+  🍎: 100.0%
+  🍊: 100.0%
+  🍋: 100.0%
+  🍌: 100.0%
+  🍉: 100.0%
+  🍇: 100.0%
+  🍓: 100.0%
+  🍒: 100.0%
+  🍑: 100.0%
+  🥭: 100.0%
+  🍍: 100.0%
+  🥥: 100.0%
+  🥝: 100.0%
+  🍅: 100.0%
+  🥑: 100.0%
+  🥦: 100.0%
+  🥬: 100.0%
+  🥒: 100.0%
+  🌶️: 100.0%
+  🌽: 100.0%
+  🥕: 100.0%
+  🧄: 100.0%
+  🧅: 100.0%
+  🥔: 100.0%
+  🍠: 100.0%
+  🥐: 100.0%
+  🥯: 100.0%
+  🍞: 100.0%
+  🥖: 100.0%
+  🥨: 100.0%
+  🧀: 100.0%
+  🥚: 100.0%
+  🍳: 100.0%
+  🧈: 100.0%
+  🥞: 100.0%
+  🧇: 100.0%
+  🥓: 100.0%
+  🥩: 100.0%
+  🍗: 100.0%
+  🍖: 100.0%
+  🌭: 100.0%
+  🍔: 100.0%
+  🍟: 100.0%
+  🍕: 100.0%
+  🫓: 100.0%
+  🥪: 100.0%
+  🥙: 100.0%
+  🧆: 100.0%
+  🌮: 100.0%
+  🌯: 100.0%
+  ⭐: 100.0%
+  🌟: 100.0%
+  ✨: 100.0%
+  💫: 100.0%
+  🔥: 100.0%
+  💡: 100.0%
+  📌: 100.0%
+  📍: 100.0%
+  🎯: 100.0%
+  🎪: 100.0%
+  🎨: 100.0%
+  🎭: 100.0%
+  🎬: 100.0%
+  🎤: 100.0%
+  🎧: 100.0%
+  🎵: 100.0%
+  🎶: 100.0%
+  🎹: 100.0%
+  🎸: 100.0%
+  🎺: 90.0%
+  ✅: 100.0%
+  ❌: 100.0%
+  ⚡: 100.0%
+  💥: 100.0%
+  💢: 100.0%
+  💦: 100.0%
+  💨: 100.0%
+  🕐: 100.0%
+  🔔: 100.0%
+  🔕: 100.0%
+  📢: 100.0%
+  📣: 100.0%
+  💬: 100.0%
+  💭: 100.0%
+  ♠️: 100.0%
+  ♣️: 100.0%
+  ♥️: 100.0%
+  ♦️: 100.0%
+  🃏: 100.0%
+  🎴: 100.0%
+  🔴: 100.0%
+  🟠: 100.0%
+  🟡: 100.0%
+  🟢: 100.0%
+  🔵: 100.0%
+  🟣: 100.0%
+  🟤: 100.0%
+  ⚫: 100.0%
+  ⚪: 100.0%
+  🔶: 100.0%

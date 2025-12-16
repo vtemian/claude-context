@@ -1,0 +1,19 @@
+{
+  "trial_id": "01-scale-p1000-t1",
+  "experiment": "01-scale",
+  "parameters": {
+    "padding_size": 1000,
+    "style": "neutral"
+  },
+  "sections_found": 10,
+  "compliance_rates": {
+    "\ud83d\ude00": 0.0,
+    "\ud83d\ude03": 0.0,
+    "\ud83d\ude04": 0.0,
+    "\ud83d\ude01": 0.0,
+    "\ud83d\ude06": 0.0
+  },
+  "overall_compliance": 0.0,
+  "context_size_chars": 5444,
+  "raw_output_file": "results/raw/01-scale-p1000-t1.txt"
+}

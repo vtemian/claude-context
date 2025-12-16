@@ -1,0 +1,39 @@
+# experiments/04-verbose-rules/config.yaml
+name: verbose-rules
+description: |
+  Test how many verbose rules Claude can follow simultaneously.
+  Each rule is 2-3 sentences with varied phrasing.
+  Compares against 03-rule-count to see if verbosity helps or hurts.
+
+levels: 5
+emojis:
+  - "😀"  # Level 0: User (skipped)
+  - "😃"  # Level 1: Project root
+  - "😄"  # Level 2: ./src/CLAUDE.md
+  - "😁"  # Level 3: ./src/lib/CLAUDE.md
+  - "😆"  # Level 4: ./src/lib/core/CLAUDE.md
+
+# Same rule counts as 03 for comparison
+rule_counts:
+  - 10
+  - 20
+  - 30
+  - 40
+  - 50
+  - 60
+  - 70
+  - 80
+  - 90
+  - 100
+  - 120
+  - 140
+  - 160
+  - 180
+  - 200
+
+trials_per_condition: 3
+
+prompt: |
+  Write a story with 10 clearly separated sections.
+  Each section should be 2-3 sentences about any topic.
+  Number each section (Section 1, Section 2, etc.).

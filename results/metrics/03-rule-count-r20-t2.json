@@ -1,0 +1,33 @@
+{
+  "trial_id": "03-rule-count-r20-t2",
+  "experiment": "03-rule-count",
+  "parameters": {
+    "num_rules": 20
+  },
+  "sections_found": 10,
+  "compliance_rates": {
+    "\ud83d\ude00": 1.0,
+    "\ud83d\ude03": 1.0,
+    "\ud83d\ude04": 1.0,
+    "\ud83d\ude01": 1.0,
+    "\ud83d\ude06": 1.0,
+    "\ud83d\udc36": 1.0,
+    "\ud83d\udc31": 1.0,
+    "\ud83d\udc2d": 1.0,
+    "\ud83d\udc39": 1.0,
+    "\ud83d\udc30": 1.0,
+    "\ud83c\udf4e": 1.0,
+    "\ud83c\udf4a": 1.0,
+    "\ud83c\udf4b": 1.0,
+    "\ud83c\udf4c": 1.0,
+    "\ud83c\udf49": 1.0,
+    "\u2b50": 1.0,
+    "\ud83c\udf1f": 1.0,
+    "\u2728": 1.0,
+    "\ud83d\udcab": 1.0,
+    "\ud83d\udd25": 1.0
+  },
+  "overall_compliance": 1.0,
+  "context_size_chars": 804,
+  "raw_output_file": "results/raw/03-rule-count-r20-t2.txt"
+}

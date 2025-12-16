@@ -1,0 +1,145 @@
+digraph barchart {
+    rankdir=LR;
+    node [shape=none, fontname="Helvetica"];
+    edge [style=invis];
+
+    // Title
+    title [label="Compliance by Rule Count\nTerse (blue) vs Verbose (orange)", fontsize=14, fontname="Helvetica Bold"];
+
+    r10 [label=<<TABLE BORDER="0" CELLBORDER="0" CELLSPACING="2">
+        <TR><TD ALIGN="RIGHT" WIDTH="40">10</TD>
+            <TD BGCOLOR="#2196F3" WIDTH="181" HEIGHT="12"> </TD>
+            <TD ALIGN="LEFT" WIDTH="40">91%</TD></TR>
+        <TR><TD></TD>
+            <TD BGCOLOR="#FF9800" WIDTH="200" HEIGHT="12"> </TD>
+            <TD ALIGN="LEFT">100%</TD></TR>
+    </TABLE>>];
+    r20 [label=<<TABLE BORDER="0" CELLBORDER="0" CELLSPACING="2">
+        <TR><TD ALIGN="RIGHT" WIDTH="40">20</TD>
+            <TD BGCOLOR="#2196F3" WIDTH="200" HEIGHT="12"> </TD>
+            <TD ALIGN="LEFT" WIDTH="40">100%</TD></TR>
+        <TR><TD></TD>
+            <TD BGCOLOR="#FF9800" WIDTH="200" HEIGHT="12"> </TD>
+            <TD ALIGN="LEFT">100%</TD></TR>
+    </TABLE>>];
+    r10 -> r20;
+    r30 [label=<<TABLE BORDER="0" CELLBORDER="0" CELLSPACING="2">
+        <TR><TD ALIGN="RIGHT" WIDTH="40">30</TD>
+            <TD BGCOLOR="#2196F3" WIDTH="199" HEIGHT="12"> </TD>
+            <TD ALIGN="LEFT" WIDTH="40">100%</TD></TR>
+        <TR><TD></TD>
+            <TD BGCOLOR="#FF9800" WIDTH="199" HEIGHT="12"> </TD>
+            <TD ALIGN="LEFT">100%</TD></TR>
+    </TABLE>>];
+    r20 -> r30;
+    r40 [label=<<TABLE BORDER="0" CELLBORDER="0" CELLSPACING="2">
+        <TR><TD ALIGN="RIGHT" WIDTH="40">40</TD>
+            <TD BGCOLOR="#2196F3" WIDTH="199" HEIGHT="12"> </TD>
+            <TD ALIGN="LEFT" WIDTH="40">100%</TD></TR>
+        <TR><TD></TD>
+            <TD BGCOLOR="#FF9800" WIDTH="200" HEIGHT="12"> </TD>
+            <TD ALIGN="LEFT">100%</TD></TR>
+    </TABLE>>];
+    r30 -> r40;
+    r50 [label=<<TABLE BORDER="0" CELLBORDER="0" CELLSPACING="2">
+        <TR><TD ALIGN="RIGHT" WIDTH="40">50</TD>
+            <TD BGCOLOR="#2196F3" WIDTH="199" HEIGHT="12"> </TD>
+            <TD ALIGN="LEFT" WIDTH="40">100%</TD></TR>
+        <TR><TD></TD>
+            <TD BGCOLOR="#FF9800" WIDTH="200" HEIGHT="12"> </TD>
+            <TD ALIGN="LEFT">100%</TD></TR>
+    </TABLE>>];
+    r40 -> r50;
+    r60 [label=<<TABLE BORDER="0" CELLBORDER="0" CELLSPACING="2">
+        <TR><TD ALIGN="RIGHT" WIDTH="40">60</TD>
+            <TD BGCOLOR="#2196F3" WIDTH="199" HEIGHT="12"> </TD>
+            <TD ALIGN="LEFT" WIDTH="40">100%</TD></TR>
+        <TR><TD></TD>
+            <TD BGCOLOR="#FF9800" WIDTH="200" HEIGHT="12"> </TD>
+            <TD ALIGN="LEFT">100%</TD></TR>
+    </TABLE>>];
+    r50 -> r60;
+    r70 [label=<<TABLE BORDER="0" CELLBORDER="0" CELLSPACING="2">
+        <TR><TD ALIGN="RIGHT" WIDTH="40">70</TD>
+            <TD BGCOLOR="#2196F3" WIDTH="200" HEIGHT="12"> </TD>
+            <TD ALIGN="LEFT" WIDTH="40">100%</TD></TR>
+        <TR><TD></TD>
+            <TD BGCOLOR="#FF9800" WIDTH="200" HEIGHT="12"> </TD>
+            <TD ALIGN="LEFT">100%</TD></TR>
+    </TABLE>>];
+    r60 -> r70;
+    r80 [label=<<TABLE BORDER="0" CELLBORDER="0" CELLSPACING="2">
+        <TR><TD ALIGN="RIGHT" WIDTH="40">80</TD>
+            <TD BGCOLOR="#2196F3" WIDTH="199" HEIGHT="12"> </TD>
+            <TD ALIGN="LEFT" WIDTH="40">100%</TD></TR>
+        <TR><TD></TD>
+            <TD BGCOLOR="#FF9800" WIDTH="200" HEIGHT="12"> </TD>
+            <TD ALIGN="LEFT">100%</TD></TR>
+    </TABLE>>];
+    r70 -> r80;
+    r90 [label=<<TABLE BORDER="0" CELLBORDER="0" CELLSPACING="2">
+        <TR><TD ALIGN="RIGHT" WIDTH="40">90</TD>
+            <TD BGCOLOR="#2196F3" WIDTH="133" HEIGHT="12"> </TD>
+            <TD ALIGN="LEFT" WIDTH="40">67%</TD></TR>
+        <TR><TD></TD>
+            <TD BGCOLOR="#FF9800" WIDTH="2" HEIGHT="12"> </TD>
+            <TD ALIGN="LEFT">0%</TD></TR>
+    </TABLE>>];
+    r80 -> r90;
+    r100 [label=<<TABLE BORDER="0" CELLBORDER="0" CELLSPACING="2">
+        <TR><TD ALIGN="RIGHT" WIDTH="40">100</TD>
+            <TD BGCOLOR="#2196F3" WIDTH="199" HEIGHT="12"> </TD>
+            <TD ALIGN="LEFT" WIDTH="40">100%</TD></TR>
+        <TR><TD></TD>
+            <TD BGCOLOR="#FF9800" WIDTH="199" HEIGHT="12"> </TD>
+            <TD ALIGN="LEFT">100%</TD></TR>
+    </TABLE>>];
+    r90 -> r100;
+    r120 [label=<<TABLE BORDER="0" CELLBORDER="0" CELLSPACING="2">
+        <TR><TD ALIGN="RIGHT" WIDTH="40">120</TD>
+            <TD BGCOLOR="#2196F3" WIDTH="199" HEIGHT="12"> </TD>
+            <TD ALIGN="LEFT" WIDTH="40">100%</TD></TR>
+        <TR><TD></TD>
+            <TD BGCOLOR="#FF9800" WIDTH="199" HEIGHT="12"> </TD>
+            <TD ALIGN="LEFT">100%</TD></TR>
+    </TABLE>>];
+    r100 -> r120;
+    r140 [label=<<TABLE BORDER="0" CELLBORDER="0" CELLSPACING="2">
+        <TR><TD ALIGN="RIGHT" WIDTH="40">140</TD>
+            <TD BGCOLOR="#2196F3" WIDTH="199" HEIGHT="12"> </TD>
+            <TD ALIGN="LEFT" WIDTH="40">100%</TD></TR>
+        <TR><TD></TD>
+            <TD BGCOLOR="#FF9800" WIDTH="133" HEIGHT="12"> </TD>
+            <TD ALIGN="LEFT">67%</TD></TR>
+    </TABLE>>];
+    r120 -> r140;
+    r160 [label=<<TABLE BORDER="0" CELLBORDER="0" CELLSPACING="2">
+        <TR><TD ALIGN="RIGHT" WIDTH="40">160</TD>
+            <TD BGCOLOR="#2196F3" WIDTH="199" HEIGHT="12"> </TD>
+            <TD ALIGN="LEFT" WIDTH="40">100%</TD></TR>
+        <TR><TD></TD>
+            <TD BGCOLOR="#FF9800" WIDTH="199" HEIGHT="12"> </TD>
+            <TD ALIGN="LEFT">100%</TD></TR>
+    </TABLE>>];
+    r140 -> r160;
+    r180 [label=<<TABLE BORDER="0" CELLBORDER="0" CELLSPACING="2">
+        <TR><TD ALIGN="RIGHT" WIDTH="40">180</TD>
+            <TD BGCOLOR="#2196F3" WIDTH="133" HEIGHT="12"> </TD>
+            <TD ALIGN="LEFT" WIDTH="40">67%</TD></TR>
+        <TR><TD></TD>
+            <TD BGCOLOR="#FF9800" WIDTH="199" HEIGHT="12"> </TD>
+            <TD ALIGN="LEFT">100%</TD></TR>
+    </TABLE>>];
+    r160 -> r180;
+    r200 [label=<<TABLE BORDER="0" CELLBORDER="0" CELLSPACING="2">
+        <TR><TD ALIGN="RIGHT" WIDTH="40">200</TD>
+            <TD BGCOLOR="#2196F3" WIDTH="196" HEIGHT="12"> </TD>
+            <TD ALIGN="LEFT" WIDTH="40">98%</TD></TR>
+        <TR><TD></TD>
+            <TD BGCOLOR="#FF9800" WIDTH="65" HEIGHT="12"> </TD>
+            <TD ALIGN="LEFT">33%</TD></TR>
+    </TABLE>>];
+    r180 -> r200;
+
+    title -> r10 [style=invis];
+}

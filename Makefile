@@ -1,5 +1,5 @@
 .PHONY: install test lint format clean help
-.PHONY: experiments run-01 run-02 run-03 analyze analyze-01 analyze-02 analyze-03
+.PHONY: experiments run-01 run-02 run-03 run-04 analyze analyze-01 analyze-02 analyze-03 analyze-04
 
 # Development targets
 install:
@@ -29,12 +29,14 @@ help:
 	@echo "  make run-01         Run 01-scale (6 padding sizes × 3 trials)"
 	@echo "  make run-02         Run 02-emphasis (5 styles × 5 trials)"
 	@echo "  make run-03         Run 03-rule-count (15 rule counts × 3 trials)"
+	@echo "  make run-04         Run 04-verbose-rules (15 rule counts × 3 trials, verbose)"
 	@echo ""
 	@echo "Analysis:"
 	@echo "  make analyze        Analyze all experiments"
 	@echo "  make analyze-01     Analyze 01-scale"
 	@echo "  make analyze-02     Analyze 02-emphasis"
 	@echo "  make analyze-03     Analyze 03-rule-count"
+	@echo "  make analyze-04     Analyze 04-verbose-rules"
 	@echo ""
 	@echo "  make clean          Remove workspace and results"
 
@@ -89,8 +91,21 @@ run-03:
 		done; \
 	done
 
+# 04-verbose-rules: Test verbose rules (2-3 sentences each) (15 counts × 3 trials = 45 runs)
+run-04:
+	@echo "=== Running 04-verbose-rules experiment (15 rule counts × 3 trials) ==="
+	@for rules in $(RULE_COUNTS); do \
+		echo ""; \
+		echo "=== Rules: $$rules (verbose) ==="; \
+		uv run claude-md-research generate -e 04-verbose-rules -r $$rules -s verbose -o workspace/04-verbose-rules-r$$rules; \
+		for trial in $(TRIALS_03); do \
+			echo "--- Trial $$trial (rules=$$rules) ---"; \
+			uv run claude-md-research run -e 04-verbose-rules -r $$rules -t $$trial -w workspace/04-verbose-rules-r$$rules; \
+		done; \
+	done
+
 # Analysis
-analyze: analyze-01 analyze-02 analyze-03
+analyze: analyze-01 analyze-02 analyze-03 analyze-04
 
 analyze-01:
 	@echo "=== Analyzing 01-scale ==="
@@ -103,6 +118,10 @@ analyze-02:
 analyze-03:
 	@echo "=== Analyzing 03-rule-count ==="
 	-uv run claude-md-research analyze -e 03-rule-count
+
+analyze-04:
+	@echo "=== Analyzing 04-verbose-rules ==="
+	-uv run claude-md-research analyze -e 04-verbose-rules
 
 # Cleanup
 clean:

@@ -1,0 +1,21 @@
+{
+  "trial_id": "03-rule-count-r10-t3",
+  "experiment": "03-rule-count",
+  "parameters": {
+    "num_rules": 10
+  },
+  "sections_found": 10,
+  "compliance_rates": {
+    "\ud83d\ude00": 0.9,
+    "\ud83d\ude03": 0.9,
+    "\ud83d\udc36": 1.0,
+    "\ud83d\udc31": 1.0,
+    "\ud83c\udf4e": 1.0,
+    "\ud83c\udf4a": 1.0,
+    "\u2b50": 1.0,
+    "\ud83c\udf1f": 1.0
+  },
+  "overall_compliance": 0.975,
+  "context_size_chars": 323,
+  "raw_output_file": "results/raw/03-rule-count-r10-t3.txt"
+}

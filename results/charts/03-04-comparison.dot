@@ -1,0 +1,45 @@
+digraph comparison {
+    rankdir=TB;
+    node [shape=none, fontname="Helvetica"];
+    edge [style=invis];
+
+    // Title
+    title [label="Rule Count Compliance: Terse vs Verbose\n(Experiments 03 & 04)", fontsize=16, fontname="Helvetica Bold"];
+
+    // Legend
+    legend [label=<<TABLE BORDER="0" CELLBORDER="0" CELLSPACING="2">
+        <TR><TD BGCOLOR="#2196F3" WIDTH="20"> </TD><TD> Terse (03)</TD>
+            <TD WIDTH="20"> </TD>
+            <TD BGCOLOR="#FF9800" WIDTH="20"> </TD><TD> Verbose (04)</TD></TR>
+        <TR><TD COLSPAN="5"> </TD></TR>
+        <TR><TD BGCOLOR="#4CAF50" WIDTH="20"> </TD><TD> 80-100%</TD>
+            <TD WIDTH="20"> </TD>
+            <TD BGCOLOR="#FFC107" WIDTH="20"> </TD><TD> 40-79%</TD></TR>
+        <TR><TD BGCOLOR="#F44336" WIDTH="20"> </TD><TD> 0-39%</TD>
+            <TD COLSPAN="3"> </TD></TR>
+    </TABLE>>];
+
+    // Data table
+    data [label=<<TABLE BORDER="1" CELLBORDER="1" CELLSPACING="0" CELLPADDING="8">
+        <TR><TD BGCOLOR="#E0E0E0"><B>Rules</B></TD><TD BGCOLOR="#E0E0E0"><B>Terse</B></TD><TD BGCOLOR="#E0E0E0"><B>Verbose</B></TD><TD BGCOLOR="#E0E0E0"><B>Diff</B></TD></TR>
+        <TR><TD>10</TD><TD BGCOLOR="#C8E6C9">91%</TD><TD BGCOLOR="#C8E6C9">100%</TD><TD BGCOLOR="#C8E6C9">+9%</TD></TR>
+        <TR><TD>20</TD><TD BGCOLOR="#C8E6C9">100%</TD><TD BGCOLOR="#C8E6C9">100%</TD><TD BGCOLOR="#FFFFFF">0%</TD></TR>
+        <TR><TD>30</TD><TD BGCOLOR="#C8E6C9">100%</TD><TD BGCOLOR="#C8E6C9">100%</TD><TD BGCOLOR="#FFFFFF">0%</TD></TR>
+        <TR><TD>40</TD><TD BGCOLOR="#C8E6C9">100%</TD><TD BGCOLOR="#C8E6C9">100%</TD><TD BGCOLOR="#FFFFFF">0%</TD></TR>
+        <TR><TD>50</TD><TD BGCOLOR="#C8E6C9">100%</TD><TD BGCOLOR="#C8E6C9">100%</TD><TD BGCOLOR="#FFFFFF">0%</TD></TR>
+        <TR><TD>60</TD><TD BGCOLOR="#C8E6C9">100%</TD><TD BGCOLOR="#C8E6C9">100%</TD><TD BGCOLOR="#FFFFFF">0%</TD></TR>
+        <TR><TD>70</TD><TD BGCOLOR="#C8E6C9">100%</TD><TD BGCOLOR="#C8E6C9">100%</TD><TD BGCOLOR="#FFFFFF">0%</TD></TR>
+        <TR><TD>80</TD><TD BGCOLOR="#C8E6C9">100%</TD><TD BGCOLOR="#C8E6C9">100%</TD><TD BGCOLOR="#FFFFFF">0%</TD></TR>
+        <TR><TD>90</TD><TD BGCOLOR="#FFF9C4">67%</TD><TD BGCOLOR="#FFCDD2">0%</TD><TD BGCOLOR="#FFCDD2">-67%</TD></TR>
+        <TR><TD>100</TD><TD BGCOLOR="#C8E6C9">100%</TD><TD BGCOLOR="#C8E6C9">100%</TD><TD BGCOLOR="#FFFFFF">-0%</TD></TR>
+        <TR><TD>120</TD><TD BGCOLOR="#C8E6C9">100%</TD><TD BGCOLOR="#C8E6C9">100%</TD><TD BGCOLOR="#FFFFFF">0%</TD></TR>
+        <TR><TD>140</TD><TD BGCOLOR="#C8E6C9">100%</TD><TD BGCOLOR="#FFF9C4">67%</TD><TD BGCOLOR="#FFCDD2">-33%</TD></TR>
+        <TR><TD>160</TD><TD BGCOLOR="#C8E6C9">100%</TD><TD BGCOLOR="#C8E6C9">100%</TD><TD BGCOLOR="#FFFFFF">-0%</TD></TR>
+        <TR><TD>180</TD><TD BGCOLOR="#FFF9C4">67%</TD><TD BGCOLOR="#C8E6C9">100%</TD><TD BGCOLOR="#C8E6C9">+33%</TD></TR>
+        <TR><TD>200</TD><TD BGCOLOR="#C8E6C9">98%</TD><TD BGCOLOR="#FFCDD2">33%</TD><TD BGCOLOR="#FFCDD2">-66%</TD></TR>
+        <TR><TD BGCOLOR="#E0E0E0"><B>Mean</B></TD><TD BGCOLOR="#E0E0E0"><B>95%</B></TD><TD BGCOLOR="#E0E0E0"><B>87%</B></TD><TD BGCOLOR="#E0E0E0"><B>-8%</B></TD></TR>
+    </TABLE>>];
+
+    title -> legend [style=invis];
+    legend -> data [style=invis];
+}

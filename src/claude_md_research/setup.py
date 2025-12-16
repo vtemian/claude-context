@@ -38,6 +38,7 @@ def setup_experiment_files(
     style: str = "neutral",
     backup_user_config: bool = False,
     skip_user_config: bool = False,
+    use_claude_padding: bool = False,
 ) -> ExperimentSetup:
     """Create CLAUDE.md files for an experiment trial.
 
@@ -48,6 +49,7 @@ def setup_experiment_files(
         style: Emphasis style for rules
         backup_user_config: If True, backup ~/.claude/CLAUDE.md before modifying
         skip_user_config: If True, do not create/modify ~/.claude/CLAUDE.md (level 0)
+        use_claude_padding: If True, use Claude API to generate varied padding
     """
     base_path = Path(base_dir)
     base_path.mkdir(parents=True, exist_ok=True)
@@ -61,6 +63,7 @@ def setup_experiment_files(
             emoji=emoji,
             padding_size=padding_size,
             style=style,
+            use_claude_padding=use_claude_padding,
         )
 
         if level == 0:

@@ -27,7 +27,8 @@ def main():
 @click.option("--output", "-o", default="./workspace", help="Output directory")
 @click.option("--padding", "-p", type=int, default=1000, help="Padding size")
 @click.option("--style", "-s", default="neutral", help="Emphasis style")
-def generate(experiment: str, output: str, padding: int, style: str):
+@click.option("--claude-padding", is_flag=True, help="Use Claude API to generate padding")
+def generate(experiment: str, output: str, padding: int, style: str, claude_padding: bool):
     """Generate CLAUDE.md files for an experiment."""
     config_path = f"experiments/{experiment}/config.yaml"
 
@@ -42,9 +43,12 @@ def generate(experiment: str, output: str, padding: int, style: str):
         padding_size=padding,
         style=style,
         skip_user_config=True,  # Don't modify user's ~/.claude/CLAUDE.md
+        use_claude_padding=claude_padding,
     )
 
+    padding_type = "Claude API" if claude_padding else "templates"
     click.echo(f"Created {len(setup.claude_md_paths)} CLAUDE.md files (level 0 skipped)")
+    click.echo(f"Padding source: {padding_type}")
     click.echo(f"Working directory: {setup.working_dir}")
 
     for path in setup.claude_md_paths:
@@ -58,7 +62,8 @@ def generate(experiment: str, output: str, padding: int, style: str):
 @click.option("--output", "-o", default="./results", help="Results directory")
 @click.option("--timeout", type=int, default=60, help="Timeout seconds")
 @click.option("--style", "-s", default="neutral", help="Emphasis style")
-def run(experiment: str, padding: int, trial: int, output: str, timeout: int, style: str):
+@click.option("--claude-padding", is_flag=True, help="Use Claude API to generate padding")
+def run(experiment: str, padding: int, trial: int, output: str, timeout: int, style: str, claude_padding: bool):
     """Run a single experiment trial."""
     import tempfile
 
@@ -76,6 +81,7 @@ def run(experiment: str, padding: int, trial: int, output: str, timeout: int, st
             padding_size=padding,
             style=style,
             backup_user_config=True,
+            use_claude_padding=claude_padding,
         )
 
         # Calculate context size

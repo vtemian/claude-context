@@ -25,11 +25,11 @@ def run_claude_session(
     """
     Run Claude CLI with a prompt and capture output.
 
-    Uses: claude --print --prompt "..."
+    Uses: claude --print "prompt"
     """
     import time
 
-    cmd = ["claude", "--print", "--prompt", prompt]
+    cmd = ["claude", "--print", prompt]
 
     start_time = time.time()
 

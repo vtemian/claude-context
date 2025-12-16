@@ -60,80 +60,79 @@ def generate(experiment: str, output: str, padding: int, style: str, claude_padd
 @click.option("--padding", "-p", type=int, required=True, help="Padding size")
 @click.option("--trial", "-t", type=int, default=1, help="Trial number")
 @click.option("--output", "-o", default="./results", help="Results directory")
+@click.option("--workspace", "-w", default="./workspace", help="Workspace directory for experiment files")
 @click.option("--timeout", type=int, default=60, help="Timeout seconds")
 @click.option("--style", "-s", default="neutral", help="Emphasis style")
 @click.option("--claude-padding", is_flag=True, help="Use Claude API to generate padding")
-def run(experiment: str, padding: int, trial: int, output: str, timeout: int, style: str, claude_padding: bool):
+def run(experiment: str, padding: int, trial: int, output: str, workspace: str, timeout: int, style: str, claude_padding: bool):
     """Run a single experiment trial."""
-    import tempfile
-
     config_path = f"experiments/{experiment}/config.yaml"
     config = load_config_file(config_path)
 
     trial_id = f"{experiment}-p{padding}-t{trial}"
     click.echo(f"Running trial: {trial_id}")
 
-    with tempfile.TemporaryDirectory() as tmpdir:
-        # Setup
-        setup = setup_experiment_files(
-            config=config,
-            base_dir=tmpdir,
-            padding_size=padding,
-            style=style,
-            backup_user_config=True,
-            use_claude_padding=claude_padding,
+    # Setup experiment files in workspace directory
+    setup = setup_experiment_files(
+        config=config,
+        base_dir=workspace,
+        padding_size=padding,
+        style=style,
+        backup_user_config=True,
+        use_claude_padding=claude_padding,
+    )
+
+    # Calculate context size
+    context_size = sum(
+        Path(p).stat().st_size for p in setup.claude_md_paths
+        if Path(p).exists()
+    )
+
+    click.echo(f"Context size: {context_size} chars")
+    click.echo(f"Working dir: {setup.working_dir}")
+
+    try:
+        # Run Claude
+        result = run_claude_session(
+            working_dir=setup.working_dir,
+            prompt=config.prompt,
+            timeout=timeout,
         )
 
-        # Calculate context size
-        context_size = sum(
-            Path(p).stat().st_size for p in setup.claude_md_paths
-            if Path(p).exists()
+        if not result.success:
+            click.echo(f"Error: {result.error}", err=True)
+            return
+
+        # Save raw output
+        raw_dir = Path(output) / "raw"
+        raw_dir.mkdir(parents=True, exist_ok=True)
+        raw_file = raw_dir / f"{trial_id}.txt"
+        raw_file.write_text(result.output)
+
+        # Analyze
+        compliance = analyze_compliance(result.output, config.emojis)
+
+        # Save metrics
+        metrics = TrialMetrics(
+            trial_id=trial_id,
+            experiment=experiment,
+            parameters={"padding_size": padding, "style": style},
+            sections_found=compliance.total_sections,
+            compliance_rates=compliance.compliance_rates,
+            overall_compliance=compliance.overall_compliance,
+            context_size_chars=context_size,
+            raw_output_file=str(raw_file),
         )
 
-        click.echo(f"Context size: {context_size} chars")
+        save_trial_metrics(metrics, output)
 
-        try:
-            # Run Claude
-            result = run_claude_session(
-                working_dir=setup.working_dir,
-                prompt=config.prompt,
-                timeout=timeout,
-            )
+        click.echo(f"Sections found: {compliance.total_sections}")
+        click.echo(f"Overall compliance: {compliance.overall_compliance:.1%}")
+        for emoji, rate in compliance.compliance_rates.items():
+            click.echo(f"  {emoji}: {rate:.1%}")
 
-            if not result.success:
-                click.echo(f"Error: {result.error}", err=True)
-                return
-
-            # Save raw output
-            raw_dir = Path(output) / "raw"
-            raw_dir.mkdir(parents=True, exist_ok=True)
-            raw_file = raw_dir / f"{trial_id}.txt"
-            raw_file.write_text(result.output)
-
-            # Analyze
-            compliance = analyze_compliance(result.output, config.emojis)
-
-            # Save metrics
-            metrics = TrialMetrics(
-                trial_id=trial_id,
-                experiment=experiment,
-                parameters={"padding_size": padding, "style": style},
-                sections_found=compliance.total_sections,
-                compliance_rates=compliance.compliance_rates,
-                overall_compliance=compliance.overall_compliance,
-                context_size_chars=context_size,
-                raw_output_file=str(raw_file),
-            )
-
-            save_trial_metrics(metrics, output)
-
-            click.echo(f"Sections found: {compliance.total_sections}")
-            click.echo(f"Overall compliance: {compliance.overall_compliance:.1%}")
-            for emoji, rate in compliance.compliance_rates.items():
-                click.echo(f"  {emoji}: {rate:.1%}")
-
-        finally:
-            teardown_experiment_files(setup)
+    finally:
+        teardown_experiment_files(setup)
 
 
 @main.command()

@@ -51,18 +51,8 @@ def setup_experiment_files(
         skip_user_config: If True, do not create/modify ~/.claude/CLAUDE.md (level 0)
         use_claude_padding: If True, use Claude API to generate varied padding
     """
-    import subprocess
-
     base_path = Path(base_dir)
     base_path.mkdir(parents=True, exist_ok=True)
-
-    # Initialize git repo so Claude Code recognizes this as a project
-    # and loads the CLAUDE.md files
-    subprocess.run(
-        ["git", "init", "-q"],
-        cwd=base_path,
-        capture_output=True,
-    )
 
     claude_md_paths = []
     backed_up_path = None

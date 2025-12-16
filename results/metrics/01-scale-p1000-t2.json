@@ -1,5 +1,5 @@
 {
-  "trial_id": "01-scale-p1000-t1",
+  "trial_id": "01-scale-p1000-t2",
   "experiment": "01-scale",
   "parameters": {
     "padding_size": 1000
@@ -29,5 +29,5 @@
   },
   "overall_compliance": 1.0,
   "context_size_chars": 4177,
-  "raw_output_file": "results/raw/01-scale-p1000-t1.txt"
+  "raw_output_file": "results/raw/01-scale-p1000-t2.txt"
 }

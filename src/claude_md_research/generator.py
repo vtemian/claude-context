@@ -3,6 +3,58 @@
 import random
 import anthropic
 
+# Emoji pools by level - each CLAUDE.md level gets its own distinct pool
+# This makes it easy to track which level's rules are being followed
+EMOJI_POOLS = {
+    # Level 1 (project root): Smileys & faces
+    1: [
+        "😀", "😃", "😄", "😁", "😆", "😅", "🤣", "😂", "🙂", "😊",
+        "😇", "🥰", "😍", "🤩", "😘", "😋", "😛", "🤪", "😜", "🤓",
+        "🤠", "🥳", "🥸", "😎", "🤗", "🤭", "🤫", "🤔", "🤐", "🤨",
+        "😏", "😒", "🙄", "😬", "😮", "🤤", "😴", "🤒", "🤕", "🤢",
+        "🤮", "🤧", "🥵", "🥶", "🥴", "😵", "🤯", "🤠", "🥳", "🥸",
+    ],
+    # Level 2 (src/): Animals
+    2: [
+        "🐶", "🐱", "🐭", "🐹", "🐰", "🦊", "🐻", "🐼", "🐨", "🐯",
+        "🦁", "🐮", "🐷", "🐸", "🐵", "🐔", "🐧", "🐦", "🐤", "🦆",
+        "🦅", "🦉", "🦇", "🐺", "🐗", "🐴", "🦄", "🐝", "🐛", "🦋",
+        "🐌", "🐞", "🐜", "🦟", "🦗", "🕷️", "🦂", "🐢", "🐍", "🦎",
+        "🦖", "🦕", "🐙", "🦑", "🦐", "🦞", "🦀", "🐡", "🐠", "🐟",
+        "🐬", "🐳", "🐋", "🦈", "🐊", "🐅", "🐆", "🦓", "🦍", "🦧",
+        "🐘", "🦛", "🦏", "🐪", "🐫", "🦒", "🦘", "🦬", "🐃", "🐂",
+    ],
+    # Level 3 (src/lib/): Food & plants
+    3: [
+        "🍎", "🍊", "🍋", "🍌", "🍉", "🍇", "🍓", "🍒", "🍑", "🥭",
+        "🍍", "🥥", "🥝", "🍅", "🥑", "🥦", "🥬", "🥒", "🌶️", "🌽",
+        "🥕", "🧄", "🧅", "🥔", "🍠", "🥐", "🥯", "🍞", "🥖", "🥨",
+        "🧀", "🥚", "🍳", "🧈", "🥞", "🧇", "🥓", "🥩", "🍗", "🍖",
+        "🌭", "🍔", "🍟", "🍕", "🫓", "🥪", "🥙", "🧆", "🌮", "🌯",
+        "🫔", "🥗", "🥘", "🫕", "🍝", "🍜", "🍲", "🍛", "🍣", "🍱",
+        "🥟", "🦪", "🍤", "🍙", "🍚", "🍘", "🍥", "🥠", "🥮", "🍢",
+        "🍡", "🍧", "🍨", "🍦", "🥧", "🧁", "🍰", "🎂", "🍮", "🍭",
+        "🍬", "🍫", "🍿", "🍩", "🍪", "🌰", "🥜", "🍯", "🥛", "🍼",
+        "🫖", "☕", "🍵", "🧃", "🥤", "🧋", "🍶", "🍺", "🍻", "🥂",
+    ],
+    # Level 4 (src/lib/core/): Symbols & objects
+    4: [
+        "⭐", "🌟", "✨", "💫", "🔥", "💡", "📌", "📍", "🎯", "🎪",
+        "🎨", "🎭", "🎬", "🎤", "🎧", "🎵", "🎶", "🎹", "🎸", "🎺",
+        "✅", "❌", "⚡", "💥", "💢", "💦", "💨", "🕐", "🔔", "🔕",
+        "📢", "📣", "💬", "💭", "♠️", "♣️", "♥️", "♦️", "🃏", "🎴",
+        "🔴", "🟠", "🟡", "🟢", "🔵", "🟣", "🟤", "⚫", "⚪", "🔶",
+        "🔷", "🔸", "🔹", "▪️", "▫️", "◾", "◽", "🔲", "🔳", "⬛",
+        "⬜", "🟥", "🟧", "🟨", "🟩", "🟦", "🟪", "🟫", "💠", "🔘",
+        "🎁", "🎀", "🎊", "🎉", "🎈", "🧸", "🎮", "🕹️", "🎲", "🧩",
+        "♟️", "🎰", "🎳", "🔮", "🧿", "🪬", "🖼️", "🧵", "🧶", "👑",
+        "💎", "💍", "🏆", "🥇", "🥈", "🥉", "🏅", "🎖️", "📿", "🔑",
+    ],
+}
+
+# Flat pool for backward compatibility
+EMOJI_POOL = EMOJI_POOLS[1] + EMOJI_POOLS[2] + EMOJI_POOLS[3] + EMOJI_POOLS[4]
+
 RULE_TEMPLATES = {
     "neutral": [
         "Every section should contain one {emoji}.",
@@ -71,22 +123,69 @@ def generate_reinforcement_padding(emoji: str, target_chars: int) -> str:
     return "\n".join(lines)
 
 
-def generate_padding_via_claude(
-    emoji: str,
+def generate_diverse_emoji_rules(
+    level: int,
     target_chars: int,
     style: str = "neutral",
-    model: str = "claude-3-5-haiku-20241022",
-) -> str:
-    """Generate padding text using Claude API for more natural variation.
+) -> tuple[str, list[str]]:
+    """Generate rules for many different emojis from a level's pool.
 
     Args:
-        emoji: The emoji to include in instructions
-        target_chars: Approximate target character count
-        style: Instruction style (neutral, important, never, caps)
-        model: Claude model to use (default: haiku for cost efficiency)
+        level: CLAUDE.md level (1-4) to get emoji pool from
+        target_chars: Target character count for all rules combined
+        style: Instruction style
 
     Returns:
-        Generated instruction text containing the emoji
+        Tuple of (rules_text, list_of_emojis_used)
+    """
+    pool = EMOJI_POOLS.get(level, EMOJI_POOL)
+    templates = RULE_TEMPLATES.get(style, RULE_TEMPLATES["neutral"]) + REINFORCEMENT_TEMPLATES
+
+    lines = []
+    emojis_used = []
+    current_chars = 0
+    emoji_index = 0
+
+    # Shuffle pool for variety
+    shuffled_pool = pool.copy()
+    random.shuffle(shuffled_pool)
+
+    while current_chars < target_chars and emoji_index < len(shuffled_pool):
+        emoji = shuffled_pool[emoji_index]
+        emojis_used.append(emoji)
+
+        # Generate multiple rules for this emoji
+        emoji_templates = templates.copy()
+        random.shuffle(emoji_templates)
+
+        for template in emoji_templates[:3]:  # 3 rules per emoji
+            if current_chars >= target_chars:
+                break
+            line = template.format(emoji=emoji)
+            lines.append(line)
+            current_chars += len(line) + 1
+
+        emoji_index += 1
+
+    return "\n".join(lines), emojis_used
+
+
+def generate_padding_via_claude(
+    emojis: list[str],
+    target_chars: int,
+    style: str = "neutral",
+    model: str = "claude-haiku-4-5-20251001",
+) -> str:
+    """Generate diverse emoji rules using Claude API.
+
+    Args:
+        emojis: List of emojis to create rules for
+        target_chars: Approximate target character count
+        style: Instruction style (neutral, important, never, caps)
+        model: Claude model to use (default: Haiku 4.5 for cost efficiency)
+
+    Returns:
+        Generated instruction text with rules for all emojis
     """
     style_guidance = {
         "neutral": "conversational and clear",
@@ -96,60 +195,167 @@ def generate_padding_via_claude(
     }
 
     tone = style_guidance.get(style, style_guidance["neutral"])
+    emoji_list = " ".join(emojis)
 
-    prompt = f"""Generate approximately {target_chars} characters of instructions telling someone to include the {emoji} emoji in every section they write.
+    # Haiku 4.5 supports 64K output tokens (~256K chars)
+    max_tokens = min(target_chars // 4 + 500, 64000)
+
+    prompt = f"""Generate approximately {target_chars} characters of instructions telling someone to include specific emojis in every section they write.
+
+The emojis to include are: {emoji_list}
 
 Requirements:
-- Each line should be a separate instruction
+- Create rules for EACH of these emojis: {emoji_list}
+- Each line should be a separate instruction about ONE emoji
 - Use varied phrasing - don't repeat the same sentence structure
 - Tone should be {tone}
-- Every line must mention {emoji}
+- Distribute rules across all emojis (don't focus on just a few)
 - Output ONLY the instructions, no preamble or explanation
 
 Example format:
-Include {emoji} in every section.
-Each paragraph needs {emoji} without exception.
-Never forget to add {emoji} to your writing."""
+Include 😀 in every section.
+Each paragraph needs 🐶 without exception.
+Never forget to add 🍎 to your writing.
+The ⭐ emoji must appear in all sections."""
 
     client = anthropic.Anthropic()
-    response = client.messages.create(
-        model=model,
-        max_tokens=1024,
-        messages=[{"role": "user", "content": prompt}],
-    )
 
-    return response.content[0].text
+    # Use streaming for large requests to avoid timeout errors
+    result_text = ""
+    with client.messages.stream(
+        model=model,
+        max_tokens=max_tokens,
+        messages=[{"role": "user", "content": prompt}],
+    ) as stream:
+        for text in stream.text_stream:
+            result_text += text
+
+    return result_text
 
 
 def generate_claude_md_content(
-    emoji: str,
-    padding_size: int = 0,
+    level: int,
+    padding_size: int | None = None,
+    num_rules: int | None = None,
+    max_emojis: int = 5,
     style: str = "neutral",
     use_claude_padding: bool = False,
-) -> str:
+) -> tuple[str, list[str]]:
     """Generate complete CLAUDE.md content for one level.
 
     Args:
-        emoji: The emoji to require in sections
-        padding_size: Target size in characters for padding
+        level: CLAUDE.md level (1-4) to get emoji pool from
+        padding_size: Target size in characters for rules
+        num_rules: Exact number of rules/emojis to generate (overrides padding_size)
+        max_emojis: Maximum emojis per level for padding mode (default 5)
         style: Instruction style (neutral, important, never, caps)
-        use_claude_padding: If True, use Claude API to generate varied padding
+        use_claude_padding: If True, use Claude API to generate varied rules
+
+    Returns:
+        Tuple of (content, list_of_emojis_used)
     """
-    parts = []
+    pool = EMOJI_POOLS.get(level, EMOJI_POOL)
 
-    # Primary rule
-    rule = generate_rule_text(emoji, style)
-    parts.append(rule)
+    # Mode 1: Fixed number of rules (one rule per emoji)
+    if num_rules is not None:
+        num_emojis = min(num_rules, len(pool))
+        emojis = pool[:num_emojis]
+        # Generate exactly one rule per emoji
+        lines = []
+        templates = RULE_TEMPLATES.get(style, RULE_TEMPLATES["neutral"])
+        for emoji in emojis:
+            template = random.choice(templates)
+            lines.append(template.format(emoji=emoji))
+        return "\n".join(lines), emojis
 
-    # Padding (reinforcement)
-    if padding_size > 0:
-        # Account for the rule we already added
-        remaining = padding_size - len(rule) - 2
-        if remaining > 0:
-            if use_claude_padding:
-                padding = generate_padding_via_claude(emoji, remaining, style)
-            else:
-                padding = generate_reinforcement_padding(emoji, remaining)
-            parts.append(padding)
+    # Mode 2: Padding-based (fixed emoji count, variable reinforcement)
+    if padding_size is None or padding_size <= 0:
+        # Minimal content: just one rule with first emoji
+        emoji = pool[0]
+        content = generate_rule_text(emoji, style)
+        return content, [emoji]
 
-    return "\n\n".join(parts)
+    # Use fixed number of emojis, fill padding with reinforcement
+    num_emojis = min(max_emojis, len(pool))
+    emojis = pool[:num_emojis]
+
+    if use_claude_padding:
+        content = generate_padding_via_claude(emojis, padding_size, style)
+        content = _adjust_content_size(content, emojis, padding_size, style)
+    else:
+        content = _generate_reinforced_rules(emojis, padding_size, style)
+
+    return content, emojis
+
+
+def _generate_reinforced_rules(
+    emojis: list[str],
+    target_chars: int,
+    style: str = "neutral",
+) -> str:
+    """Generate rules for fixed emojis, filling target size with reinforcement."""
+    templates = RULE_TEMPLATES.get(style, RULE_TEMPLATES["neutral"]) + REINFORCEMENT_TEMPLATES
+
+    lines = []
+    current_chars = 0
+    template_idx = 0
+    emoji_idx = 0
+
+    # Shuffle templates for variety
+    shuffled_templates = templates.copy()
+    random.shuffle(shuffled_templates)
+
+    while current_chars < target_chars:
+        emoji = emojis[emoji_idx % len(emojis)]
+        template = shuffled_templates[template_idx % len(shuffled_templates)]
+        line = template.format(emoji=emoji)
+        lines.append(line)
+        current_chars += len(line) + 1
+        template_idx += 1
+        emoji_idx += 1
+
+    return "\n".join(lines)
+
+
+def _adjust_content_size(
+    content: str,
+    emojis: list[str],
+    target_size: int,
+    style: str,
+) -> str:
+    """Adjust content to be close to target size by truncating or padding."""
+    tolerance = 0.1  # 10% tolerance
+
+    if len(content) > target_size * (1 + tolerance):
+        # Truncate to target size at a line boundary
+        lines = content.split("\n")
+        truncated = []
+        current_size = 0
+        for line in lines:
+            if current_size + len(line) + 1 > target_size:
+                break
+            truncated.append(line)
+            current_size += len(line) + 1
+        content = "\n".join(truncated)
+
+    elif len(content) < target_size * (1 - tolerance):
+        # Pad with template-based rules
+        remaining = target_size - len(content) - 2
+        if remaining > 0 and emojis:
+            templates = REINFORCEMENT_TEMPLATES.copy()
+            random.shuffle(templates)
+            padding_lines = []
+            chars = 0
+            template_idx = 0
+            emoji_idx = 0
+            while chars < remaining:
+                emoji = emojis[emoji_idx % len(emojis)]
+                template = templates[template_idx % len(templates)]
+                line = template.format(emoji=emoji)
+                padding_lines.append(line)
+                chars += len(line) + 1
+                template_idx += 1
+                emoji_idx += 1
+            content = content + "\n\n" + "\n".join(padding_lines)
+
+    return content

@@ -12,9 +12,10 @@ class ExperimentConfig:
     name: str
     levels: int
     emojis: list[str]
-    padding_sizes: list[int]
     trials_per_condition: int
     prompt: str
+    padding_sizes: list[int] = field(default_factory=list)
+    rule_counts: list[int] = field(default_factory=list)
     description: str = ""
     padding_style: str = "reinforcement"
     emphasis_styles: list[dict[str, str]] = field(default_factory=list)

@@ -6,6 +6,8 @@ from claude_md_research.generator import (
     generate_reinforcement_padding,
     generate_claude_md_content,
     generate_padding_via_claude,
+    generate_diverse_emoji_rules,
+    EMOJI_POOLS,
 )
 
 
@@ -29,38 +31,75 @@ def test_generate_reinforcement_padding():
     assert len(padding) <= 550
 
 
+def test_generate_diverse_emoji_rules():
+    """Test diverse emoji rules generation."""
+    content, emojis = generate_diverse_emoji_rules(level=1, target_chars=500)
+
+    # Should have multiple emojis
+    assert len(emojis) > 1
+    # All emojis should be from level 1 pool
+    for emoji in emojis:
+        assert emoji in EMOJI_POOLS[1]
+    # Content should contain all emojis
+    for emoji in emojis:
+        assert emoji in content
+
+
 def test_generate_claude_md_content():
-    content = generate_claude_md_content(
-        emoji="😀",
-        padding_size=200,
+    """Test content generation returns tuple of (content, emojis)."""
+    content, emojis = generate_claude_md_content(
+        level=1,
+        padding_size=500,
         style="important",
     )
-    assert "😀" in content
-    # Should contain at least one emphasis keyword from important templates
-    assert any(keyword in content for keyword in ["IMPORTANT", "CRITICAL", "REQUIRED", "MUST"])
-    assert len(content) >= 150
+
+    # Should return emojis from level 1 pool
+    assert len(emojis) > 0
+    for emoji in emojis:
+        assert emoji in EMOJI_POOLS[1]
+
+    # Content should mention at least some emojis
+    assert any(emoji in content for emoji in emojis)
+    assert len(content) >= 400
+
+
+def test_generate_claude_md_content_minimal():
+    """Test minimal content with no padding."""
+    content, emojis = generate_claude_md_content(level=2, padding_size=0)
+
+    # Should return single emoji with minimal rule
+    assert len(emojis) == 1
+    assert emojis[0] in EMOJI_POOLS[2]
+    assert emojis[0] in content
 
 
 def test_generate_padding_via_claude_mocked():
-    """Test Claude API padding generation with mocked response."""
-    mock_response = Mock()
-    mock_response.content = [Mock(text="""Include 😀 in every section you write.
-Each paragraph must contain the 😀 emoji.
-Never forget to add 😀 to your sections.
-The 😀 symbol is required throughout.""")]
+    """Test Claude API padding generation with mocked streaming response."""
+    mock_text = """Include 😀 in every section you write.
+Each paragraph must contain the 🐶 emoji.
+Never forget to add 🍎 to your sections.
+The ⭐ symbol is required throughout."""
 
     with patch("claude_md_research.generator.anthropic.Anthropic") as mock_anthropic:
         mock_client = Mock()
-        mock_client.messages.create.return_value = mock_response
+        mock_stream = Mock()
+        mock_stream.__enter__ = Mock(return_value=mock_stream)
+        mock_stream.__exit__ = Mock(return_value=False)
+        mock_stream.text_stream = iter([mock_text])
+        mock_client.messages.stream.return_value = mock_stream
         mock_anthropic.return_value = mock_client
 
-        result = generate_padding_via_claude("😀", target_chars=200)
+        emojis = ["😀", "🐶", "🍎", "⭐"]
+        result = generate_padding_via_claude(emojis, target_chars=200)
 
-        assert "😀" in result
-        mock_client.messages.create.assert_called_once()
-        call_kwargs = mock_client.messages.create.call_args[1]
-        assert "😀" in call_kwargs["messages"][0]["content"]
-        assert call_kwargs["model"] == "claude-3-5-haiku-20241022"
+        assert any(e in result for e in emojis)
+        mock_client.messages.stream.assert_called_once()
+        call_kwargs = mock_client.messages.stream.call_args[1]
+        # Should mention all emojis in prompt
+        prompt = call_kwargs["messages"][0]["content"]
+        for emoji in emojis:
+            assert emoji in prompt
+        assert call_kwargs["model"] == "claude-haiku-4-5-20251001"
 
 
 @pytest.mark.skipif(
@@ -69,9 +108,11 @@ The 😀 symbol is required throughout.""")]
 )
 def test_generate_padding_via_claude_integration():
     """Integration test with real API - only runs if API key is set."""
-    result = generate_padding_via_claude("🎯", target_chars=300)
+    emojis = ["🎯", "🔥", "⭐"]
+    result = generate_padding_via_claude(emojis, target_chars=300)
 
-    assert "🎯" in result
+    # Should contain at least some of the emojis
+    assert any(e in result for e in emojis)
     assert len(result) >= 200  # Allow some variance
     # Should have multiple lines
     assert result.count("\n") >= 2

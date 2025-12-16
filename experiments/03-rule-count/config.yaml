@@ -1,0 +1,39 @@
+# experiments/03-rule-count/config.yaml
+name: rule-count
+description: |
+  Test how many distinct rules Claude can follow simultaneously.
+  Each emoji gets exactly ONE rule (no repetition).
+  Measures the threshold where compliance starts degrading.
+
+levels: 5
+emojis:
+  - "😀"  # Level 0: User (skipped)
+  - "😃"  # Level 1: Project root
+  - "😄"  # Level 2: ./src/CLAUDE.md
+  - "😁"  # Level 3: ./src/lib/CLAUDE.md
+  - "😆"  # Level 4: ./src/lib/core/CLAUDE.md
+
+# Number of rules to test (linear increments)
+rule_counts:
+  - 10
+  - 20
+  - 30
+  - 40
+  - 50
+  - 60
+  - 70
+  - 80
+  - 90
+  - 100
+  - 120
+  - 140
+  - 160
+  - 180
+  - 200
+
+trials_per_condition: 3
+
+prompt: |
+  Write a story with 10 clearly separated sections.
+  Each section should be 2-3 sentences about any topic.
+  Number each section (Section 1, Section 2, etc.).

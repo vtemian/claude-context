@@ -38,10 +38,13 @@ def test_setup_creates_directory_structure(sample_config):
         assert os.path.exists(setup.claude_md_paths[1])  # Level 2 (./src/CLAUDE.md)
         assert setup.working_dir.endswith("src")
 
-        # Check content contains emoji (level 1 has 😃)
+        # Check content contains emojis from level 1's pool
         with open(setup.claude_md_paths[0]) as f:
             content = f.read()
-            assert "😃" in content
+            # Verify at least one emoji from level 1 is present
+            level_1_emojis = setup.emojis_by_level.get(1, [])
+            assert len(level_1_emojis) > 0, "Level 1 should have emojis"
+            assert any(emoji in content for emoji in level_1_emojis)
 
 
 def test_teardown_removes_files(sample_config):
